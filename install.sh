@@ -2,6 +2,7 @@
 
 # Packages that need to be installed
 # alacritty
+# bspwm
 
 DOTFILES_DIR="$HOME/.dotfiles"
 
@@ -12,9 +13,18 @@ DOTFILES=(
 )
 
 # Create symlinks for each dotfile
-for file in "${DOTFILES[@]}"; do
-    echo "Adding symlink for $file"
-    ln -sf "$DOTFILES_DIR/$file" "$HOME/$file"
+for folder in "${DOTFILES[@]}"; do
+    link="$DOTFILES_DIR/$folder"
+    target="$HOME/$folder"
+
+    # Check if the symlink exists and points to the correct location
+    if [ -L "$target" ] && [ "$(readlink "$target")" = "$link" ]; then
+        echo "Symbolic link for $folder already exists and points to the correct location, skipping..."
+    else
+        echo "Adding symlink for $folder"
+        mkdir -p "$(dirname "$target")"  # Create parent directory if it doesn't exist
+        ln -sf "$link" "$target"
+    fi
 done
 
 echo "Dotfiles installation complete!"
