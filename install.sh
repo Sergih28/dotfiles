@@ -7,7 +7,8 @@ DOTFILES_DIR="$HOME/.dotfiles"
 
 # Define list of dotfiles to symlink
 DOTFILES=(
-    ".config/alacritty/alacritty.toml"
+    ".config/alacritty/alacritty.toml",
+    ".config/bspwm/bspwmrc"
 )
 
 # Create symlinks for each dotfile
