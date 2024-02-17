@@ -7,15 +7,12 @@ DOTFILES_DIR="$HOME/.dotfiles"
 
 # Define list of dotfiles to symlink
 DOTFILES=(
-    ".config/alacritty/alacritty.toml",
-    ".config/bspwm/bspwmrc"
+    ".config/alacritty"
+    ".config/bspwm"
 )
 
 # Create symlinks for each dotfile
 for file in "${DOTFILES[@]}"; do
-    # Create the folder if it doesn't exist
-    mkdir -p "$(dirname $HOME/$file)"
-
     echo "Adding symlink for $file"
     ln -sf "$DOTFILES_DIR/$file" "$HOME/$file"
 done
