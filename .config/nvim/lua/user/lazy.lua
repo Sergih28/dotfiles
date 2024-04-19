@@ -14,4 +14,4 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("user.plugins")
 
 -- This needs to be here as it has to be run after the plugin (mini.map) is loaded
-vim.cmd("autocmd VimEnter * lua MiniMap.open()")
+-- vim.cmd("autocmd VimEnter * lua MiniMap.open()")
