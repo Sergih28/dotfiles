@@ -1,0 +1,30 @@
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗"
+    }
+  }
+})
+
+require("mason-lspconfig").setup {
+  ensure_installed = { 
+    "lua_ls",
+    "tsserver",
+    "cssls",
+    "sqlls",
+    "astro",
+    "tailwindcss",
+    "html",
+  },
+}
+
+require("lspconfig").lua_ls.setup {}
+require("lspconfig").tsserver.setup {}
+require("lspconfig").cssls.setup {}
+require("lspconfig").sqlls.setup {}
+require("lspconfig").astro.setup {}
+require("lspconfig").tailwindcss.setup {}
+require("lspconfig").html.setup {}
+

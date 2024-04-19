@@ -1,0 +1,28 @@
+return {}
+-- return {
+--   'folke/edgy.nvim',
+--   event = 'VeryLazy',
+--   init = function()
+--     vim.opt.laststatus = 3
+--     vim.opt.splitkeep = "screen"
+--   end,
+--   opts = {
+--     bottom = {
+--       {
+--         ft = "toggleterm",
+--         size = { height = 0.4 },
+--         -- exclude floating windows
+--         filter = function(buf, win)
+--           return vim.api.nvim_win_get_config(win).relative == ""
+--         end,
+--       }
+--     },
+--     wo = {
+--       winbar = false,
+--       winhighlight = "WinBar:WinBar,Normal:Normal",
+--       winfixwidth = false,
+--       winfixheight = false,
+--     }
+--     -- fix_win_height = vim.fn.has("nvim-0.10.0") == 0
+--   }
+-- }

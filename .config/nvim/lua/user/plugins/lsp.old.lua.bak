@@ -1,0 +1,62 @@
+-- :Mason to see the list
+return {
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup({
+        PATH = "append", -- "skip" seems to cause the spawning error
+        ui = {
+          icons = {
+              package_installed = "",
+              package_pending = "➜",
+              --package_uninstalled = ""
+          }
+        }
+      })
+    end,
+  },
+  {  
+    "williamboman/mason-lspconfig.nvim",
+    config = function()
+      require('mason-lspconfig').setup {
+        -- config
+        ensure_installed = {
+          "lua_ls",
+          --"luau_lsp",
+          "astro",
+          "tsserver",
+          "html",
+          "cssls",
+          "tailwindcss",
+          "sqlls",
+          "intelephense" -- php
+          -- npm i -g vscode-langservers-extracted
+        }
+      }
+    end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      --require("lspconfig").luau_lsp.setup {}
+      require("lspconfig").lua_ls.setup {
+        cmd = { "lua-language-server", "--log-level=debug" },
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim" },
+            },
+          },
+        },
+      }
+      -- require("lspconfig").astro.setup {}
+      -- require("lspconfig").tsserver.setup {}
+      -- require("lspconfig").html.setup {}
+      -- require("lspconfig").cssls.setup {}
+      -- --require("lspconfig").tailwindcss.setup {}
+      -- require("lspconfig").sqlls.setup {}
+      -- require("lspconfig").intelephense.setup {}
+    end,
+  },
+}
+
