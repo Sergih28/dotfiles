@@ -14,6 +14,9 @@ return {
     --configure nvim-tree
     nvimtree.setup({
       sort_by = "case_sensitive",
+      update_focused_file = {
+        enable = true,
+      },
       view = {
         width = 35,
 	      relativenumber = true,
