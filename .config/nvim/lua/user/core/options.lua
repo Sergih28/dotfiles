@@ -63,6 +63,5 @@ end
 -- Set ColorColumn to match the normal background color
 vim.cmd('highlight ColorColumn guibg=NONE ctermbg=NONE')
 
-
 vim.o.ttymouse = "xterm2"
 vim.o.mouse = "nvia"

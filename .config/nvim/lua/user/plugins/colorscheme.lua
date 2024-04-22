@@ -42,6 +42,13 @@ return {
       vim.cmd("highlight NvimTreeRootFolder guifg=#e6b810 ctermfg=208")
       vim.cmd("highlight NvimTreeEmptyFolderName guifg=#d9a206 ctermfg=208")
 
+      -- Normal floating windows
+      vim.cmd("highlight NormalFloat guibg='#3b0764' ctermbg=3")
+
+      -- Nvim treesitter context
+      vim.cmd("highlight TreesitterContextBottom gui=underline guisp=White")
+      vim.cmd("highlight TreesitterContextLineNumberBottom gui=underline guisp=White")
+      vim.cmd("highlight TreesitterContextLineNumber guifg=#38bdf8 guibg=#3b0764 ctermfg=81 ctermbg=3")
 
       -- Text selection
       vim.cmd("highlight Visual guibg=#4a3c00 ctermbg=155")
@@ -70,7 +77,7 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    config = function ()
+    config = function()
       -- Setup colors to highlight for quick-scope (when using f, F, t, T on a line)
       vim.cmd("highlight QuickScopePrimary guifg='#facc15' gui=underline ctermfg=155 cterm=underline")
       vim.cmd("highlight QuickScopeSecondary guifg='#38bdf8' gui=underline ctermfg=81 cterm=underline")
@@ -85,26 +92,26 @@ return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
-    config = function ()
+    config = function()
       -- Setup colors to highlight for quick-scope (when using f, F, t, T on a line)
       vim.cmd("highlight QuickScopePrimary guifg='#facc15' gui=underline ctermfg=155 cterm=underline")
       vim.cmd("highlight QuickScopeSecondary guifg='#38bdf8' gui=underline ctermfg=81 cterm=underline")
 
-      require('catppuccin').setup({
-        transparent_background = true
+      require("catppuccin").setup({
+        transparent_background = true,
       })
-    end
+    end,
   },
   {
     "Rigellute/shades-of-purple.vim",
     priority = 1000,
-    config = function ()
+    config = function()
       -- Setup colors to highlight for quick-scope (when using f, F, t, T on a line)
       vim.cmd("highlight QuickScopePrimary guifg='#facc15' gui=underline ctermfg=155 cterm=underline")
       vim.cmd("highlight QuickScopeSecondary guifg='#38bdf8' gui=underline ctermfg=81 cterm=underline")
-    end
+    end,
   },
   {
     "haishanh/night-owl.vim",
-  }
+  },
 }
