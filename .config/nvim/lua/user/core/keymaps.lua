@@ -90,7 +90,7 @@ map("n", "<leader>gb", ":Telescope git_branches<CR>", "Show git branches")
 map("n", "<leader>gs", ":Telescope git_status<CR>", "Show git status")
 map("n", "<leader>gl", ":Telescope git_commits<CR>", "Show git commits (git log)")
 map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
-map("n", "<leader>n", ":Noice telescope<CR>", "Show notifications")
+--map("n", "<leader>n", ":Noice telescope<CR>", "Show notifications")
 
 -- telescope-import
 map("n", "<leader>I", ":Telescope import<CR>", "Show imports")
@@ -103,6 +103,11 @@ map("n", "<leader>gd", ":GitGutterDiffOrig<CR>", "Show git diff")
 
 -- Nvim-tree
 map("n", "<leader>nt", ":NvimTreeToggle<CR>", "Toggle nvim tree")
+
+-- nvim-treesitter-context
+map("n", "<leader>n", function()
+  require("treesitter-context").go_to_context(vim.v.count1)
+end, "Jump to context (upwards)")
 
 -- Lazy
 map("n", "<leader>lz", ":Lazy<CR>", "Show Lazy window")
