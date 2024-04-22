@@ -15,7 +15,12 @@ vim.g.maplocalleader = " "
 
 -- Define a function to set key mappings with a shared options table
 local function map(mode, keys, command, description)
-  local desc = description .. " (" .. command .. ")"
+  local desc
+  if type(command) == "string" then
+    desc = description .. " (" .. command .. ")"
+  else
+    desc = description
+  end
   local opts = { noremap = true, silent = true, desc = desc }
   keymap.set(mode, keys, command, opts)
 end
