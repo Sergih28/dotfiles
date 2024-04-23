@@ -37,16 +37,35 @@ return {
       return newVirtText
     end
 
+    -- Option 2: nvim lsp as LSP client
+    -- Tell the server the capability of foldingRange,
+    -- Neovim hasn't added foldingRange to default capabilities, users must add it manually
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.foldingRange = {
+      dynamicRegistration = false,
+      lineFoldingOnly = true,
+    }
+    local language_servers = require("lspconfig").util.available_servers() -- or list servers manually like {'gopls', 'clangd'}
+    for _, ls in ipairs(language_servers) do
+      require("lspconfig")[ls].setup({
+        capabilities = capabilities,
+        -- you can add other fields for setting up lsp server in this table
+      })
+    end
+    require("ufo").setup({
+      fold_virt_text_handler = handler,
+    })
+
     -- global handler
     -- `handler` is the 2nd parameter of `setFoldVirtTextHandler`,
     -- check out `./lua/ufo.lua` and search `setFoldVirtTextHandler` for detail.
     -- setup folding source: first lsp, then indent as fallback
-    require("ufo").setup({
-      fold_virt_text_handler = handler,
-      provider_selector = function()
-        return { "treesitter", "indent" }
-      end,
-    })
+    -- require("ufo").setup({
+    --   fold_virt_text_handler = handler,
+    --   provider_selector = function()
+    --     return { "treesitter" "indent" }
+    --   end,
+    -- })
 
     -- remap keys for "fold all" and "unfold all"
     -- vim.keymap.set("n", "zR", require("ufo").openAllFolds, { desc = "Open all folds" })
@@ -56,8 +75,8 @@ return {
     vim.keymap.set("n", "K", function()
       local winid = require("ufo").peekFoldedLinesUnderCursor()
       if not winid then
-        vim.lsp.buf.hover()
-        --vim.cmd [[ Lspsaga hover_doc ]]
+        -- vim.lsp.buf.hover()
+        vim.cmd [[ Lspsaga hover_doc ]]
       end
     end)
   end,
