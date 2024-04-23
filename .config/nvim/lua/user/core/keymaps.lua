@@ -133,9 +133,14 @@ map("n", "<leader>lg", ":LazyGit<CR>", "Show LazyGit panel")
 -- Lspasaga
 map("n", "<leader>o", ":Lspsaga outline<CR>", "Show outline")
 map("n", "<C-t>", ":Lspsaga term_toggle<CR>", "Show floating terminal")
-map("n", "<leader>i", ":Lspsaga finder imp<CR>", "Show implementations")
-map("n", "<leader>d", ":Lspsaga peek_definition<CR>", "Show definition")
+map("n", "<leader>i", ":Lspsaga finder tyd+ref<CR>", "Show type definitions and references")
+map("n", "<leader>d", ":Lspsaga goto_definition<CR>", "Go to definition")
+map("n", "<leader>td", ":Lspsaga goto_type_definition<CR>", "Go to type definition")
+map("n", "<leader>D", ":Lspsaga peek_definition<CR>", "Peek definition")
+map("n", "<leader>tD", ":Lspsaga peek_type_definition<CR>", "Peek type definition")
 map("n", "<leader>aa", ":Lspsaga code_action<CR>", "Show code actions")
+map("n", "K", ":Lspsaga hover_doc<CR>", "Hover doc")
+map("n", "<leader>rn", ":Lspsaga rename<CR>", "Rename")
 
 -- session lens
 map("n", "<leader>,", ":SearchSession<CR>", "Show sessions")

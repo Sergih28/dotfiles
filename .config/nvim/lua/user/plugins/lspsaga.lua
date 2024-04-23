@@ -1,9 +1,9 @@
 return {
-  'nvimdev/lspsaga.nvim',
+  "nvimdev/lspsaga.nvim",
   config = function()
-    require('lspsaga').setup({
+    require("lspsaga").setup({
       outline = {
-        layout = 'float',
+        layout = "float",
         max_height = 1,
         left_width = 0.45,
       },
@@ -22,11 +22,16 @@ return {
       definition = {
         width = 0.7,
         height = 0.7,
-      }
+      },
+      finder = {
+        methods = {
+          tyd = "textDocument/typeDefinition",
+        },
+      },
     })
   end,
   dependencies = {
-    'nvim-treesitter/nvim-treesitter', -- optional
-    'nvim-tree/nvim-web-devicons',     -- optional
-  }
+    "nvim-treesitter/nvim-treesitter", -- optional
+    "nvim-tree/nvim-web-devicons", -- optional
+  },
 }
