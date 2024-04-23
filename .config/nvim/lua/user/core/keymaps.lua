@@ -73,7 +73,7 @@ map("n", "Q", "<nop>", "Disable Q because it's annoying to accidentally enter ma
 map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace current word")
 map("n", "+", "<C-a>", "Increment number")
 map("n", "-", "<C-x>", "Decrement number")
-map("n", "<leader>a", "gg<S-v>G", "Select all")
+map("n", "<leader><S-a>", "gg<S-v>G", "Select all")
 
 -- Splits
 map("n", "<leader>vs", ":vsplit<Return>", "Vertical split")
@@ -82,7 +82,7 @@ map("n", "<leader>hs", ":split<Return>", "Horizontal split")
 -- PLUGINS
 
 -- Telescope
-map("n", "<C-p>", ":Telescope find_files<CR>", "Find files")
+map("n", "<leader>p", ":Telescope find_files<CR>", "Find files")
 map("n", "<leader>k", ":Telescope keymaps<CR>", "Show keymaps")
 map("n", "<leader>b", ":Telescope buffers<CR>", "Show buffers")
 map("n", "<leader><S-f>", ":Telescope live_grep<CR>", "Find in files")
