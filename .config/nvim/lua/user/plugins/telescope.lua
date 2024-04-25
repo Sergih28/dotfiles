@@ -9,9 +9,20 @@ return {
       },
       pickers = {
         find_files = {
-          hidden = true -- show hidden files
-        }
-      }
+          hidden = true, -- show hidden files
+        },
+        buffers = {
+          mappings = {
+            n = {
+              ["<c-d>"] = require("telescope.actions").delete_buffer,
+            }, -- n
+            i = {
+              ["<c-h>"] = "which_key",
+              ["<c-d>"] = require("telescope.actions").delete_buffer,
+            },
+          },
+        },
+      },
     })
   end,
 }
