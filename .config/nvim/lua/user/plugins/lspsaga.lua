@@ -3,7 +3,7 @@ return {
   config = function()
     require("lspsaga").setup({
       outline = {
-        layout = "float",
+        layout = "normal",
         max_height = 1,
         left_width = 0.45,
       },
