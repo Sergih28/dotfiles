@@ -6,6 +6,7 @@ return {
       references = { enabled = true, include_declaration = false },
       definition = { enabled = false },
       implementation = { enabled = false },
+      vt_position = "end_of_line",
     })
   end,
 }
