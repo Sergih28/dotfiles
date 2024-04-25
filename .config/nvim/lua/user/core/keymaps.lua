@@ -96,6 +96,21 @@ map("n", "<leader>gl", ":Telescope git_commits<CR>", "Show git commits (git log)
 map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
 --map("n", "<leader>n", ":Noice telescope<CR>", "Show notifications")
 
+-- Diagnostics
+map("n", "[d", function()
+  vim.diagnostic.goto_prev()
+end, "Go to previous [D]iagnostic message")
+map("n", "]d", function()
+  vim.diagnostic.goto_next()
+end, "Go to next [D]iagnostic message")
+map("n", "<leader>E", function()
+  vim.diagnostic.open_float()
+end, "Show diagnostic [E]rror messages")
+-- I have a trouble bind to do this in a nicer way
+-- map("n", "<leader>Q", function()
+--   vim.diagnostic.setloclist()
+-- end, "Open diagnostic [Q]uickfix list")
+
 -- telescope-import
 map("n", "<leader>I", ":Telescope import<CR>", "Show imports")
 
