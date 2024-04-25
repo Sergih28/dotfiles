@@ -13,6 +13,10 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- Commands to remember
+-- yap -> copy the current paragraph
+-- ci" -> remove everything inside those "
+
 -- Define a function to set key mappings with a shared options table
 local function map(mode, keys, command, description)
   local desc
