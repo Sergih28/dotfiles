@@ -32,10 +32,10 @@ map("n", "<leader>q", ":q!<CR>", "Force exit file")
 map("n", "<leader>ff", ":lua vim.lsp.buf.format()<CR>", "Format file using lsp")
 
 -- Window navigation
-map("n", "<C-l>", "<C-w>l", "Move Right")
-map("n", "<C-k>", "<C-w>k", "Move Up")
-map("n", "<C-j>", "<C-w>j", "Move Down")
-map("n", "<C-h>", "<C-w>h", "Move Left")
+-- map("n", "<C-l>", "<C-w>l", "Move Right")
+-- map("n", "<C-k>", "<C-w>k", "Move Up")
+-- map("n", "<C-j>", "<C-w>j", "Move Down")
+-- map("n", "<C-h>", "<C-w>h", "Move Left")
 
 -- Resize with arrows
 map("n", "<C-Up>", ":resize +2<CR>", "Increase current window size horizontally")
