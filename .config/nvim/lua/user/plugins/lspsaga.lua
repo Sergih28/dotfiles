@@ -23,11 +23,6 @@ return {
         width = 0.7,
         height = 0.7,
       },
-      finder = {
-        methods = {
-          tyd = "textDocument/typeDefinition",
-        },
-      },
     })
   end,
   dependencies = {

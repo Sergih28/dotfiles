@@ -105,9 +105,15 @@ map("n", "<leader>gs", ":Telescope git_status<CR>", "Show git status")
 map("n", "<leader>gl", ":Telescope git_commits<CR>", "Show git commits (git log)")
 map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
 map("n", "<leader>fr", ":Telescope lsp_references<CR>", "Show references")
+map("n", "gd", ":Telescope lsp_definitions<CR>", "[G]o to [D]efinition")
+map("n", "gtd", ":Telescope lsp_type_definitions<CR>", "[G]o to [T]ype [D]efinition")
+map("n", "<leader>ds", ":Telescope lsp_document_symbols<CR>", "[D]ocument [S]ymbols")
+map("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<CR>", "Show [C]ode [A]ctions")
+map("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>", "Rename")
+map("n", "K", ":lua vim.lsp.buf.hover()<CR>", "Hover doc")
 map("n", "]r", ":cnext<CR>", "Go to next reference")
 map("n", "[r", ":cprev<CR>", "Go to prev reference")
-
+-- There are some extra commands in the telescope file
 
 --map("n", "<leader>n", ":Noice telescope<CR>", "Show notifications")
 
@@ -168,13 +174,8 @@ map("n", "<leader>lg", ":LazyGit<CR>", "Show LazyGit panel")
 map("n", "<leader>o", ":Lspsaga outline<CR>", "Show outline")
 map("n", "<C-t>", ":Lspsaga term_toggle<CR>", "Show floating terminal")
 map("n", "<leader>i", ":Lspsaga finder tyd+ref<CR>", "Show type definitions and references")
-map("n", "<leader>d", ":Lspsaga goto_definition<CR>", "Go to definition")
-map("n", "<leader>td", ":Lspsaga goto_type_definition<CR>", "Go to type definition")
 map("n", "<leader>D", ":Lspsaga peek_definition<CR>", "Peek definition")
 map("n", "<leader>tD", ":Lspsaga peek_type_definition<CR>", "Peek type definition")
-map("n", "<leader>aa", ":Lspsaga code_action<CR>", "Show code actions")
-map("n", "K", ":Lspsaga hover_doc<CR>", "Hover doc")
-map("n", "<leader>rn", ":Lspsaga rename<CR>", "Rename")
 
 -- session lens
 map("n", "<leader>,", ":SearchSession<CR>", "Show sessions")
