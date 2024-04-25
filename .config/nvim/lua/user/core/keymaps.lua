@@ -33,7 +33,7 @@ end
 map("n", "<ESC>", "<cmd>nohlsearch<CR>", "Clear highlight on ESC")
 
 -- File
-map("n", "<leader>s", ":silent write<CR>", "Save file")
+map("n", "<C-s>", ":silent write<CR>", "Save file")
 --map("n", "<leader>wq", ":wq<CR>", "Save and exit file")
 map("n", "<leader>q", ":q!<CR>", "Force exit file")
 map("n", "<leader>ff", ":lua vim.lsp.buf.format()<CR>", "Format file using lsp")
@@ -90,14 +90,25 @@ map("n", "<leader><S-a>", "gg<S-v>G", "Select all")
 -- PLUGINS
 
 -- Telescope
-map("n", "<leader>p", ":Telescope find_files<CR>", "Find files")
-map("n", "<leader>k", ":Telescope keymaps<CR>", "Show keymaps")
-map("n", "<leader>b", ":Telescope buffers<CR>", "Show buffers")
-map("n", "<leader><S-f>", ":Telescope live_grep<CR>", "Find in files")
+map("n", "<leader>sh", ":Telescope help_tags<CR>", "[S]earch [H]elp")
+map("n", "<leader>sk", ":Telescope keymaps<CR>", "[S]earch [K]eymaps")
+map("n", "<leader>sf", ":Telescope find_files<CR>", "[S]earch [F]iles")
+map("n", "<leader>ss", ":Telescope builtin<CR>", "[S]earch [S]elect Telescope")
+map("n", "<leader>sw", ":Telescope grep_string<CR>", "[S]earch current [W]ord")
+map("n", "<leader>sg", ":Telescope live_grep<CR>", "[S]earch by [G]rep")
+map("n", "<leader>sd", ":Telescope diagnostics<CR>", "[S]earch [D]iagnostics")
+map("n", "<leader>sr", ":Telescope resume<CR>", "[S]earch [R]esume")
+map("n", "<leader>s.", ":Telescope oldfiles<CR>", '[S]earch Recent files ("." for repeat)')
+map("n", "<leader><leader>", ":Telescope buffers<CR>", "[ ] Find existing buffers")
 map("n", "<leader>gb", ":Telescope git_branches<CR>", "Show git branches")
 map("n", "<leader>gs", ":Telescope git_status<CR>", "Show git status")
 map("n", "<leader>gl", ":Telescope git_commits<CR>", "Show git commits (git log)")
 map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
+map("n", "<leader>fr", ":Telescope lsp_references<CR>", "Show references")
+map("n", "]r", ":cnext<CR>", "Go to next reference")
+map("n", "[r", ":cprev<CR>", "Go to prev reference")
+
+
 --map("n", "<leader>n", ":Noice telescope<CR>", "Show notifications")
 
 -- Diagnostics
@@ -142,7 +153,7 @@ map("n", "<leader>e", ":TroubleToggle<CR>", "Show trouble panel (errors, warning
 map("n", "<leader>t", ":TodoTelescope<CR>", "Show todos in telescope panel")
 
 -- Zen mode
-map("n", "<leader>f", ":ZenMode<CR>", "Zen mode full screen current file")
+map("n", "<leader>zm", ":ZenMode<CR>", "Zen mode full screen current file")
 
 -- undotree
 map("n", "<leader>u", ":UndotreeToggle<CR>", "Show undo tree")
