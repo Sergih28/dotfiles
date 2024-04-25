@@ -8,5 +8,6 @@ return {
     auto_close = false,
     -- hover = "K", -- opens a small popup with the full multiline message
     -- preview = "p", -- preview the diagnostic location
+    -- toggle_preview = "P", -- toggle auto_preview
   },
 }
