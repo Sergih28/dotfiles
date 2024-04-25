@@ -79,8 +79,9 @@ map("n", "-", "<C-x>", "Decrement number")
 map("n", "<leader><S-a>", "gg<S-v>G", "Select all")
 
 -- Splits
-map("n", "<leader>vs", ":vsplit<Return>", "Vertical split")
-map("n", "<leader>hs", ":split<Return>", "Horizontal split")
+-- just do it natively. Ctrl-w + s / Ctrl-w + s
+-- map("n", "<leader>vs", ":vsplit<Return>", "Vertical split")
+-- map("n", "<leader>hs", ":split<Return>", "Horizontal split")
 
 -- PLUGINS
 
