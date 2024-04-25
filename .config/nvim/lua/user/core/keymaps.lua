@@ -25,6 +25,9 @@ local function map(mode, keys, command, description)
   keymap.set(mode, keys, command, opts)
 end
 
+-- Highlights
+map("n", "<ESC>", "<cmd>nohlsearch<CR>", "Clear highlight on ESC")
+
 -- File
 map("n", "<leader>s", ":silent write<CR>", "Save file")
 --map("n", "<leader>wq", ":wq<CR>", "Save and exit file")
