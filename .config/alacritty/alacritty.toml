@@ -35,7 +35,7 @@ style = "Bold"
 
 [font.glyph_offset]
 x = 1
-y = 6
+y = 8
 
 [font.normal]
 family = "FiraCode Nerd Font"
@@ -43,7 +43,7 @@ style = "Regular"
 
 [font.offset]
 x = 1
-y = 12
+y = 16
 
 [mouse]
 hide_when_typing = true
