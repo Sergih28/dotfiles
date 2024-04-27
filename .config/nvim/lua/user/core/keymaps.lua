@@ -103,10 +103,6 @@ map("n", "<leader>sd", ":Telescope diagnostics<CR>", "[S]earch [D]iagnostics")
 map("n", "<leader>sr", ":Telescope resume<CR>", "[S]earch [R]esume")
 map("n", "<leader>s.", ":Telescope oldfiles<CR>", '[S]earch Recent files ("." for repeat)')
 map("n", "<leader><leader>", ":Telescope buffers<CR>", "[ ] Find existing buffers")
-map("n", "<leader>gb", ":Telescope git_branches<CR>", "Show git branches")
-map("n", "<leader>gs", ":Telescope git_status<CR>", "Show git status")
-map("n", "<leader>gl", ":Telescope git_commits<CR>", "Show git commits (git log)")
-map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
 map("n", "<leader>fr", ":Telescope lsp_references<CR>", "Show references")
 map("n", "gd", ":Telescope lsp_definitions<CR>", "[G]o to [D]efinition")
 map("n", "gtd", ":Telescope lsp_type_definitions<CR>", "[G]o to [T]ype [D]efinition")
@@ -141,9 +137,6 @@ map("n", "<leader>I", ":Telescope import<CR>", "Show imports")
 -- Mason
 map("n", "<leader>m", ":Mason<CR>", "Show Mason")
 
--- gitgutter
-map("n", "<leader>gd", ":GitGutterDiffOrig<CR>", "Show git diff")
-
 -- Nvim-tree
 map("n", "<leader>nt", ":NvimTreeToggle<CR>", "Toggle nvim tree")
 
@@ -170,8 +163,16 @@ map("n", "<leader>u", ":UndotreeToggle<CR>", "Show undo tree")
 -- bufferline
 map("n", "<leader>y", ":BufferLineTogglePin<CR>", "Pin/Unpin tab")
 
--- lazygit
+-- git
+map("n", "<leader>gb", ":Telescope git_branches<CR>", "Show git branches")
+map("n", "<leader>gst", ":Telescope git_status<CR>", "Show git status")
+map("n", "<leader>gstl", ":Telescope git_commits<CR>", "Show git commits (git log)")
+map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
 map("n", "<leader>lg", ":LazyGit<CR>", "Show LazyGit panel")
+map("n", "<leader>gdf", ":GitDiff<CR>", "Show git diff of current file")
+map("n", "<leader>gc", ":Neogit commit<CR>", "[G]it [C]ommit")
+map("n", "<leader>gp", ":Neogit pull<CR>", "[G]it [p]ull")
+map("n", "<leader>gP", ":Neogit push<CR>", "[G]it [P]ush")
 
 -- Lspasaga
 map("n", "<leader>o", ":Lspsaga outline<CR>", "Show outline")
@@ -199,9 +200,6 @@ map("n", "<leader>?", ":ConformInfo<CR>", "Show formatter info (usually needed w
 
 -- Mini.map
 -- map("n", "<leader>v", ":lua MiniMap.toggle()<CR>", "Toggle Minimap")
-
--- git.nvim
-map("n", "<leader>gdf", ":GitDiff<CR>", "Show git diff of current file")
 
 -- url-open
 map("n", "<leader>O", ":URLOpenUnderCursor<CR>", "Open URL with default browser")
