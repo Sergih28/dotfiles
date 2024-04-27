@@ -6,3 +6,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank()
   end,
 })
+
+-- Reload file when moving your cursor and sometimes even without that (otherwise it just reloads by default when reentering the buffer)
+vim.o.autoread = true
+vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "CursorMoved", "CursorMovedI", "FocusGained" }, {
+  command = "if mode() != 'c' | checktime | endif",
+  pattern = { "*" },
+})
