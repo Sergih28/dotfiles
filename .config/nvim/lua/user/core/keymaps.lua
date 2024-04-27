@@ -226,4 +226,4 @@ map("n", "<leader>ot", ":ObsidianToday<CR>", "Open [O]bsidian [T]oday note")
 map("n", "<leader>otp", ":ObsidianTemplate<CR>", "Insert [O]bsidian [T]emplate")
 
 -- Hardtime
-map("n", "<leader>htr", ":Hardtime report<CR>", "[H]ardtime [R]eport")
+map("n", "<leader>htr", ":Hardtime report<CR>", "[H]ard[T]ime [R]eport")
