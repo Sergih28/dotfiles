@@ -34,6 +34,8 @@ local options = {
 
   -- Make statusline always 100%, otherwise multiple statuslines are seen for each split
   ls = 3,
+
+  conceallevel = 2, -- Needed on 1 or 2 for obsidian
 }
 
 -- use system clipboard as default register

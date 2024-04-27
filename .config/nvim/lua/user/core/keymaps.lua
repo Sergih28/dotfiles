@@ -208,3 +208,12 @@ map("n", "<leader>O", ":URLOpenUnderCursor<CR>", "Open URL with default browser"
 map("n", "<leader>md", ":MarkdownPreview<CR>", "Open [M]arkdown [P]review")
 map("n", "<leader>mds", ":MarkdownPreviewStop<CR>", "[M]arkdown [P]review [Stop]")
 map("n", "<leader>mdt", ":MarkdownPreviewToggle<CR>", "[M]arkdown [P]review [T]oggle")
+
+-- Obsidian
+-- <leader>ch | Toggle checkboxes (it already applies this keybind by default)
+map("n", "<leader>oo", ":ObsidianOpen<CR>", "[O]pen in [O]bsidian")
+map("n", "<leader>ob", ":ObsidianBacklinks<CR>", "Open [O]bsidian [B]acklinks")
+map("n", "<leader>ol", ":Obsidianlinks<CR>", "Open [O]bsidian [L]inks")
+map("n", "<leader>on", ":ObsidianNew<CR>", "Add [O]bsidian [N]ew note")
+map("n", "<leader>ot", ":ObsidianToday<CR>", "Open [O]bsidian [T]oday note")
+map("n", "<leader>otp", ":ObsidianTemplate<CR>", "Insert [O]bsidian [T]emplate")
