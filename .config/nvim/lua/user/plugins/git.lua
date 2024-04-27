@@ -2,15 +2,19 @@ return {
   "dinhhuy258/git.nvim",
   config = function()
     require("git").setup({
+      default_mappings = false,
       keymaps = {
-        -- Open blame window
         blame = "<leader>gbl",
         -- Open file/folder in git repository
         browse = "<leader>go",
-        -- Opens a new diff that compares against the current index
         diff = "<Leader>gd",
-        -- Close git diff
         diff_close = "<Leader>gD",
+        open_pull_request = "<Leader>gpr",
+        create_pull_request = "<Leader>gPr",
+        -- Revert to the specific commit
+        revert = "<Leader>gr",
+        -- Revert the current file to the specific commit
+        revert_file = "<Leader>gR",
       },
     })
   end,
