@@ -203,3 +203,8 @@ map("n", "<leader>gdf", ":GitDiff<CR>", "Show git diff of current file")
 
 -- url-open
 map("n", "<leader>O", ":URLOpenUnderCursor<CR>", "Open URL with default browser")
+
+-- Markdown
+map("n", "<leader>md", ":MarkdownPreview<CR>", "Open [M]arkdown [P]review")
+map("n", "<leader>mds", ":MarkdownPreviewStop<CR>", "[M]arkdown [P]review [Stop]")
+map("n", "<leader>mdt", ":MarkdownPreviewToggle<CR>", "[M]arkdown [P]review [T]oggle")
