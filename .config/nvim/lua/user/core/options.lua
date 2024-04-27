@@ -3,6 +3,7 @@ local options = {
 
   -- file asdf
   scrolloff = 8, -- number of lines to keep above and below the cursor
+  confirm = true, -- warning if you try to close a file with unsaved changes
 
   -- line numbers
   relativenumber = true, -- show relative line numbers
