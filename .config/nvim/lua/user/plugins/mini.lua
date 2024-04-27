@@ -61,7 +61,36 @@ return {
     "goolord/alpha-nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require("alpha").setup(require("alpha.themes.startify").config)
+      local alpha = require("alpha")
+      local dashboard = require("alpha.themes.dashboard")
+
+      local logo = [[
+███████╗███████╗██████╗  ██████╗ ██╗
+██╔════╝██╔════╝██╔══██╗██╔════╝ ██║
+███████╗█████╗  ██████╔╝██║  ███╗██║
+╚════██║██╔══╝  ██╔══██╗██║   ██║██║
+███████║███████╗██║  ██║╚██████╔╝██║
+╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝
+      ]]
+
+      logo = string.rep("\n", 8) .. logo .. "\n\n"
+      dashboard.section.header.val = logo
+
+      dashboard.section.buttons.val = {
+        dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
+        dashboard.button("p", "  > Projects", ":Telescope workspaces<CR>"),
+        dashboard.button(",", "  > Sessions", ":SearchSession<CR>"),
+        dashboard.button("h", "  > Stats", ":Hardtime report<CR>"),
+        dashboard.button("n", "  > Notes", ":WorkspacesOpen Sergi-PKM<CR>"),
+        dashboard.button("s", "  > Settings", ":WorkspacesOpen Neovim-config<CR>"),
+        -- dashboard.button("s", "  > Settings", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
+        dashboard.button("q", "  > Quit NVIM", ":qa<CR>"),
+      }
+
+      alpha.setup(dashboard.opts)
+
+      -- Disable folding on alpha buffer
+      vim.cmd([[ autocmd FileType alpha setlocal nofoldenable ]])
     end,
   },
   -- {
