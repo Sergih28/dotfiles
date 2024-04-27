@@ -35,7 +35,7 @@ map("n", "<ESC>", "<cmd>nohlsearch<CR>", "Clear highlight on ESC")
 -- File
 map("n", "<C-s>", ":silent write<CR>", "Save file")
 --map("n", "<leader>wq", ":wq<CR>", "Save and exit file")
-map("n", "<leader>q", ":q!<CR>", "Force exit file")
+map("n", "<leader>q", ":q<CR>", "Exit file")
 map("n", "<leader>ff", ":lua vim.lsp.buf.format()<CR>", "Format file using lsp")
 
 -- Window navigation
