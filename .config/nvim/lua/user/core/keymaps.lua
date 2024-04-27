@@ -227,3 +227,6 @@ map("n", "<leader>otp", ":ObsidianTemplate<CR>", "Insert [O]bsidian [T]emplate")
 
 -- Hardtime
 map("n", "<leader>htr", ":Hardtime report<CR>", "[H]ard[T]ime [R]eport")
+
+-- Workspaces
+map("n", "<leader>pj", ":Telescope workspaces<CR>", "Show [P]ro[J]ects")
