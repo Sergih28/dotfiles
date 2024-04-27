@@ -73,8 +73,10 @@ map("n", "x", '"_x', "Do not yank with x")
 
 -- Inside a file
 map("n", "J", "mzJ`z", "Keep the cursor at place when joining the previous line")
-map("n", "<C-d>", "<C-d>zz", "Center when moving multiple lines down")
-map("n", "<C-u>", "<C-u>zz", "Center when moving multiple lines up")
+map("n", "<C-f>", "<C-f>zz", "Center when moving one page down")
+map("n", "<C-b>", "<C-b>zz", "Center when moving one page up")
+map("n", "<C-d>", "<C-d>zz", "Center when moving half page down")
+map("n", "<C-u>", "<C-u>zz", "Center when moving half page up")
 map("n", "n", "nzzzv", "Keep cursor in the middle of the screen when searching for next ocurrence")
 map("n", "N", "Nzzzv", "Keep cursor in the middle of the screen when searching for previous ocurrence")
 map("n", "Q", "<nop>", "Disable Q because it's annoying to accidentally enter macro mode or similar")
