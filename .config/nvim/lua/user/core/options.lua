@@ -36,6 +36,8 @@ local options = {
   ls = 3,
 
   conceallevel = 2, -- Needed on 1 or 2 for obsidian
+
+  showmode = false, -- Needed for Hardtime plugin to display hints on insert omde too
 }
 
 -- use system clipboard as default register

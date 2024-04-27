@@ -219,3 +219,6 @@ map("n", "<leader>ol", ":Obsidianlinks<CR>", "Open [O]bsidian [L]inks")
 map("n", "<leader>on", ":ObsidianNew<CR>", "Add [O]bsidian [N]ew note")
 map("n", "<leader>ot", ":ObsidianToday<CR>", "Open [O]bsidian [T]oday note")
 map("n", "<leader>otp", ":ObsidianTemplate<CR>", "Insert [O]bsidian [T]emplate")
+
+-- Hardtime
+map("n", "<leader>hr", ":Hardtime report<CR>", "[H]ardtime [R]eport")
