@@ -16,6 +16,7 @@ vim.g.maplocalleader = " "
 -- Commands to remember
 -- yap -> copy the current paragraph
 -- ci" -> remove everything inside those "
+-- == -> indent automatically the line
 
 -- Define a function to set key mappings with a shared options table
 local function map(mode, keys, command, description)
