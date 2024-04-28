@@ -230,3 +230,6 @@ map("n", "<leader>htr", ":Hardtime report<CR>", "[H]ard[T]ime [R]eport")
 
 -- Workspaces
 map("n", "<leader>pj", ":Telescope workspaces<CR>", "Show [P]ro[J]ects")
+
+-- Alternate toggler
+map("n", "<leader>ta", ":ToggleAlternate<CR>", "[T]oggle [A]lternate")
