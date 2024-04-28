@@ -233,3 +233,6 @@ map("n", "<leader>pj", ":Telescope workspaces<CR>", "Show [P]ro[J]ects")
 
 -- Alternate toggler
 map("n", "<leader>ta", ":ToggleAlternate<CR>", "[T]oggle [A]lternate")
+
+-- Twighlight
+map("n", "<leader>tt", ":Twighlight<CR>", "[T]wighlight [T]oggle")

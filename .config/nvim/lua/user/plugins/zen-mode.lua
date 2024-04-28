@@ -2,7 +2,8 @@ return {
   "folke/zen-mode.nvim",
   opts = {
     plugins = {
-      gitsigns = { enabled = true }
-    }
-  }
+      gitsigns = { enabled = true },
+      twilight = { enabled = false },
+    },
+  },
 }
