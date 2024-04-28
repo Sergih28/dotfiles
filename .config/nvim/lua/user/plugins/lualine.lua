@@ -26,7 +26,7 @@ return {
       sections = {
         lualine_a = { "mode" },
         -- lualine_b = {require('auto-session.lib').current_session_name, 'branch', 'diff', 'diagnostics'},
-        lualine_b = { "diff", "diagnostics" },
+        lualine_b = { "branch", "diff", "diagnostics" },
         lualine_c = {
           {
             "filetype",
