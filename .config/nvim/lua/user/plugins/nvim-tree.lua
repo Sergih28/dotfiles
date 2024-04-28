@@ -11,6 +11,9 @@ return {
     -- change color for arrows in tree to light blue
     --vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
+    local HEIGHT_RATIO = 0.95 -- You can change this
+    local WIDTH_RATIO = 0.7 -- You can change this too
+
     --configure nvim-tree
     nvimtree.setup({
       sort_by = "case_sensitive",
@@ -18,15 +21,19 @@ return {
         enable = true,
       },
       view = {
-        width = 35,
-	      relativenumber = true,
+        relativenumber = true,
         side = 'right',
+        adaptive_size = true,
+        float = {
+          enable = false,
+          quit_on_focus_loss = true,
+        },
       },
       -- change folder arrow icons
       renderer = {
         group_empty = true,
-	      indent_markers = {
-          enable = true
+        indent_markers = {
+          enable = true,
         },
         icons = {
           glyphs = {
@@ -57,7 +64,7 @@ return {
       },
       diagnostics = {
         enable = true,
-      }
+      },
     })
-  end
+  end,
 }
