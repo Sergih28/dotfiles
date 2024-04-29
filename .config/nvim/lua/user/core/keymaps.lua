@@ -195,13 +195,6 @@ map("n", "<leader>.", ":ToggleTerm<CR>", "Remap C-\\ C-N to ESC to ease exiting 
 map("t", "<C-t>", "<C-\\><C-n>", "Remap C-\\ C-N to Ctrl+t to ease exiting terminal mode")
 
 -- conform (formatter)
-vim.keymap.set({ "n", "v" }, "<leader>/", function()
-  require("conform").format({
-    lsp_fallback = true,
-    async = false,
-    timeout_ms = 500,
-  })
-end, { desc = "Format file or range (in visual mode)" })
 map("n", "<leader>?", ":ConformInfo<CR>", "Show formatter info (usually needed when formatting failed)")
 
 -- Mini.map
