@@ -3,8 +3,8 @@ return {
   -- This installs the latest stable release.
   -- Set to false or omit to install the latest development version
   version = "*",
-  opts = {
-    {
+  config = function()
+    require("hydrate").setup({
       -- The interval between notifications in minutes
       minute_interval = 20,
 
@@ -16,6 +16,6 @@ return {
       -- Useful if you don't have long-running neovim instances
       -- or if you tend to have multiple instances running at a time
       persist_timer = true,
-    }
-  }
+    })
+  end,
 }
