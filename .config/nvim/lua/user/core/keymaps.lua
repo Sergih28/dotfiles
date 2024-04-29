@@ -187,13 +187,6 @@ map("n", "<leader>hr", ":Gitsigns reset_hunk<CR>", "Git reset hunk")
 map("n", "<leader>hs", ":Gitsigns stage_hunk<CR>", "Git stage hunk")
 map("n", "<leader>hu", ":Gitsigns undo_stage_hunk<CR>", "Git unstage hunk")
 
--- Lspasaga
-map("n", "<leader>o", ":Lspsaga outline<CR>", "Show outline")
-map("n", "<C-t>", ":Lspsaga term_toggle<CR>", "Show floating terminal")
-map("n", "<leader>i", ":Lspsaga finder tyd+ref<CR>", "Show type definitions and references")
-map("n", "<leader>D", ":Lspsaga peek_definition<CR>", "Peek definition")
-map("n", "<leader>tD", ":Lspsaga peek_type_definition<CR>", "Peek type definition")
-
 -- session lens
 map("n", "<leader>,", ":SearchSession<CR>", "Show sessions")
 
