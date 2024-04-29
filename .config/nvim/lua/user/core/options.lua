@@ -1,5 +1,6 @@
 local options = {
   termguicolors = true, -- needed for bufferline
+  updatetime = 250, -- decrease update time
 
   -- file asdf
   scrolloff = 8, -- number of lines to keep above and below the cursor
@@ -41,16 +42,16 @@ local options = {
 }
 
 -- use system clipboard as default register
-local is_mac = vim.fn.has("macunix")
-local is_unix = vim.fn.has("unix")
-local is_windows = vim.fn.has("win32")
+-- local is_mac = vim.fn.has("macunix")
+-- local is_unix = vim.fn.has("unix")
+-- local is_windows = vim.fn.has("win32")
 
-if is_mac or is_unix then
-  vim.opt.clipboard:append({ "unnamedplus" })
-end
-if is_windows then
-  vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
-end
+-- if is_mac or is_unix then
+--   vim.opt.clipboard:append({ "unnamedplus" })
+-- end
+-- if is_windows then
+--   vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
+-- end
 
 --vim.opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
