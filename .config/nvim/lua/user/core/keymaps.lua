@@ -66,11 +66,13 @@ map("v", "K", ":m '<-2<CR>gv=gv", "Move selected line(s) up")
 map("v", "J", ":m '>+1<CR>gv=gv", "Move selected line(s) down")
 
 -- Yank tweaks
-map("n", "<leader>y", '"+y', "Yank into the system clipboard")
+map("n", "<leader>yy", '"+yy', "Yank line into the system clipboard")
 map("v", "<leader>y", '"+y', "Yank into the system clipboard")
-map("n", "<leader>Y", '"+Y', "Yank into the system clipboard")
+map("n", "<leader>p", '"+p', "Paste from the system clipboard")
+map("v", "<leader>p", '"+p', "Paste from the system clipboard")
+map("n", "<leader>cb", ':reg<CR>', "Check clipboard")
 map("v", "p", '"_dP', "Replace paste so it does not copy what you replaced")
-map("n", "x", '"_x', "Do not yank with x")
+-- map("n", "x", '"_x', "Do not yank with x")
 
 -- Inside a file
 map("n", "J", "mzJ`z", "Keep the cursor at place when joining the previous line")
