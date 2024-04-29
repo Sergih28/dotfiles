@@ -38,7 +38,7 @@ map("n", "<C-s>", ":silent write<CR>", "Save file")
 --map("n", "<leader>wq", ":wq<CR>", "Save and exit file")
 map("n", "<leader>q", ":q<CR>", "Exit file")
 map("n", "<leader>Q", ":bufdo bdelete<CR>", "Close all open buffers")
-map("n", "<leader>ff", ":lua vim.lsp.buf.format()<CR>", "Format file using lsp")
+map("n", "<leader>ff", vim.lsp.buf.format, "Format file using lsp")
 
 -- Window navigation
 -- map("n", "<C-l>", "<C-w>l", "Move Right")
