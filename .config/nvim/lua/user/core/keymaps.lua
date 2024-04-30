@@ -194,9 +194,6 @@ map("t", "<C-t>", "<C-\\><C-n>", "Remap C-\\ C-N to Ctrl+t to ease exiting termi
 -- conform (formatter)
 map("n", "<leader>?", ":ConformInfo<CR>", "Show formatter info (usually needed when formatting failed)")
 
--- Mini.map
--- map("n", "<leader>v", ":lua MiniMap.toggle()<CR>", "Toggle Minimap")
-
 -- url-open
 map("n", "<leader>O", ":URLOpenUnderCursor<CR>", "Open URL with default browser")
 
