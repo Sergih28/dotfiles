@@ -16,6 +16,12 @@ return {
       defaults = {
         file_ignore_patterns = { "node_modules" },
         dynamic_preview_title = true,
+        layout_strategy = "flex",
+        sorting_strategy = "ascending",
+        layout_config = {
+          vertical = { width = 0.95, height = 0.8, prompt_position = "bottom" },
+          horizontal = { width = 0.95, height = 0.95, prompt_position = "bottom" },
+        },
         mappings = {
           n = {
             ["<C-w>"] = actions.send_selected_to_qflist + actions.open_qflist,
