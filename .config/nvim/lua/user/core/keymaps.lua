@@ -166,9 +166,6 @@ map("n", "<leader>zm", ":ZenMode<CR>", "Zen mode full screen current file")
 -- undotree
 map("n", "<leader>u", ":UndotreeToggle<CR>", "Show undo tree")
 
--- bufferline
-map("n", "<leader>y", ":BufferLineTogglePin<CR>", "Pin/Unpin tab")
-
 -- git
 map("n", "<leader>gb", ":Telescope git_branches<CR>", "Show git branches")
 map("n", "<leader>gst", ":Telescope git_status<CR>", "Show git status")
