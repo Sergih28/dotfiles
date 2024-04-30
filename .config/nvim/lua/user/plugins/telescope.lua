@@ -7,6 +7,7 @@ return {
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
     { "nvim-telescope/telescope-ui-select.nvim" },
     { "nvim-tree/nvim-web-devicons" },
+    { "nvim-telescope/telescope-file-browser.nvim" },
   },
   config = function()
     require("telescope").setup({
@@ -40,6 +41,7 @@ return {
     pcall(require("telescope").load_extension, "fzf")
     pcall(require("telescope").load_extension, "ui-select")
     pcall(require("telescope").load_extension, "import")
+    pcall(require("telescope").load_extension, "file_browser")
 
     local builtin = require("telescope.builtin")
 

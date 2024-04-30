@@ -73,6 +73,7 @@ map("n", "-", "<C-x>", "Decrement number")
 -- PLUGINS
 
 -- Telescope
+map("n", "<leader>fb", ":Telescope file_browser<CR>", "[F]ile [B]rowser")
 map("n", "<leader>sh", ":Telescope help_tags<CR>", "[S]earch [H]elp")
 map("n", "<leader>sk", ":Telescope keymaps<CR>", "[S]earch [K]eymaps")
 map("n", "<leader>sf", ":Telescope find_files<CR>", "[S]earch [F]iles")
