@@ -330,7 +330,7 @@ return {
         "json",
         "json5",
         "kotlin",
-        "latex",
+        -- "latex",
         "markdown",
         "markdown_inline",
         "mermaid",
