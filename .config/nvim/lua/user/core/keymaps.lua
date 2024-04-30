@@ -200,3 +200,7 @@ map("n", "<leader>ta", ":ToggleAlternate<CR>", "[T]oggle [A]lternate")
 
 -- Twilight
 map("n", "<leader>tt", ":Twilight<CR>", "[T]wighlight [T]oggle")
+
+-- Hydrate
+map("n", "<leader>hw", ":HydrateWhen<CR>", "[H]ydrate [W]hen")
+map("n", "<leader>hn", ":HydrateNow<CR>", "[H]ydrate [N]ow")
