@@ -1,7 +1,4 @@
-local keymap = vim.keymap -- for conciseness
--- one word anotd
--- Remap space as leader key
--- keymap("", "<Space>", "<Nop>", opts)
+local keymap = vim.keymap
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -19,14 +16,8 @@ vim.g.maplocalleader = " "
 -- == -> indent automatically the line
 
 -- Define a function to set key mappings with a shared options table
-local function map(mode, keys, command, description)
-  -- local desc
-  -- if type(command) == "string" then
-  --   desc = description .. " (" .. command .. ")"
-  -- else
-  --   desc = description
-  -- end
-  local opts = { noremap = true, silent = true, desc = description }
+local function map(mode, keys, command, desc)
+  local opts = { noremap = true, silent = true, desc = desc }
   keymap.set(mode, keys, command, opts)
 end
 
@@ -35,18 +26,11 @@ map("n", "<ESC>", "<cmd>nohlsearch<CR>", "Clear highlight on ESC")
 
 -- File
 map("n", "<C-s>", ":silent write<CR>", "Save file")
---map("n", "<leader>wq", ":wq<CR>", "Save and exit file")
 map("n", "<leader>q", ":q<CR>", "Exit file")
 map("n", "<leader>Q", ":bufdo bdelete<CR>", "Close all open buffers")
 map("n", "<leader>ff", vim.lsp.buf.format, "Format file using lsp")
 
--- Window navigation
--- map("n", "<C-l>", "<C-w>l", "Move Right")
--- map("n", "<C-k>", "<C-w>k", "Move Up")
--- map("n", "<C-j>", "<C-w>j", "Move Down")
--- map("n", "<C-h>", "<C-w>h", "Move Left")
-
--- Resize with arrows
+-- Resize windows with arrows
 map("n", "<C-Up>", ":resize +2<CR>", "Increase current window size horizontally")
 map("n", "<C-Down>", ":resize -2<CR>", "Decrease current window size horizontally")
 map("n", "<C-Left>", ":vertical resize -2<CR>", "Decrease current window size vertically")
@@ -70,11 +54,11 @@ map("n", "<leader>yy", '"+yy', "Yank line into the system clipboard")
 map("v", "<leader>y", '"+y', "Yank into the system clipboard")
 map("n", "<leader>p", '"+p', "Paste from the system clipboard")
 map("v", "<leader>p", '"+p', "Paste from the system clipboard")
-map("n", "<leader>cb", ':reg<CR>', "Check clipboard")
+map("n", "<leader>cb", ":reg<CR>", "Check clipboard")
 map("v", "p", '"_dP', "Replace paste so it does not copy what you replaced")
--- map("n", "x", '"_x', "Do not yank with x")
 
 -- Inside a file
+map("n", "<leader><S-a>", "gg<S-v>G", "Select all")
 map("n", "J", "mzJ`z", "Keep the cursor at place when joining the previous line")
 map("n", "<C-f>", "<C-f>zz", "Center when moving one page down")
 map("n", "<C-b>", "<C-b>zz", "Center when moving one page up")
@@ -82,16 +66,9 @@ map("n", "<C-d>", "<C-d>zz", "Center when moving half page down")
 map("n", "<C-u>", "<C-u>zz", "Center when moving half page up")
 map("n", "n", "nzzzv", "Keep cursor in the middle of the screen when searching for next ocurrence")
 map("n", "N", "Nzzzv", "Keep cursor in the middle of the screen when searching for previous ocurrence")
-map("n", "Q", "<nop>", "Disable Q because it's annoying to accidentally enter macro mode or similar")
 map("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], "Search and replace current word")
 map("n", "+", "<C-a>", "Increment number")
 map("n", "-", "<C-x>", "Decrement number")
-map("n", "<leader><S-a>", "gg<S-v>G", "Select all")
-
--- Splits
--- just do it natively. Ctrl-w + s / Ctrl-w + s
--- map("n", "<leader>vs", ":vsplit<Return>", "Vertical split")
--- map("n", "<leader>hs", ":split<Return>", "Horizontal split")
 
 -- PLUGINS
 
@@ -146,7 +123,7 @@ map("n", "<leader>m", ":Mason<CR>", "Show Mason")
 -- Nvim-tree
 map("n", "<leader>nt", ":NvimTreeToggle<CR>", "Toggle nvim tree")
 
--- nvim-treesitter-context
+-- nvim-treesitter-context (pinned line/s above)
 map("n", "<leader>n", function()
   require("treesitter-context").go_to_context(vim.v.count1)
 end, "Jump to context (upwards)")
