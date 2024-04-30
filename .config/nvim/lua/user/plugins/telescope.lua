@@ -10,9 +10,22 @@ return {
     { "nvim-telescope/telescope-file-browser.nvim" },
   },
   config = function()
+    local actions = require("telescope.actions")
+
     require("telescope").setup({
       defaults = {
         file_ignore_patterns = { "node_modules" },
+        dynamic_preview_title = true,
+        mappings = {
+          n = {
+            ["<C-w>"] = actions.send_selected_to_qflist + actions.open_qflist,
+          },
+          i = {
+            ["<C-w>"] = actions.send_selected_to_qflist + actions.open_qflist,
+            ["<C-k>"] = actions.cycle_history_next,
+            ["<C-j>"] = actions.cycle_history_prev,
+          },
+        },
       },
       pickers = {
         find_files = {
@@ -21,18 +34,24 @@ return {
         buffers = {
           mappings = {
             n = {
-              ["<c-d>"] = require("telescope.actions").delete_buffer,
-            }, -- n
+              ["<C-d>"] = require("telescope.actions").delete_buffer,
+            },
             i = {
-              ["<c-h>"] = "which_key",
-              ["<c-d>"] = require("telescope.actions").delete_buffer,
+              ["<C-h>"] = "which_key",
+              ["<C-d>"] = require("telescope.actions").delete_buffer,
             },
           },
         },
       },
       extensions = {
+        heading = { treesitter = true },
         ["ui-select"] = {
           require("telescope.themes").get_dropdown(),
+        },
+        file_browser = {
+          theme = "dropdown",
+          hijack_netrw = true,
+          previewer = false,
         },
       },
     })
