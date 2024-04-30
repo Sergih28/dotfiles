@@ -147,7 +147,7 @@ map("n", "<leader>u", ":UndotreeToggle<CR>", "Show undo tree")
 -- git
 map("n", "<leader>gb", ":Telescope git_branches<CR>", "Show git branches")
 map("n", "<leader>gst", ":Telescope git_status<CR>", "Show git status")
-map("n", "<leader>gstl", ":Telescope git_commits<CR>", "Show git commits (git log)")
+map("n", "<leader>glg", ":Telescope git_commits<CR>", "Show git commits (git log)")
 map("n", "<leader>gt", ":Telescope git_stash<CR>", "Show git stash")
 map("n", "<leader>lg", ":LazyGit<CR>", "Show LazyGit panel")
 map("n", "<leader>gdf", ":GitDiff<CR>", "Show [G]it [D]i[f]f of current file")
