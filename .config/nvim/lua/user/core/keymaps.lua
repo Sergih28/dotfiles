@@ -29,6 +29,8 @@ map("n", "<C-s>", ":silent write<CR>", "Save file")
 map("n", "<leader>q", ":q<CR>", "Exit file")
 map("n", "<leader>Q", ":bufdo bdelete<CR>", "Close all open buffers")
 map("n", "<leader>ff", vim.lsp.buf.format, "Format file using lsp")
+map("n", "<leader>qf", ":copen<CR>", "Open [Q]uick[Fix] list")
+
 
 -- Resize windows with arrows
 map("n", "<C-Up>", ":resize +2<CR>", "Increase current window size horizontally")
