@@ -59,6 +59,16 @@ return {
               vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
             end, "[T]oggle Inlay [H]ints")
           end
+
+          -- This is needed so that with catppuccin theme we have some border to hover and diagnostics
+          vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+          vim.lsp.handlers["textDocument/signatureHelp"] =
+            vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+          vim.diagnostic.config({
+            float = {
+              border = "rounded",
+            },
+          })
         end,
       })
 
