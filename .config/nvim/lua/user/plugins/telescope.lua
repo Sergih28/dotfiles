@@ -14,6 +14,16 @@ return {
 
     require("telescope").setup({
       defaults = {
+        borderchars = {
+          "─",
+          "│",
+          "─",
+          "│",
+          "┌",
+          "┐",
+          "┘",
+          "└",
+        },
         file_ignore_patterns = { "node_modules" },
         dynamic_preview_title = true,
         layout_strategy = "flex",

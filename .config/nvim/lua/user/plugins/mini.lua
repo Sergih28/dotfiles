@@ -76,6 +76,16 @@ return {
       logo = string.rep("\n", 8) .. logo .. "\n\n"
       dashboard.section.header.val = logo
 
+      vim.api.nvim_set_hl(0, "GreenHLGroup", { fg = "#111111" })
+      vim.api.nvim_set_hl(0, "BlueHLGroup", { fg = "#ffffff" })
+
+      dashboard.section.header.opts = {
+        {
+          { hl = { { "GreenHLGroup", 0, 12 }, { "BlueHLGroup", 13, 20 } } },
+          { hl = { { "GreenHLGroup", 0, 12 }, { "BlueHLGroup", 13, 20 } } },
+        },
+      }
+
       dashboard.section.buttons.val = {
         dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
         dashboard.button("p", "  > Projects", ":Telescope workspaces<CR>"),
