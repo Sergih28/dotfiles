@@ -6,16 +6,26 @@ return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = function()
-    -- local custom_nightfly = require("lualine.themes.nightfly")
-    --
-    -- -- Change the background to transparent
-    -- custom_nightfly.normal.b.bg = "NONE"
-    -- custom_nightfly.normal.c.bg = "NONE"
-    -- custom_nightfly.insert.b.bg = "NONE"
-    -- custom_nightfly.visual.b.bg = "NONE"
-    -- custom_nightfly.replace.b.bg = "NONE"
-    -- custom_nightfly.command.b.bg = "NONE"
-    -- custom_nightfly.inactive.b.bg = "NONE"
+    -- https://github.com/nvim-lualine/lualine.nvim/issues/614#issuecomment-1488293495
+    local mode_map = {
+      ["NORMAL"] = "N",
+      ["O-PENDING"] = "N?",
+      ["INSERT"] = "I",
+      ["VISUAL"] = "V",
+      ["V-BLOCK"] = "VB",
+      ["V-LINE"] = "VL",
+      ["V-REPLACE"] = "VR",
+      ["REPLACE"] = "R",
+      ["COMMAND"] = "!",
+      ["SHELL"] = "SH",
+      ["TERMINAL"] = "T",
+      ["EX"] = "X",
+      ["S-BLOCK"] = "SB",
+      ["S-LINE"] = "SL",
+      ["SELECT"] = "S",
+      ["CONFIRM"] = "Y?",
+      ["MORE"] = "M",
+    }
 
     return {
       options = {
@@ -24,7 +34,16 @@ return {
         section_separators = { left = "", right = "" },
       },
       sections = {
-        lualine_a = { "mode" },
+        lualine_a = {
+          {
+            "mode",
+            fmt = function(s)
+              return mode_map[s] or s
+              -- This would just show the first letter
+              --   return s:sub(1, 1)
+            end,
+          },
+        },
         lualine_b = {
           {
             "branch",
@@ -81,10 +100,6 @@ return {
             color = { bg = "NONE", fg = "#FAB387" },
             padding = { left = 1, right = 0 },
           },
-          -- {
-          --   'filetype',
-          --   color = {fg='#87B0F9'},
-          -- }
         },
         lualine_y = {
           {
@@ -112,7 +127,6 @@ return {
             separator = "",
           },
         },
-        -- lualine_z = {'os.date(" %I:%M %p")'}
         lualine_z = {},
       },
     }
