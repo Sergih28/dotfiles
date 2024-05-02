@@ -209,3 +209,8 @@ map("n", "<leader>tt", ":Twilight<CR>", "[T]wighlight [T]oggle")
 -- Hydrate
 map("n", "<leader>hw", ":HydrateWhen<CR>", "[H]ydrate [W]hen")
 map("n", "<leader>hn", ":HydrateNow<CR>", "[H]ydrate [N]ow")
+
+-- Treesj (toggle returns and similar)
+map("n", "<leader>tr", ":TSJToggle<CR>", "[T]sj Toggle [R]eturn")
+map("n", "<leader>tj", ":TSJJoin<CR>", "[T]sj [J]oin")
+map("n", "<leader>ts", ":TSJSplit<CR>", "[T]sj [S]plit")
