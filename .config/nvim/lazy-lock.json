@@ -53,6 +53,7 @@
   "obsidian.nvim": { "branch": "main", "commit": "b1bfc2ad9172f0405bf6c21e1f63cfb73f79b480" },
   "plenary.nvim": { "branch": "master", "commit": "08e301982b9a057110ede7a735dd1b5285eb341f" },
   "quick-scope": { "branch": "master", "commit": "256d81e391a22eeb53791ff62ce65f870418fa71" },
+  "ranger.nvim": { "branch": "main", "commit": "d3b032feee6b3b0cf923222f260523e2bd7f3ad3" },
   "recall.nvim": { "branch": "main", "commit": "4e844601dd1387f1dad1b4bd555ad8a2ac817d8e" },
   "screenkey.nvim": { "branch": "main", "commit": "3ee8f62196bb4fc3bdb9b102501f25a2f21218d9" },
   "session-lens": { "branch": "main", "commit": "1b65d8e1bcd1836c5135cce118ba18d662a9dabd" },
