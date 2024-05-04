@@ -39,6 +39,7 @@ local options = {
   conceallevel = 2, -- Needed on 1 or 2 for obsidian
 
   showmode = false, -- Needed for Hardtime plugin to display hints on insert mode too
+  lazyredraw = true, -- You see the end result of a macro straight away
 }
 
 -- use system clipboard as default register
