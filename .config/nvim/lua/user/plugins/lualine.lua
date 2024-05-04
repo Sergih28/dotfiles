@@ -27,6 +27,10 @@ return {
       ["MORE"] = "M",
     }
 
+    local function maximize_status()
+      return vim.t.maximized and " " or ""
+    end
+
     return {
       options = {
         theme = "catppuccin", --custom_nightfly,
@@ -42,7 +46,9 @@ return {
               -- This would just show the first letter
               --   return s:sub(1, 1)
             end,
+            separator = "",
           },
+          { maximize_status, color = { bg = "NONE", fg = "#A6E3A1" } },
         },
         lualine_b = {
           {
