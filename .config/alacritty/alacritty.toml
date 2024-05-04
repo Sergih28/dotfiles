@@ -5,34 +5,6 @@ import = [
 [env]
 TERM = "xterm-256color"
 
-# [colors.bright]
-# black = "#5C5C61"
-# blue = "#6943FF"
-# cyan = "#80FCFF"
-# green = "#3AD900"
-# magenta = "#FB94FF"
-# red = "#3A37F5"
-# white = "#2D2B55"
-# yellow = "#FAD000"
-#
-# [colors.cursor]
-# cursor = "#FAD000"
-# text = "#1E1E3F"
-#
-# [colors.normal]
-# black = "#000000"
-# blue = "#6943FF"
-# cyan = "#80FCFF"
-# green = "#75e44c"
-# magenta = "#FF2C70"
-# red = "#EC3A37"
-# white = "#FFFFFF"
-# yellow = "#FAD000"
-#
-# [colors.primary]
-# background = "#1E1E3F"
-# foreground = "#c0aa3a"
-
 [font]
 size = 14
 
