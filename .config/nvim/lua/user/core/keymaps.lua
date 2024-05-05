@@ -214,3 +214,7 @@ map("n", "<leader>hn", ":HydrateNow<CR>", "[H]ydrate [N]ow")
 map("n", "<leader>tr", ":TSJToggle<CR>", "[T]sj Toggle [R]eturn")
 map("n", "<leader>tj", ":TSJJoin<CR>", "[T]sj [J]oin")
 map("n", "<leader>ts", ":TSJSplit<CR>", "[T]sj [S]plit")
+
+-- Codesnap (code screenshots)
+map("v", "<leader>cc", ":CodeSnap<CR>", "[C]odeSnap [C]opy")
+map("v", "<leader>cs", ":CodeSnapSave<CR>", "[C]odeSnap [S]ave")
