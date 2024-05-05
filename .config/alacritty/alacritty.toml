@@ -10,24 +10,27 @@ size = 13.5
 builtin_box_drawing = true
 
 [font.bold]
+# family = "CaskaydiaCove NFM"
 family = "FiraCode Nerd Font"
 # family = "Ubuntu Mono"
 # family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.normal]
+# family = "CaskaydiaCove NFM"
 family = "FiraCode Nerd Font"
 # family = "Ubuntu Mono"
 # family = "JetBrainsMono Nerd Font"
 style = "Regular"
+# style = "SemiLight"
 
 [font.offset]
 x = 0
-y = 16
+y = 14
 
 [font.glyph_offset]
 x = 0
-y = 8
+y = 7
 
 [mouse]
 hide_when_typing = true
