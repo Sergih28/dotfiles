@@ -108,7 +108,7 @@ return {
         docker_compose_language_service = {},
         dockerls = {},
         emmet_ls = {},
-        eslint = {},
+        -- eslint = {},
         grammarly = {},
         graphql = {},
         html = {},
