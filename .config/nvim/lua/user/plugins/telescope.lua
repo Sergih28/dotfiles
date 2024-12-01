@@ -1,31 +1,31 @@
+local borderchars = {
+  "─",
+  "│",
+  "─",
+  "│",
+  "┌",
+  "┐",
+  "┘",
+  "└",
+}
+
 return {
-  "nvim-telescope/telescope.nvim",
-  branch = "0.1.x",
+  "nvim-telescope/telescope.nvim", tag = "0.1.8",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "piersolenski/telescope-import.nvim",
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    { "nvim-telescope/telescope-ui-select.nvim" },
-    { "nvim-tree/nvim-web-devicons" },
-    { "nvim-telescope/telescope-file-browser.nvim" },
+    "nvim-telescope/telescope-ui-select.nvim", -- Sets vum.ui.select to telescope (e.g. code actions)
+    "nvim-telescope/telescope-symbols.nvim", -- Emoji picker
+    "nvim-telescope/telescope-file-browser.nvim", -- File browser
+    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- Better fzf than native Telescope has
+    "piersolenski/telescope-import.nvim", -- Import modules faster
   },
   config = function()
     local actions = require("telescope.actions")
 
     require("telescope").setup({
       defaults = {
-        --  "┐", --[[ "╭", "╮", "╯", "╰" ]]
-        borderchars = {
-          "─",
-          "│",
-          "─",
-          "│",
-          "┌",
-          "┐",
-          "┘",
-          "└",
-        },
-        file_ignore_patterns = { "node_modules" },
+        borderchars = borderchars,
+        file_ignore_patterns = { "node_modules", ".git", "^%." },
         dynamic_preview_title = true,
         layout_strategy = "flex",
         sorting_strategy = "ascending",
@@ -44,6 +44,17 @@ return {
           },
         },
       },
+      extensions = {
+        ["ui-select"] = {
+          require("telescope.themes").get_dropdown({
+            borderchars = borderchars,
+            layout_strategy = "vertical",
+          })
+        },
+        file_browser = {
+          hijack_netrw = true,
+        }
+      },
       pickers = {
         find_files = {
           hidden = true, -- show hidden files
@@ -51,56 +62,22 @@ return {
         buffers = {
           mappings = {
             n = {
-              ["<C-d>"] = require("telescope.actions").delete_buffer,
+              ["<C-d>"] = actions.delete_buffer,
             },
             i = {
               ["<C-h>"] = "which_key",
-              ["<C-d>"] = require("telescope.actions").delete_buffer,
+              ["<C-d>"] = actions.delete_buffer,
             },
           },
         },
       },
-      extensions = {
-        heading = { treesitter = true },
-        ["ui-select"] = {
-          require("telescope.themes").get_dropdown(),
-        },
-        file_browser = {
-          theme = "dropdown",
-          hijack_netrw = true,
-          previewer = false,
-        },
-      },
     })
 
-    -- Enable Telescope extensions if they are installed
-    pcall(require("telescope").load_extension, "fzf")
-    pcall(require("telescope").load_extension, "ui-select")
-    pcall(require("telescope").load_extension, "import")
-    pcall(require("telescope").load_extension, "file_browser")
-
-    local builtin = require("telescope.builtin")
-
-    vim.keymap.set("n", "<leader>s/", function()
-      builtin.live_grep({
-        grep_open_files = true,
-        prompt_title = "Live Grep in Open Files",
-      })
-    end, { desc = "[S]earch [/] in Open Files" })
-
-    -- Shortcut for searching your Neovim configuration files
-    vim.keymap.set("n", "<leader>sn", function()
-      builtin.find_files({ cwd = vim.fn.stdpath("config") })
-    end, { desc = "[S]earch [N]eovim files" })
-
-    vim.keymap.set("n", "<leader>pws", function()
-      local word = vim.fn.expand("<cword>")
-      builtin.grep_string({ search = word })
-    end)
-
-    vim.keymap.set("n", "<leader>pWs", function()
-      local word = vim.fn.expand("<cWORD>")
-      builtin.grep_string({ search = word })
-    end)
+    -- Enable extensions
+    require("telescope").load_extension("ui-select")
+    require("telescope").load_extension("file_browser")
+    require("telescope").load_extension("fzf")
+    require("telescope").load_extension("import")
   end,
 }
+

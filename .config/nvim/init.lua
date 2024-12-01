@@ -1,4 +1,5 @@
 require("user.core")
 require("user.lazy")
 
--- install ripgrep (for telescope-import)
+-- Binds that need to happen after plugins
+require("user.core.keymaps2")

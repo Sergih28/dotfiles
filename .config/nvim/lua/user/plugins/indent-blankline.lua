@@ -1,10 +1,8 @@
--- vim.opt.list = true
--- vim.opt.listchars:append "space:⋅"
--- vim.opt.listchars:append "eol:↴"
-
 return {
   "lukas-reineke/indent-blankline.nvim",
   main = "ibl",
+  ---@module "ibl"
+  ---@type ibl.config
   config = function()
     local highlight = {
       "RainbowRed",
@@ -27,8 +25,6 @@ return {
       vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#89DCEB" })
     end)
 
-    require("ibl").setup({
-      indent = { highlight = highlight },
-    })
+    require("ibl").setup { indent = { highlight = highlight, char = "▏" } }
   end,
 }

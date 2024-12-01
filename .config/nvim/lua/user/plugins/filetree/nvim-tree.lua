@@ -2,20 +2,11 @@ return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
-    local nvimtree = require("nvim-tree")
-
-    -- recommended settings from nvim-tree documentation
+    -- disable netrw at the very start of your init.lua
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    -- change color for arrows in tree to light blue
-    --vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
-
-    local HEIGHT_RATIO = 0.95 -- You can change this
-    local WIDTH_RATIO = 0.7 -- You can change this too
-
-    --configure nvim-tree
-    nvimtree.setup({
+    require("nvim-tree").setup({
       sort_by = "case_sensitive",
       update_focused_file = {
         enable = true,
@@ -44,9 +35,7 @@ return {
           },
         },
       },
-      -- disable window_picker for
-      -- explorer to work well with
-      -- window splits
+      -- disable window_picker for explorer to work well with window splits
       actions = {
         open_file = {
           quit_on_open = true,

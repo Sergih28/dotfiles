@@ -1,73 +1,53 @@
 local options = {
-  termguicolors = true, -- needed for bufferline
-  updatetime = 250, -- decrease update time
-
-  -- file asdf
-  scrolloff = 8, -- number of lines to keep above and below the cursor
-  confirm = true, -- warning if you try to close a file with unsaved changes
+  -- file
+  scrolloff = 8, -- number of lines to keep visible above and below the cursor
+  confirm = true, -- ask confirmation when trying to close a file with unsaved changes
 
   -- line numbers
   relativenumber = true, -- show relative line numbers
-  number = true, -- show absolute lien number on cursor line (when relative number is on)
+  number = true, -- show absolute line number on the cursor line
 
   -- tabs & indentation
-  tabstop = 2, -- 2 spaces for tabs (prettier default)
-  shiftwidth = 2, -- 2 spaces for indent width
+  tabstop = 2, -- set 2 spaces for tabs
+  shiftwidth = 2, -- set 2 spaces for indent with
   expandtab = true, -- expand tab to spaces
-  autoindent = true, -- copy indent from current line when starting new one
-
-  -- appearance
 
   -- search settings
   ignorecase = true, -- ignore case when searching
   smartcase = true, -- if you include mixed case in your search, assumes you want case-sensitive
 
-  -- cursor line
+  -- cursor
   cursorline = true, -- highlight the current cursor line
 
-  -- split windows
-  splitright = true, -- split vertical window to the right
-  splitbelow = true, -- split horizontal window to the bottom
+  -- status line
+  laststatus = 3, -- show only 1 status line regardless of the number of split windows
 
-  -- read undos from the past (longer in time)
+  -- splits
+  splitright = true, -- new vertical split opens to the right (your cursor will be on the right window instead of the left one),
+  splitbelow = true, -- new horizontal split opens to the bottom (your cursor will be on the bottom window instead of the top one)
+
+  -- macros
+  lazyredraw = true, -- see the end result of a macro straight away
+
+  -- visual
+  conceallevel = 2, -- necessary for obsidian notes to display markdown files cleaner
+
+  -- spell check
+  spell = true, -- activate spell check (specially good for comments)
+
+  -- persist undo changes
   undodir = os.getenv("HOME") .. "/.vim/undodir",
   undofile = true,
 
-  -- Make statusline always 100%, otherwise multiple statuslines are seen for each split
-  ls = 3,
-
-  conceallevel = 2, -- Needed on 1 or 2 for obsidian
-
-  showmode = false, -- Needed for Hardtime plugin to display hints on insert mode too
-  lazyredraw = true, -- You see the end result of a macro straight away
+  -- other
+  termguicolors = true, -- enable true color support
+  updatetime = 250, -- shorter time for things like autocompletion to show up
 }
 
--- use system clipboard as default register
--- local is_mac = vim.fn.has("macunix")
--- local is_unix = vim.fn.has("unix")
--- local is_windows = vim.fn.has("win32")
-
--- if is_mac or is_unix then
---   vim.opt.clipboard:append({ "unnamedplus" })
--- end
--- if is_windows then
---   vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
--- end
-
---vim.opt.clipboard:append("unnamedplus") -- use system clipboard as default register
-
--- Fix markdown indentation settings
-vim.g.markdown_recommended_style = 0 -- otherwise 4 is applied on those files
-
--- Add spell check for comments
-vim.cmd("set spell")
-
+-- Apply options
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
--- Set ColorColumn to match the normal background color
-vim.cmd("highlight ColorColumn guibg=NONE ctermbg=NONE")
-
---vim.o.ttymouse = "xterm2"
+-- Enable mouse for all modes
 vim.o.mouse = "nvia"

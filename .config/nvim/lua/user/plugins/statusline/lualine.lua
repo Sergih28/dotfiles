@@ -33,7 +33,7 @@ return {
 
     return {
       options = {
-        theme = "catppuccin", --custom_nightfly,
+        theme = "catppuccin",
         component_separators = { left = "|", right = "|" },
         section_separators = { left = "", right = "" },
       },
@@ -44,7 +44,7 @@ return {
             fmt = function(s)
               return mode_map[s] or s
               -- This would just show the first letter
-              --   return s:sub(1, 1)
+              -- return s:sub(1, 1)
             end,
             separator = "",
           },

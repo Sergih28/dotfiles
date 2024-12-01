@@ -1,8 +1,6 @@
 return {
   "ojroques/nvim-bufdel",
-  config = function()
-    require("bufdel").setup{
-      quit = false,
-    }
-  end,
+  opts = {
+    quit = false,
+  }
 }

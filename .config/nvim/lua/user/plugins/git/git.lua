@@ -5,16 +5,15 @@ return {
       default_mappings = false,
       keymaps = {
         blame = "<leader>gbl",
-        -- Open file/folder in git repository
         browse = "<leader>go",
+        quit_blame_commit = "q",
         diff = "<Leader>gd",
         diff_close = "<Leader>gD",
         open_pull_request = "<Leader>gpr",
         create_pull_request = "<Leader>gPr",
-        -- Revert to the specific commit
-        revert = "<Leader>gr",
-        -- Revert the current file to the specific commit
-        revert_file = "<Leader>gR",
+        -- I think this is too dangerous, and I don't use it anyway
+        -- revert = "<Leader>gr",-- Revert to the specific commit
+        -- revert_file = "<Leader>gR",-- Revert the current file to the specific commit
       },
     })
   end,
