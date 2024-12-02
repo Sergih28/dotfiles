@@ -144,3 +144,9 @@ map("n", "<leader>/", function() require("conform").format({ async = true }) end
 
 -- Treesj (toggle returns and similar)
 map("n", "<leader>tr", ":TSJToggle<CR>", "[T]sj Toggle [R]eturn")
+
+-- Treesitter context
+map("n", "<leader>ts", ":TSContextToggle<CR>", "[T]oggle [S]ticky Lines (Treesitter)")
+map("n", "<leader>n", function()
+  require("treesitter-context").go_to_context(vim.v.count1)
+end, "Jump to context (upwards) (Treesitter)")

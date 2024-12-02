@@ -96,6 +96,10 @@ return {
     {
       "nvim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
+      dependencies = {
+        "windwp/nvim-ts-autotag", -- To rename and autoclose tags
+        { "nvim-treesitter/nvim-treesitter-context", opts = { multiwindow = true } },
+      },
       config = function()
         local configs = require("nvim-treesitter.configs")
 
