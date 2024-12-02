@@ -26,9 +26,15 @@ require("lazy").setup({
     { import = "user.plugins" },
     { import = "user.plugins.bookmarks" },
     { import = "user.plugins.colorscheme" },
-    { import = "user.plugins.filetree" },
+    { import = "user.plugins.editor" },
+    { import = "user.plugins.file_navigation" },
     { import = "user.plugins.git" },
+    { import = "user.plugins.health" },
+    { import = "user.plugins.info" },
     { import = "user.plugins.lsp" },
+    { import = "user.plugins.notifications" },
+    { import = "user.plugins.screenshot" },
+    { import = "user.plugins.stats" },
     { import = "user.plugins.statusline" },
   },
   ui = {
@@ -44,7 +50,7 @@ require("lazy").setup({
 
 -- Setup nvim-notify only for hydrate notifications
 local notify = require("notify")
-local hydrate = require("user.plugins.hydrate")
+local hydrate = require("user.plugins.health.hydrate")
 
 -- Override vim.notify to filter Hydrate notifications
 vim.notify = function(msg, log_level, opts)
