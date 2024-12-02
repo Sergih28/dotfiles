@@ -108,12 +108,23 @@ map("v", "<leader>cc", ":CodeSnap<CR>", "[C]odeSnap [C]opy")
 map("v", "<leader>cs", ":CodeSnapSave<CR>", "[C]odeSnap [S]ave")
 
 -- Flash
-map({ "n" }, "s", function() require("flash").jump() end, "[F]lash")
+map({ "n" }, "<leader>ss", function()
+  local flash = require("flash")
+
+  local word_under_cursor = vim.fn.expand("<cword>")
+  local search_pattern = vim.fn.getreg("/")
+
+  if search_pattern == "\\<" .. word_under_cursor .. "\\>" then
+    flash.jump({ pattern = word_under_cursor })
+  else
+    flash.jump()
+  end
+end, "[F]lash")
 map({ "n", "x", "o" }, "S", function() require("flash").treesitter() end, "[F]lash [T]reesitter")
 map("o", "r", function() require("flash").remote() end, "[F]lash [R]emote")
 map({ "o", "x" }, "R", function() require("flash").treesitter_search() end, "[F]lash [T]reesitter [S]earch")
 map("c", "<c-s>", function() require("flash").toggle() end, "[F]lash [T]oggle [S]earch")
-map("n", "*", function() vim.cmd("normal! *") vim.cmd("normal! N") require("flash").jump({pattern = vim.fn.expand("<cword>")}) end, "[F]lash [W]ord [U]nder [C]ursor")
+-- map("n", "*", function() vim.cmd("normal! *") vim.cmd("normal! N") require("flash").jump({pattern = vim.fn.expand("<cword>")}) end, "[F]lash [W]ord [U]nder [C]ursor")
 
 -- Markdown Preview
 map("n", "<leader>md", ":MarkdownPreview<CR>", "Open [M]arkdown [P]review")
