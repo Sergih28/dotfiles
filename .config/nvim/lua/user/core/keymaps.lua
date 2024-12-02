@@ -39,6 +39,7 @@ map("n", "<leader>cb", ":reg<CR>", "Check clipboard")
 map("v", "p", '"_dP', "Replace paste so it does not copy what you replaced")
 
 -- Inside a file
+map("n", "*", function() vim.cmd("normal! *") vim.cmd("normal! N") end, "Remap * to stay in the first word")
 map("n", "<leader><S-a>", "gg<S-v>G$", "Select all")
 map("n", "<C-f>", "<C-f>zz", "Center when moving one page down")
 map("n", "<C-b>", "<C-b>zz", "Center when moving one page up")
