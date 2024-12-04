@@ -40,6 +40,7 @@ map("v", "p", '"_dP', "Replace paste so it does not copy what you replaced")
 
 -- Inside a file
 map("n", "*", function() vim.cmd("normal! *") vim.cmd("normal! N") end, "Remap * to stay in the first word")
+map("n", "<leader><tab>", function() vim.api.nvim_feedkeys('cc', 'n', true) end, "Add auto-tabs on current line")
 map("v", "/", "\"fy/\\V<C-R>f<CR>N", "Search selection, staying on the same word")
 map("n", "<leader><S-a>", "gg<S-v>G$", "Select all")
 map("n", "<C-f>", "<C-f>zz", "Center when moving one page down")
