@@ -15,9 +15,11 @@ local options = {
   -- search settings
   ignorecase = true, -- ignore case when searching
   smartcase = true, -- if you include mixed case in your search, assumes you want case-sensitive
+  inccommand = "split", -- preview in a split the search and replace changes
 
   -- cursor
   cursorline = true, -- highlight the current cursor line
+  virtualedit = "block", -- go above the last char to easily edit on v-block mode
 
   -- status line
   laststatus = 3, -- show only 1 status line regardless of the number of split windows
