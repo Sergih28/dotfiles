@@ -33,6 +33,9 @@ map("n", "<leader>lz", ":Lazy<CR>", "Show Lazy window")
 -- Mason
 map("n", "<leader>ms", ":Mason<CR>", "Show Mason")
 
+-- Lazydocker
+map("n", "<leader>lzd", ":LazyDocker<CR>", "Show Lazydocker")
+
 -- Git related
 -- There are some more keymaps in the git.lua plugin file (they need to be there)
 map("n", "<leader>lg", ":LazyGit<CR>", "Show LazyGit panel")
