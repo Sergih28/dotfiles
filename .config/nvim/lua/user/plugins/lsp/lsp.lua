@@ -99,69 +99,107 @@ return {
       dependencies = {
         "windwp/nvim-ts-autotag", -- To rename and autoclose tags
         { "nvim-treesitter/nvim-treesitter-context", opts = { multiwindow = true } },
+        "nvim-treesitter/nvim-treesitter-textobjects",
       },
       config = function()
         local configs = require("nvim-treesitter.configs")
+        local ensure_installed = {
+          -- default parsers
+          "c",
+          "lua",
+          "vim",
+          "vimdoc",
+          "query",
+          "elixir",
+          "heex",
+          "javascript",
+          "html",
+          -- custom parsers
+          "astro",
+          "bash",
+          "comment",
+          "css",
+          "csv",
+          "diff",
+          "dockerfile",
+          "editorconfig",
+          "fish",
+          "git_config",
+          "git_rebase",
+          "gitattributes",
+          "gitcommit",
+          "gitignore",
+          "gpg",
+          "http",
+          "ini",
+          "jsdoc",
+          "json",
+          "luadoc",
+          "markdown",
+          "markdown_inline",
+          "mermaid",
+          "norg",
+          "php",
+          "phpdoc",
+          "prisma",
+          "python",
+          "regex",
+          "robots",
+          "scss",
+          "sql",
+          "sxhkdrc",
+          "tmux",
+          "toml",
+          "tsx",
+          "twig",
+          "typescript",
+          "vue",
+          "xml",
+          "yaml",
+          "yuck",
+        }
 
         configs.setup({
-          ensure_installed = {
-            -- default parsers
-            "c",
-            "lua",
-            "vim",
-            "vimdoc",
-            "query",
-            "elixir",
-            "heex",
-            "javascript",
-            "html",
-            -- custom parsers
-            "astro",
-            "bash",
-            "comment",
-            "css",
-            "csv",
-            "diff",
-            "dockerfile",
-            "editorconfig",
-            "fish",
-            "git_config",
-            "git_rebase",
-            "gitattributes",
-            "gitcommit",
-            "gitignore",
-            "gpg",
-            "http",
-            "ini",
-            "jsdoc",
-            "json",
-            "luadoc",
-            "markdown",
-            "markdown_inline",
-            "mermaid",
-            "norg",
-            "php",
-            "phpdoc",
-            "prisma",
-            "python",
-            "regex",
-            "robots",
-            "scss",
-            "sql",
-            "sxhkdrc",
-            "tmux",
-            "toml",
-            "tsx",
-            "twig",
-            "typescript",
-            "vue",
-            "xml",
-            "yaml",
-            "yuck",
-          },
+          ensure_installed = ensure_installed,
           sync_install = false,
           highlight = { enable = true },
           indent = { enable = true },
+          incremental_selection = {
+            enable = true,
+            keymaps = {
+              init_selection = "<Leader>si",
+              node_incremental = "<Leader>sn",
+              scope_incremental = "<Leader>sc",
+              node_decremental = "<Leader>sp",
+            },
+          },
+          textobjects = {
+            select = {
+              enable = true,
+
+              -- Automatically jump forward to textobj, similar to targets.vim
+              lookahead = true,
+
+              keymaps = {
+                ["af"] = "@function.outer",
+                ["if"] = "@function.inner",
+                ["ac"] = "@class.outer",
+                ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
+                -- You can also use captures from other query groups like `locals.scm`
+                ["as"] = { query = "@local.scope", query_group = "locals", desc = "Select language scope" },
+              },
+              selection_modes = {
+                ["@parameter.outer"] = "v", -- charwise
+                ["@function.outer"] = "V", -- linewise
+                ["@class.outer"] = "<c-v>", -- blockwise
+              },
+              -- If you set this to `true` (default is `false`) then any textobject is
+              -- extended to include preceding or succeeding whitespace. Succeeding
+              -- whitespace has priority in order to act similarly to eg the built-in
+              -- `ap`.
+              include_surrounding_whitespace = true,
+            },
+          },
         })
       end,
     },
