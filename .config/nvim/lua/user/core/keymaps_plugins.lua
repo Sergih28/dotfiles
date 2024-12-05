@@ -65,7 +65,7 @@ map("n", "<leader>s/", function()
     prompt_title = "Live Grep in Open Files",
   })
 end, "[S]earch [/] in Open Files (Telescope)" )
-map("n", "<leader>sn", function()
+map("n", "<leader>snv", function()
   require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
 end, "[S]earch [N]eovim files")
 map("n", "<leader>se", function() require("telescope.builtin").symbols{ sources = {'emoji'} } end, "[S]earch [E]moji (Telescope)")
