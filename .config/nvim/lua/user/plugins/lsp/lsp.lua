@@ -145,6 +145,7 @@ return {
           "python",
           "regex",
           "robots",
+          "rust",
           "scss",
           "sql",
           "sxhkdrc",
@@ -219,6 +220,7 @@ return {
           yaml = { "prettierd", "prettier" },
           markdown = { "markdownlint", "prettierd", "prettier" },
           lua = { "stylua" },
+          rust = { "rustfmt" },
         },
       },
     },
@@ -311,6 +313,7 @@ return {
         "diagnosticls",
         "html",
         "lua_ls",
+        "rust_analyzer",
       },
       handlers = {
         function(server_name)
