@@ -319,8 +319,7 @@ return {
 
         -- Add vim as global variable
         ["lua_ls"] = function()
-          local lspconfig = require("lspconfig")
-          lspconfig.lua_ls.setup({
+          require("lspconfig").lua_ls.setup({
             settings = {
               Lua = {
                 diagnostics = {
