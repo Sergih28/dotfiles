@@ -11,6 +11,7 @@
 1. Install yarn (for some neovim plugins)
 1. Install fzf, ripgrep and fd (for telescope)
 1. Install neovim
+1. Install DAP related things (more info in the dap plugin file)
 
 
 ### Other things
