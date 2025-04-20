@@ -26,6 +26,7 @@ require("lazy").setup({
     { import = "user.plugins" },
     { import = "user.plugins.bookmarks" },
     { import = "user.plugins.colorscheme" },
+    { import = "user.plugins.debugger" },
     { import = "user.plugins.editor" },
     { import = "user.plugins.file_navigation" },
     { import = "user.plugins.git" },
