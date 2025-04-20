@@ -151,6 +151,7 @@ return {
           request = "attach",
           resolveSourceMapLocations = { "${workspaceFolder}/**", "!**/node_modules/**" }, -- Needed for jest
           port = 9229,
+          cwd = "${workspaceFolder}",
         },
         -- Maybe this is useful as an example at some point to combine launch and attach
         --   {
@@ -188,6 +189,6 @@ return {
       },
     }
 
-    dap.set_log_level("DEBUG")
+    dap.set_log_level("TRACE")
   end,
 }
