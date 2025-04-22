@@ -67,7 +67,7 @@
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
   "undotree": { "branch": "master", "commit": "b951b87b46c34356d44aa71886aecf9dd7f5788a" },
   "vscode-chrome-debug": { "branch": "master", "commit": "96f4e5001883bba776c58df86c39840a21a0c2ff" },
-  "vscode-js-debug": { "branch": "main", "commit": "41c802115c16b25c5a4c3573c1b38b4ba58875e3" },
+  "vscode-js-debug": { "branch": "main", "commit": "3ed213faba62916c4d73233bd837a57179b40b2a" },
   "vscode-php-debug": { "branch": "main", "commit": "60b6926416cbaff404f9107694690ce181500d1d" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" },
   "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" }
