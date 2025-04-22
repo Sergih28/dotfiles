@@ -4,6 +4,7 @@ local js_based_languages = { "typescript", "javascript", "typescriptreact", "jav
 -- ⚠️⚠️⚠️⚠️
 -- MANUAL SETUP IS REQUIRED!!!
 -- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#javascript
+-- paste it on ~/.local/share/nvim/
 -- ⚠️⚠️⚠️⚠️
 -- ⚠️⚠️⚠️⚠️
 
