@@ -70,6 +70,7 @@
   "vscode-js-debug": { "branch": "main", "commit": "3ed213faba62916c4d73233bd837a57179b40b2a" },
   "vscode-php-debug": { "branch": "main", "commit": "60b6926416cbaff404f9107694690ce181500d1d" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" },
+  "window-picker.nvim": { "branch": "main", "commit": "2fe9e4001beeeee9562ddb21b0ad46ab2463bc5b" },
   "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" },
   "zen-mode.nvim": { "branch": "main", "commit": "863f150ca321b3dd8aa1a2b69b5f411a220e144f" }
 }

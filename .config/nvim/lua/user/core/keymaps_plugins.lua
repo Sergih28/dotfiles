@@ -204,3 +204,6 @@ map("n", "<leader>dl", ":PBSetLogPoint<CR>", "[D]ebug [L]ogpoint")
 
 -- ZenMode
 map("n", "<leader>ft", ":ZenMode<CR>", "[F]ullscreen [T]oggle (Maximize) (Zen mode)")
+
+-- Window picker
+map("n", "<leader>cw", ":WindowPick<CR>", "[C]hange (Pick) [W]indow")
