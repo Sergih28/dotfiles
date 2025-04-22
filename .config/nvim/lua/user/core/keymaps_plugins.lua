@@ -202,3 +202,5 @@ map("n", "<leader>dB", ":PBSetConditionalBreakpoint<CR>", "[D]ebug Conditional [
 map("n", "<leader>dbc", ":PBClearAllBreakpoints<CR>", "[D]ebug [B]reakpoints [C]lear")
 map("n", "<leader>dl", ":PBSetLogPoint<CR>", "[D]ebug [L]ogpoint")
 
+-- ZenMode
+map("n", "<leader>ft", ":ZenMode<CR>", "[F]ullscreen [T]oggle (Maximize) (Zen mode)")
