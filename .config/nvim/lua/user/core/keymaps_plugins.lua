@@ -214,3 +214,8 @@ map("n", "<leader>rn", function () require("live-rename").rename({ insert = true
 -- CSVView
 map("n", "<leader>csv", ":CsvViewToggle display_mode=border header_lnum=1<CR>", "Toggle [C][S][V] View")
 
+-- DiffView
+map("n", "<leader>gda", ":DiffviewOpen<CR>", "[G]it [D]iff [A]ll")
+map("n", "<leader>gdc", ":DiffviewClose<CR>", "[G]it [D]iff [C]lose")
+map("n", "<leader>gdt", ":DiffviewToggleFiles<CR>", "[G]it [D]iff Toggle [T]ree (Files)")
+
