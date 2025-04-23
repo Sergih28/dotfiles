@@ -86,7 +86,7 @@ map("n", "<leader>D", ":Telescope lsp_type_definitions<CR>", "[G]o to [T]ype [D]
 map("n", "<leader>ds", ":Telescope lsp_document_symbols<CR>", "[D]ocument [S]ymbols (Telescope)")
 map("n", "<leader>ca", vim.lsp.buf.code_action, "Show [C]ode [A]ctions")
 map("n", "<leader>ws", ":Telescope lsp_dynamic_workspace_symbols<CR>", "Show [W]orkspace [S]ymbols (Telescope)")
-map("n", "<leader>rn", vim.lsp.buf.rename, "Rename")
+-- map("n", "<leader>rn", vim.lsp.buf.rename, "Rename") -- Replaced with live-rename plugin
 map("n", "K", vim.lsp.buf.hover, "Hover doc")
 map("n", "]r", ":cnext<CR>zz", "Go to next reference")
 map("n", "[r", ":cprev<CR>zz", "Go to prev reference")
@@ -207,3 +207,6 @@ map("n", "<leader>ft", ":ZenMode<CR>", "[F]ullscreen [T]oggle (Maximize) (Zen mo
 
 -- Window picker
 map("n", "<leader>cw", ":WindowPick<CR>", "[C]hange (Pick) [W]indow")
+
+-- Live rename
+map("n", "<leader>rn", function () require("live-rename").rename({ insert = true }) end, "[R]ename")
