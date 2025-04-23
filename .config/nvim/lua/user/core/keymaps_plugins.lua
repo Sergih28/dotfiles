@@ -210,3 +210,7 @@ map("n", "<leader>cw", ":WindowPick<CR>", "[C]hange (Pick) [W]indow")
 
 -- Live rename
 map("n", "<leader>rn", function () require("live-rename").rename({ insert = true }) end, "[R]ename")
+
+-- CSVView
+map("n", "<leader>csv", ":CsvViewToggle display_mode=border header_lnum=1<CR>", "Toggle [C][S][V] View")
+
