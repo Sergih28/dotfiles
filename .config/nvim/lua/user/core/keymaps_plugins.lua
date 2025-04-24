@@ -220,4 +220,4 @@ map("n", "<leader>gdc", ":DiffviewClose<CR>", "[G]it [D]iff [C]lose")
 map("n", "<leader>gdt", ":DiffviewToggleFiles<CR>", "[G]it [D]iff Toggle [T]ree (Files)")
 
 -- Neogen
-map("n", "<leader>ga", ":Neogen<CR>", "[G]enerate [A]nnotation with Neogen")
+map("n", "<leader>ga", ":Neogen func<CR>", "[G]enerate (function) [A]nnotation with Neogen")
