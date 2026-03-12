@@ -1,0 +1,37 @@
+layout {
+    pane_template name="default-without-time" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane name=""
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    pane_template name="top-bar-without-time" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+
+    new_tab_template {
+       default-without-time
+    }
+
+    tab name="󰇈" {
+        top-bar-without-time
+        pane size="100%" name="󰇈 Obsidian" {
+            command "nvim"
+            args "--cmd" "cd ~/Documents/Obsidian_Sergi"
+        }
+    }
+    tab name="" {
+        top-bar-without-time
+        pane size="100%" name=" Logseq" {
+            command "nvim"
+            args "--cmd" "cd ~/Documents/Logseq/"
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+layout {
+    pane_template name="default-with-time" {
+        pane size=1 split_direction="vertical" {
+            pane size="75%" borderless=true {
+                plugin location="zellij:tab-bar"
+            }
+            pane size="35" borderless=true {
+                plugin location="with-clock"
+            }
+        }
+        pane name=""
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    pane_template name="top-bar-with-time" {
+        pane size=1 split_direction="vertical" {
+            pane size="75%" borderless=true {
+                plugin location="zellij:compact-bar"
+            }
+            pane size="35" borderless=true {
+                plugin location="with-clock"
+            }
+        }
+    }
+
+    new_tab_template {
+        default-with-time
+    }
+
+    tab name="" {
+        default-with-time
+    }
+    tab name="" {
+        top-bar-with-time
+        pane command="superfile" borderless=true
+    }
+    tab name="" {
+        top-bar-with-time
+        pane stacked=true {
+            pane name="󱞟 opencode " command="opencode" start_suspended=true cwd="~/ai-ask/"
+            pane name="󱞟 opencode 󰌢" command="opencode" start_suspended=true cwd="~/ai-ask/"
+            pane name="󰆿 cursor 󰌢" command="cursor-agent" start_suspended=true cwd="~/ai-ask/"
+            pane name=" codex 󰌢" command="codex" start_suspended=true cwd="~/ai-ask/"
+        }
+    }
+    tab name="" {
+        top-bar-with-time
+        pane command="nvim" borderless=true start_suspended=true
+    }
+    tab name="󱜿" {
+        top-bar-with-time
+        pane stacked=true {
+            pane name=" lazygit" command="lazygit" start_suspended=true
+            pane name=" lazydocker" command="lazydocker" start_suspended=true
+            pane name=" lazysql" command="lazysql" start_suspended=true
+        }
+    }
+    tab name="" {
+        top-bar-with-time
+        pane stacked=true {
+            pane name="󰕮 dashboard" command="gh" start_suspended=true {
+              args "dash"
+            }
+            pane name=" notifications" command="gh" start_suspended=true {
+              args "notify"
+            }
+            pane name=" playground"
+        }
+    }
+    tab name="󰌢" {
+        top-bar-with-time
+        pane stacked=true {
+            pane name=" btm" command="btm" start_suspended=true
+            pane name=" dysk" command="nu"  start_suspended=true {
+              args "-c" "clear; dysk"
+            }
+        }
+    }
+
+    // tab name="󰃭" {
+    //     pane size=1 borderless=true {
+    //         plugin location="zellij:compact-bar"
+    //     }
+    //     pane borderless=true {
+    //         command "gcalcli"
+    //         args "agenda"
+    //     }
+    // }
+}
+

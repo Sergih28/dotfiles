@@ -1,0 +1,51 @@
+layout {
+    pane_template name="default-without-time" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane name=""
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    pane_template name="top-bar-without-time" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+
+    pane_template name="top-bar-two-without-time" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+    }
+
+    new_tab_template {
+       default-without-time
+    }
+
+    tab name="" {
+        top-bar-two-without-time
+        pane split_direction="horizontal" {
+            pane size="100%" name=" terminal"
+            pane size=11 name=" frontend"
+        }
+    }
+    tab name="󰙨" {
+        top-bar-without-time
+        pane stacked=true {
+            pane name=" vitest"
+            pane name=" playwright"
+        }
+    }
+    tab name="" {
+        top-bar-without-time
+        pane split_direction="horizontal" {
+            pane name=" stories"
+            pane size=7 name=" drizzle db"
+            pane size=7 name=" drizzle test db"
+        }
+    }
+}
+

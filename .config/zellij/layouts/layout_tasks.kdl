@@ -1,0 +1,45 @@
+layout {
+    pane_template name="default-without-time" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane
+    }
+
+    pane_template name="top-bar-without-time" {
+        pane size=1  borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+
+    new_tab_template {
+       default-without-time
+    }
+
+    tab name="" {
+        top-bar-without-time
+        pane stacked=true {
+            pane name=" tasks" command="nu" {
+              args "-c" "clear; task"
+            }
+            pane name=" playground"
+            pane name=" add" command="~/.task/scripts/tadd"
+        }
+    }
+    tab name="" {
+        top-bar-without-time
+        pane stacked=true {
+            pane name=" active" command="task" {
+                args "active"
+            }
+            pane name=" summary" command="timew" {
+                args "s"
+            }
+            pane name=" summary with id" command="timew" {
+                args "s" ":id"
+            }
+            pane name=" playground"
+        }
+    }
+}
+
