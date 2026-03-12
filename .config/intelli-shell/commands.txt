@@ -1,0 +1,192 @@
+# [alias:ghel] List gh extensions #github
+gh extension list
+
+# [alias:ghei] Install gh extension #github
+gh extension install
+
+# [alias:dglo] List outdated devbox global packages #devbox
+devbox global list --outdated
+
+# [alias:dgl] List devbox global packages #devbox
+devbox global list
+
+# [alias:dgu] Update devbox global packages #devbox
+devbox global update
+
+# Download audio from youtube video #audio #video #downloader
+yt-dlp -x --audio-format mp3 --audio-quality 0 "{{video_url}}"
+
+# Run yt-dlp #audio #video #downloader
+yt-dlp
+
+# Run starship #terminal #shell #prompt
+starship
+
+# Run nushell #terminal #shell
+nu
+
+# [alias:dgr] Remove devbox global packages #devbox
+devbox global rm {{package}}
+
+# [alias:dga] Add devbox global packages #devbox
+devbox global add {{package}}
+
+# [alias:ds] Search devbox packages #devbox
+devbox search {{package}}
+
+# Run gh poi simulating changes #git #github
+gh poi --dry-run
+
+# Run gh poi #git #github
+gh poi
+
+# [alias:ghmp] Run gh markdown-preview #github #markdown
+gh markdown-preview
+
+# Run github client #git #github #CLI
+gh
+
+# Run zoxide (cd #alternative)
+z
+
+# [alias:zj] Run zellij (tmux #alternative)
+zellij
+
+# Run onefetch (neofetch for git repo) #info
+onefetch
+
+# Run tealdeer (tldr #alternative) #info
+tldr
+
+# Run macchina (neofetch #alternative) #info
+macchina
+
+# Run procs (ps #alternative) #resources
+procs
+
+# [alias:la] Run lsd cool command (ls #alternative) #file
+lsd -lAh
+
+# Run lsd (ls #alternative) #file
+lsd
+
+# Run dust (du #alternative) #file
+dust
+
+# Run broot (tree #alternative) #file
+broot
+
+# Run bat (cat #alternative) #file
+bat
+
+# Run ripgrep (find #alternative) #file
+rg
+
+# Run fd (find #alternative) #file
+fd
+
+# Run neomutt #email #CLI
+neomutt
+
+# Run yarn #node #package-manager
+yarn
+
+# Run git #git #dev
+git
+
+# Run python #node #dev
+python
+
+# Run bun #node #dev
+bun
+
+# Run nodejs #node #dev
+node
+
+# Run jq (command line json processor) #json #tools
+jq
+
+# [alias:pi] Run pnpm install #node #package-manager
+pnpm install
+
+# [alias:pifl] Run pnpm install with the exact versions #node #package-manager
+pnpm install --frozen-lockfile
+
+# [alias] Run pnpm #node #package-manager
+pnpm
+
+# Run fzf #tools #file
+fzf
+
+# [alias:tw] Run timewarrior #task
+timew
+
+# [alias:t] Run taskwarrior #task
+task
+
+# Run dysk #resources #disk
+dysk
+
+# Run bottom #resources #CLI
+btm
+
+# [alias:ghn] Run gh notify #dev #github #git #CLI
+gh notify
+
+# [alias:ghd] Run gh dash #dev #github #git #CLI
+gh dash
+
+# [alias:lg] Run lazygit #lazy #dev #git #CLI
+lazygit
+
+# [alias:ld] Run lazygit #lazy #dev #CLI
+lazydocker
+
+# [alias:lsql] Run lazysql #lazy #dev #db #CLI
+lazysql
+
+# [alias:nv] Run neovim #dev
+nvim
+
+# [alias:ca] Run cursor agent #ai #dev #CLI
+cursor-agent
+
+# [alias:ahl] Show atuin #history list
+atuin history list --format "{time} {command}" | ov -n -l
+
+# [alias:iic] Import #intelli-shell #bookmarks list
+intelli-shell import ~/.config/intelli-shell/commands.txt
+
+# [alias:iss] Show #intelli-shell #bookmarks list
+intelli-shell search
+
+# [alias:icl] Show #intelli-shell completion list
+intelli-shell completion delete --command {{command}} {{name}}
+
+# [alias:icd] Delete #intelli-shell completion
+intelli-shell completion delete --command {{command}} {{name}}
+
+# [alias:cld] Show #cheatsheet personal list #dev
+cheat -l -p personal --tag dev | ov -n -l
+
+# [alias:cll] Show #cheatsheet personal list #lazy
+cheat -l -p personal --tag lazy | ov -n -l
+
+# [alias:cep] Add or edit #cheatsheet entry under personal project
+cheat -p personal -e {{sheet}}
+
+# [alias:clp] Show #cheatsheet personal list
+cheat -l -p personal | ov -n -l
+
+# [alias:clc] Show #cheatsheet community list
+cheat -l -p community | ov -n -l
+
+# [alias:cl] Show #cheatsheet full list
+cheat -l | ov -n -l
+
+# [alias:gst] Show #git status
+git status
+
+# [alias:zlm] Open main #zellij layout
+zellij --layout layout_main
+
