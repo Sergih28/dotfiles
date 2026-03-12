@@ -1,0 +1,14 @@
+# font-family = "FiraCode Nerd Font"
+command = ~/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu # Default shell
+font-size = 15
+theme = Catppuccin Mocha
+background-opacity = 0.85
+background-blur = true
+maximize = true
+adjust-cell-height = 30%
+mouse-hide-while-typing = true
+window-padding-balance = true
+# shell-integration = zsh
+window-decoration = server
+mouse-scroll-multiplier = 0.5
+keybind = ctrl+,=unbind
