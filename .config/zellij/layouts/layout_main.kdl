@@ -34,15 +34,19 @@ layout {
     }
     tab name="" {
         top-bar-with-time
-        pane command="superfile" borderless=true
+        pane command="spf" borderless=true
     }
     tab name="" {
         top-bar-with-time
         pane stacked=true {
-            pane name="󱞟 opencode " command="opencode" start_suspended=true cwd="~/ai-ask/"
-            pane name="󱞟 opencode 󰌢" command="opencode" start_suspended=true cwd="~/ai-ask/"
-            pane name="󰆿 cursor 󰌢" command="cursor-agent" start_suspended=true cwd="~/ai-ask/"
-            pane name=" codex 󰌢" command="codex" start_suspended=true cwd="~/ai-ask/"
+            pane name="󱞟 opencode" command="opencode" start_suspended=true cwd="~/ai-ask/"
+            pane name="󱞟 opencode web" command="opencode" start_suspended=true cwd="~/ai-ask/" {
+              args "web"
+            }
+            pane name="󰆿 cursor" command="cursor-agent" start_suspended=true cwd="~/ai-ask/"
+            pane name=" codex" command="codex" start_suspended=true cwd="~/ai-ask/"
+            pane name="󰓎 gemini" command="gemini" start_suspended=true cwd="~/ai-ask/"
+            pane name=" claude" command="claude" start_suspended=true cwd="~/ai-ask/"
         }
     }
     tab name="" {

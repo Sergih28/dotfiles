@@ -1,3 +1,10 @@
+
+# Mise
+let line = 'use ($nu.data-dir | path join mise.nu)'
+if not (open $nu.config-path | lines | any {|l| $l == $line }) {
+    $"\n($line)" | save $nu.config-path --append
+}
+
 $env.PATH = ($env.PATH | prepend "/usr/local/bin")
 devbox global shellenv --format nushell --preserve-path-stack -r
   | lines 

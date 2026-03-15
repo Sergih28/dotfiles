@@ -1,5 +1,6 @@
 # font-family = "FiraCode Nerd Font"
-command = ~/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu # Default shell
+# command = ~/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell/env.nu # Default shell
+command = /usr/local/bin/nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell/env.nu # Default shell
 font-size = 15
 theme = Catppuccin Mocha
 background-opacity = 0.85
@@ -12,3 +13,4 @@ window-padding-balance = true
 window-decoration = server
 mouse-scroll-multiplier = 0.5
 keybind = ctrl+,=unbind
+macos-option-as-alt = true

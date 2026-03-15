@@ -8,6 +8,13 @@
 # .gitconfig (diff), gh-dash/config (keybindings and pager), 
 
 $env.XDG_CONFIG_HOME = ($env.HOME | path join ".config")
+
+# Mise
+let line = 'use ($nu.data-dir | path join mise.nu)'
+if not (open $nu.config-path | lines | any {|l| $l == $line }) {
+    $"\n($line)" | save $nu.config-path --append
+}
+
 $env.EDITOR = "nvim"
 $env.config.buffer_editor = "nvim"
 $env.config.show_banner = false # Remove welcome message
@@ -61,6 +68,14 @@ alias la = lsd -lAh
 alias zj = zellij
 alias ghei = gh extension install
 alias ghel = gh extension list
+alias mug = mise use -g
+alias mlg = mise ls -g
+alias bl = brew list
+alias bli = brew list --installed-on-request
+alias blic = brew list --casks
+alias bbi = brew bundle install
+alias bbd = brew bundle dump
+alias bbdf = brew bundle dump --force
 
 def ahl [] {
   atuin history list --format "{time} {command}" | ov -n -l
@@ -309,3 +324,5 @@ def gpristine [] {
 }
 
 source ~/.zoxide.nu
+
+use ($nu.data-dir | path join mise.nu)

@@ -26,7 +26,7 @@ let _atuin_pre_execution = {||
         return
     }
     if not ($cmd | str starts-with $ATUIN_KEYBINDING_TOKEN) {
-        $env.ATUIN_HISTORY_ID = (atuin history start -- $cmd)
+        $env.ATUIN_HISTORY_ID = (atuin history start -- $cmd e>| complete | get stdout | str trim)
     }
 }
 
@@ -36,8 +36,12 @@ let _atuin_pre_prompt = {||
         return
     }
     with-env { ATUIN_LOG: error } {
-        if (version).minor >= 104 or (version).major > 0 {
-            job spawn -t atuin {
+        if (version).minor >= 111 or (version).major > 0 {
+            job spawn -d atuin {
+                ^atuin history end $'--exit=($env.LAST_EXIT_CODE)' -- $env.ATUIN_HISTORY_ID | complete
+            } | ignore
+        } else if (version).minor >= 104 or (version).major > 0 {
+            job spawn {
                 ^atuin history end $'--exit=($env.LAST_EXIT_CODE)' -- $env.ATUIN_HISTORY_ID | complete
             } | ignore
         } else {

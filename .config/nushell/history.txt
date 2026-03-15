@@ -1,0 +1,1758 @@
+config nu
+exit
+whoami
+ls
+lsd
+lsd -la
+ls
+ls | grep Experto
+ls
+ls -la
+task
+cat .zshrc
+bat .zshrc
+pwd
+ls
+dysk
+echo https://github.com/DopplerHQ/cli
+clear
+nvim .config/zellij/
+exit
+zellij
+exit
+touch .hushlogin
+exit
+config nu
+nvim config nu
+which nvim
+nvim
+exit
+zsh
+exit
+zsh
+config nu
+nvim
+exit
+nu config
+config
+config nu
+which nvim
+exi
+exit
+zsh
+exit
+zsh
+exit
+zsh
+exit
+config nu
+devbox
+zsh
+ls
+ls | grep .hush
+rm hushloginbak
+ls | grep .hush
+exit
+zsh
+exit
+which nvim
+devbox global shellenv
+devbox
+config nu
+exit
+config nu
+exit
+which devbox
+nvim .config/ghostty/
+exit
+config nu
+which nvim
+vi .config/ghostty/config
+exit
+config nu
+devbox global --version
+devbox global version
+devbox --version
+devbox -v
+devbox
+devbox version
+devbox version update
+exit
+config nu
+exit
+devbox global shellenv --nu
+zsh
+exit
+exit
+config nu
+exit
+which devbox
+nvim
+vi `Library/Application Support/nushell/env.nu`
+vi `Library/Application Support/nushell/config.nu`
+exit
+vi `Library/Application Support/nushell/config.nu`
+which devbox
+vi `Library/Application Support/nushell/env.nu`
+vi `Library/Application Support/nushell/config.nu`
+exit
+which debox
+devbox
+nvim
+vi `Library/Application Support/nushell/config.nu`
+vi `Library/Application Support/nushell/env.nu`
+exit
+curl -fsSL https://get.jetify.com/devbox | bash
+curl -fsSL https://get.jetify.com/devbox | nu
+curl -fsSL https://get.jetify.com/devbox | bash
+devbox
+exit
+config nu
+exit
+vi `Library/Application Support/nushell/env.nu`
+which nu
+exit
+which devbox
+devbox global list
+nvim
+pwd
+touch .hushlogin
+exit
+config nu
+vi `Library/Application Support/nushell/config.nu`
+exit
+config nu
+pwd
+config nu
+devbox g
+devbox global list
+zellij
+lsd
+lsd -la
+ls
+ls -la
+ls
+tree
+tre
+tee
+ls
+ps
+df
+dysk
+ps
+ps | describe
+ls | sort-by size | reverse | first | get name | cp $in
+ls | sort-by size | reverse | first | get name
+ls | sort-by size | reverse | get name
+ls | sort-by size | reverse
+help ls
+tdlr ls
+help commands | explore
+ls
+ls *.mp4
+ls **.*.md
+ls **/*.md
+ls **/*.mp4
+config nu
+ls
+which touch
+which devbox
+which gst
+zsh
+gst
+config nu
+which config nu
+config nu
+exit
+devbox global add starship@1.24.2
+refresh-global
+exit
+vi `Library/Application Support/nushell/config.nu`
+exit
+vi `Library/Application Support/nushell/config.nu`
+exit
+vi `Library/Application Support/nushell/config.nu`
+exit
+vi `Library/Application Support/nushell/config.nu`
+exit
+vi `Library/Application Support/nushell/config.nu`
+exit
+which gst
+cd Documents/projects/
+z
+cd dotfiles/
+gst
+cd
+nvim .zshrc
+config nu
+exit
+z
+which z
+z Documents/projects/
+z
+z docu proj
+config nu
+devbox global list
+exit
+config nu
+exit
+which z
+clear
+config nu
+exit
+which yt-dlp
+zsh
+devbox search yt-dlp
+devbox global add yt-dlp@latest
+which yt-dlp
+yt-dlp --help
+tldr yt-dlp
+yt-dlp -x --audio-format mp3 --audio-quality 0 https://www.youtube.com/watch?v=6D_MelM9wdE&pp=ygUIbWFtYWNpdGE%3D
+ls
+cd Music
+ls
+mkdir Bachata
+..
+mv 'Mickey Then - MamaciTa Official Video - Bachata 2026 [6D_MelM9wdE].mp3' Music/
+cd
+z Music/
+ls
+mv 'Mickey Then - MamaciTa Official Video - Bachata 2026 [6D_MelM9wdE].mp3' Bachata/
+ls
+cd Bachata/
+ls
+brew install --cask audacity
+exit
+devbox global add tg@latest
+tg
+devbox global add cheat@latest
+devbox search lazysql
+devbox global list | grep lazy
+cheat
+cheat -l
+echo $EDITOR
+echo $env.EDITOR
+lsd
+lsd -la
+devbox global add lazysql@0.4.8
+du
+dust
+dust ../../
+dust ../../Documents/
+devbox global list | cursor
+devbox global list | grep cursor
+devbox global add cursor-cli@latest
+cheat -l
+cheat -h
+tldr cheat
+cheat -l personal
+cheat -l community
+cheat -l -p personal
+cheat -l -p community
+cheat -d
+which nvim
+less
+ls
+z
+z Documents/
+ls
+lsd
+ls
+cd Sergi-PKM/
+fzf
+ls
+less _Journal/0-Daily/2023-08-20.md
+ls
+ls 0-Inbox/
+z inbox
+z 0-Inbox/
+z ..
+..
+z inbox
+ls
+ls | sort
+ls | sort-by size | reverse
+less `Método authenticity notes.md`
+less -FRX `Método authenticity notes.md`
+ls
+exit
+echo $env.EDITOR
+echo $EDITOR
+devbox global add ov@latest
+exit
+less `Método authenticity notes.md` | ov
+tldr ov
+man ov
+ov --help
+cheat -l -p community
+cheat -e personal
+cheat -l -p community
+cheat -p personal -e cheat
+cheat -l -p community
+cheat -l -p personal
+cheat -l | fzf | xargs cheat
+cheat cheat
+cheat -p personal cheat
+cheat -l | fzf --preview 'cheat {}' | xargs cheat
+man cheat
+cheat cheat
+cheat cheat -p personal
+cl
+exit
+cl
+clc
+clp
+clp --tag a
+clp --tag personal
+clp --tag cheatsheet
+nvim ~/.config/cheat/
+exit
+cep asdf
+clp
+clc | sort
+exit
+exit
+exit
+cep ov
+clp
+exit
+exit
+cheat -p personal -e cheat
+exit
+config nu
+exit
+exit
+zellij
+exit
+nvim ~/.config/zellij/
+z
+z zellij
+zsh
+exit
+which zep
+which cep
+cep cursor-agent
+zlp
+clp
+cep nvim
+clp
+cl
+clp
+cld
+clp
+intelli-shell
+intelli-shell -i
+intelli-shell search -i
+exit
+intelli-shell new "zellij --layout layout_main" --alias "zlm" --description "Open main zellij layout"
+intelli-shell search -i
+zlm
+exit
+intelli-shell search
+intelli-shell search -i
+zellij --layout layout_main
+exit
+intelli-shell search -i --full-screen
+ss
+intelli-shell new "git status" --alias "gst" --description "Git status"
+ss
+config nu
+exit
+ss
+git status
+ishell-run
+intelli-shell run
+tldr intelli-shell
+man intelli-shell
+intelli-shell help
+intelli-shell init
+intelli-shell init nu
+ss
+exit
+exit
+exit
+exit
+exit
+ss
+zsh
+which ss
+exit
+ss
+echo "hello"
+exit
+exit
+exit
+exit
+zsh
+exit
+exit
+ss
+exit
+exit
+ss
+exit
+exit
+ss
+exit
+ss | lines
+exit
+ss
+exit
+ss
+exit
+ss
+exit
+ss
+input
+"asdf" | lines
+"asdf" | lines | last
+"asdf" | lines | last | str trim
+ss
+exit
+ss
+exit
+ss
+zz
+ls 
+git status
+git_main_branch 
+which git_main_branch
+devbox global add atuin@latest
+atuin
+history
+atuin history
+atuin history list
+atuin
+atuin register -u Sergi_mac -e sergiheras28@gmail.com
+atuin register -u sergi-mac -e sergiheras28@gmail.com
+atuin key
+atuin sync
+exit
+history
+atuin
+atuin history
+atuin history list
+history
+atuin history list
+atuin doctor
+atuin history list --human
+atuin history list
+atuin history list | ov
+atuin history list | ov -n
+atui
+autin history list
+atuin history list
+atuin history list --format "{time} - {duration} - {command}"
+atuin history list
+atuin history list --format "{time} {duration} {command}"
+atuin history list --format "{time} {command} {duration}"
+atuin history list --format "{time} {command}<tab>{duration}"
+atuin history list --format "{time}|||{command}|||{duration}"
+man ov
+ov --help
+atuin history list --format "{time}|||{command}|||{duration}" | ov -n -l
+atuin history list --format "{time}|||{command}|||{duration}" | ov -n -l -d="|||"
+atuin history list --format "{time} {command} {duration}" | ov -n -l -d=" "
+atuin history list --format "{time} {command}" | ov -n -l -d=" "
+atuin history list --format "{time} {command}" | ov -n -l -t
+atuin history | column -t
+atuin history list | column -t
+atuin history list | tr ' ' ',' | column -t -s, 
+atuin history list | awk '{$1=$1}1' | ov
+atuin history list | awk '{$1=$1}1'
+atuin history list --format "{time}|||{command}|||{duration}" | ov -n -l
+atuin history list --format "{time} {command}" | ov -n -l
+atuin history list --format "{time} {command}" --reverse | ov -n -l
+atuin history list --format "{time} {command}" | ov -n -l
+atuin history list --reverse --format "{time} {command}" | ov -n -l
+atuin history list --reverse
+autin history list
+atuin history list
+atuin history list --reverse
+man atuin
+atuin --help
+atuin stats
+atuin status
+atuin info
+atuin kv
+atuin uuid
+atuin history --help
+autin history list
+atuin history list --reverse --format "{time} {command}" | ov -n -l
+which whoami
+which which
+whoami
+exit
+ss
+exit
+clp
+which clp
+gst
+intelli-shell list
+intelli-shell --help
+intelli-shell tldr clear
+intelli-shell completion list -i
+nvim ~/Library/Application Support/org.IntelliShell.Intelli-Shell
+nvim ~/.local/share/intelli-shell
+gst
+which ss
+intelli-shell search -i
+exit
+ss
+which ss
+intelli-shell search
+intelli-shell search --interactive
+git status
+zellij --layout layout_main
+exit
+keybindings list
+keybindings list | grep char_i
+keybindings list | grep control
+keybindings list | grep Control
+keybindings list --modifiers
+keybindings default
+keybindings default | grep "'i'"
+keybindings default | grep "'a'"
+config keybindings | where key == "Ctrl-I"
+config keybindings
+exit
+config nu
+exit
+echo "Press Ctrl+I now" | read key
+zi
+exit
+exit
+exit
+exit
+exit
+exit
+z
+ripgrep
+which rgrep
+rgrep
+devbox global path
+nvim .local/share/devbox/global/default/
+cd
+rg
+rg a
+exit
+bindkey | less
+zsh
+devbox global rm ov
+exit
+devbox global add ov
+exit
+zellij
+exit
+zsh
+fzf
+rh
+rg
+rg expand-or-complete
+rg --help
+rg search
+rg control+i
+exit
+zellij
+exit
+exit
+git status
+ss
+exit
+zsh
+exit
+exit
+exit
+intelli-shell alias
+intelli-shell alias --help
+intelli-shell --help
+intelli-shell new "cheat -l" --alias "cl" --description "cheat list"
+cheat -l
+intelli-shell fix git status
+intelli-shell fix gst
+intelli-shell export
+..
+which ..
+mkdir intelli-shell
+z intelli-shell/
+intelli-shell export commands.txt
+intelli-shell import commands.txt
+cep
+cep nvim
+cheat -p personal list
+cheat -l -p personal
+cheat -l -p personal | get title
+cheat -l -p personal
+cheat -l -p personal | get title
+cheat -l -p personal | select title
+select title
+man cheat
+cheat -l -p personal
+cheat -l -p personal | get title
+cheat -l -p personal | from csv | get title
+cheat -l -p personal | lines
+cheat -l -p personal | lines | get title
+cheat -l -p personal | lines | | split column=1
+cheat -l -p personal | lines | | split
+cheat -l -p personal | lines | split column=1
+cheat -l -p personal | lines | split
+cheat -l -p personal | lines | get title
+cheat -l -p personal | lines | get column.0
+cheat -l -p personal | lines
+cheat -l -p personal | lines | split " "
+cheat -l -p personal | lines | get 0
+cheat -l -p personal | lines | columns
+cheat -l -p personal | columns
+cheat -l -p personal | lines
+cheat -l -p personal | values
+cheat -l -p personal | from csv
+cheat -l -p personal | lines | each { $it | split " " }
+cheat -l -p personal | lines | each { $it | split " " | get 0 }
+nu --help split
+cheat -l -p personal | lines | each { $it | split " " | get 0 }
+cheat -l -p personal | lines | each { $it | split delimiter: " " }
+cheat -l -p personal | lines | wrap
+cheat -l -p personal | lines | wrap a
+cheat -l -p personal | lines | split list " "
+cheat -l -p personal | lines | split list "/"
+cheat -l -p personal | split list "/"
+cheat -l -p personal | lines | group-by title
+cheat -l -p personal | table
+cheat -l -p personal | table | get column.0
+cheat -l -p personal | table
+cheat -l -p personal | table | columns
+cheat -l -p personal | columns
+cheat -l -p personal | lines | table 
+cheat -l -p personal | lines
+cheat -l -p personal | lines | merge
+cheat -l -p personal | lines | select
+cheat -l -p personal | lines | take 1
+cheat -l -p personal | lines | table | take 1
+cheat -l -p personal | lines | take not 1
+cheat -l -p personal | lines | take -1
+cheat -l -p personal | lines | table
+cheat -l -p personal | lines | table | flatten
+cheat -l -p personal | lines | table | get column
+cheat -l -p personal | lines | table | select title
+cheat -l -p personal
+cheat -l -p personal  | lines | each { <\n>    $it | split delimiter: " " | get 0, 1, 2<\n>} | into table title, file, tags
+cheat -l -p personal | wrap title
+cheat -l -p personal | lines | wrap title
+cheat -l -p personal | lines | wrap title, file, tags
+cheat -l -p personal | lines | wrap title
+cheat -l -p personal | lines | each { <\n>    $it | split " " | get 0, 1, 2<\n>} | into table title, file, tags
+cheat -l -p personal | lines | each { <\n>    $it | split-regex '\s+' | get 0, 1, 2<\n>} | into table title, file, tags
+cheat -l -p personal | lines | each { <\n>    $it | split-regex '\s+' | get 0 | wrap<\n>} | into table title
+cheat -l -p personal | lines | each { <\n>    $it | split-regex '\s+' | select 0, 1, 2<\n>} | into table title, file, tags
+cheat -l -p personal | lines | each { <\n>    $it | split-regex '\s+' | get 0, 1, 2<\n>} | into table title, file, tags
+cheat -l -p personal | lines | each {<\n>    $it | split-regex '\s+' | select column.0, column.1, column.2<\n>} | into table title, file, tags
+cheat -l -p personal | lines | each {<\n>    $it | split-regex '\s+' | get 0 1 2<\n>} | into table title, file, tags
+cheat -l -p personal | lines | split column ' '
+cheat -l -p personal | table | split column ' '
+cheat -l -p personal | wrap | split column ' '
+cheat -l -p personal | wrap ' ' | split column ' '
+cheat -l -p personal | lines | wrap ' ' | split column ' '
+cheat -l -p personal | lines 
+cheat -l -p personal | lines | split column '     '
+cheat -l -p personal | lines | split column \s+
+cheat -l -p personal | lines | split-regex column \s+
+cheat -l -p personal | lines | split list \s+
+cheat -l -p personal | lines | split list ' '
+cheat -l -p personal | lines | split column '\s+'
+cheat -l -p personal | lines | each { $it | split-regex '\s+' }
+cheat -l -p personal | lines | each { $it | replace-regex '\s+' ' ' }
+cheat -l -p personal | lines | each { <\n>    $it | replace-regex '\s+' ' '<\n>}
+cheat -l -p personal | lines | each { <\n>    $it | replace-regex '\s+' ' ' | split " " | get 0, 1, 2 <\n>} | into table title, file, tags
+cheat -l -p personal | lines | each { <\n>    $it | replace-regex '\s+' ' ' | split column " " | get 0, 1, 2 <\n>} | into table title, file, tags
+cheat -l -p personal | lines | each { $it | replace-regex '\s+' ' ' }
+cheat -l -p personal | lines | split column '     '
+cheat -l -p personal | lines | split column ' '
+cheat -l -p personal
+cheat -l -p personal | lines | split column ' '
+cheat -l -p personal | lines | each { |line| $line | str replace -r '\s+' ' ' }
+cheat -l -p personal | lines | each { |line| $line | str replace -r '\s+' ' ' } | split column ' '
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' '
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename column0 title column1 file column2 tags
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+intelli-shell completion new --command "cheat -p personal -e" "cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split<\n>   column ' ' | skip 1 | rename title file tags | get title"
+intelli-shell completion new --command "cheat -p personal -e" "nu -c \"cheat -l -p personal | lines | each { |line| \$line | str replace -ra '\\\\s+' '<\n>   ' } | split column ' ' | skip 1 | rename title file tags | get title\""
+intelli-shell completion new --command "cheat -p personal -e" options "nu -c \"cheat -l -p personal | lines | each { |line| \$line | str replace -ra<\n>  '\\\\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title\""
+intelli-shell completion new --command "cheat -p personal -e" options cheat-personal-titles
+intelli-shell completion new --command git branch "git branch --format='%(refname:short)'"
+git branch
+git {{branch}}
+z
+z groc
+pwd
+git {{branch}}
+git branch
+gco
+gb
+gb asdf
+gb asdf435435
+gb
+git branch
+gco
+git branch
+intelli-shell new "git checkout {{branch" --alias "cl" --description "cheat list"
+intelli-shell new "git checkout {{branch}}"  --description "test"
+git checkout asdf435435
+intelli-shell new "cheat -l {{branch}}" --alias "cl" --description "cheat list"
+cl
+intelli-shell completion list
+intelli-shell completion remove
+intelli-shell completion new --command "cheat -p personal -e" options "nu -c \"cheat -l -p personal | lines | each { |line| \$line | str replace -ra<\n>  '\\\\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title\""
+exit
+intelli-shell completion new --command "cheat -p personal -e {{cheatsheets}}" options "nu -c \"cheat -l -p personal | lines | each { |line| \$line | str replace -ra<\n>  '\\\\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title\""
+exit
+intelli-shell completion new --command cheat -p personal -e "nu -c \"cheat -l -p personal | lines | each { |line| \$line | str replace -ra<\n>  '\\\\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title\""
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+exit
+magic
+which magic
+exit
+magic
+intelli-shell completion new --command cheat -p personal -e "magic"
+intelli-shell completion new --command cheat -- -p personal -e "magic"
+intelli-shell completion new --command cheat -- -p personal -- -e "magic"
+intelli-shell completion new --command cheat -p personal -e "magic"
+intelli-shell completion new --command "cheat -p personal -e" "magic"
+intelli-shell completion new --command cep "magic"
+git branch --format='%(refname:short)'
+z
+z groc
+git branch --format='%(refname:short)'
+intelli-shell completion new --command "cheat -p personal -e" options "magic"
+intelli-shell completion new --command "cheat -p personal -e" options "nu -c magic"
+intelli-shell completion new --command "cheat -p personal -e" options cheat-personal-titles
+cheat -p personal -e
+intelli-shell new "cheat -p personal -e {{sheet}}"  --description "asdfasdf"
+cheat -p personal -e doesthiswork
+intelli-shell completion list
+intelli-shell completion remove cheat-personal-e
+intelli-shell completion delete cheat-personal-e
+intelli-shell completion delete
+intelli-shell completion delete --help
+intelli-shell completion delete cheat-personal-e
+intelli-shell completion list
+intelli-shell completion delete --command cheat-personal-titles
+intelli-shell completion delete --command cheat-personal-e
+intelli-shell completion delete --command sheet: cheat-personal-titles
+intelli-shell completion delete --command "sheet: cheat-personal-titles"
+intelli-shell completion delete 1
+intelli-shell completion list
+intelli-shell completion delete --command cheat-personal-e sheet
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+magic
+intelli-shell completion new --command cep magic
+intelli-shell completion new --command cep sheet magic
+intelli-shell completion list
+intelli-shell completion delete --command magic sheet
+intelli-shell completion delete --command sheet magic
+intelli-shell completion delete --command magic sheet
+intelli-shell completion list
+intelli-shell completion delete --command magic sheet
+intelli-shell completion delete --command cep sheet
+magic
+which magic
+magic
+cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+intelli-shell completion new --command cep sheet cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+intelli-shell completion new --command cep sheet cheat -l -- -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+intelli-shell completion new --command cep sheet cheat -- -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+intelli-shell completion new --command cep sheet cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' | skip 1 | rename title file tags | get title
+intelli-shell completion new --command cep sheet "cheat -l -p personal | lines | each { |line| $line | str replace -ra '\s+' ' ' } | split column ' ' |<\n>   skip 1 | rename title file tags | get title"
+intelli-shell completion new --command cep sheet 'cheat -l -p personal | lines | each { |line| $line | str replace -ra "\s+" " " } | split column " " |<\n>   skip 1 | rename title file tags | get title'
+intelli-shell new "cheat -p personal -e {{sheet}}" --alias cep --description "Add or edit personal sheet"
+intelli-shell completion delete --command cep sheet
+intelli-shell completion new --command cep sheet 'cheat -l -p personal | lines | each { |line| $line | str replace -ra "\s+" " " } | split column " " |<\n>   skip 1 | rename title file tags | get title | each { print $it }'
+intelli-shell completion delete --command cep sheet
+intelli-shell completion new --command cep sheet 'cheat -l -p personal | lines | each { |line| $line | str replace -ra "\s+" " " } | split column " " |<\n>   skip 1 | rename title file tags | get title | str join (char newline)'
+exit
+exit
+intelli-shell config
+exit
+intelli-shell new "cheat -p personal -e {{}}" --alias cep --description "Add or edit personal sheet"
+intelli-shell completion list
+intelli-shell completion delete cep sheet
+intelli-shell completion delete --command cep sheet
+intelli-shell completion list
+intelli-shell completion delete --command git branch
+intelli-shell completion list
+intelli-shell import commands.txt
+z
+z intelli-shell
+intelli-shell import commands.txt
+intelli-shell completion list
+intelli-shell import commands.txt
+intelli-shell completion list
+intelli-shell list
+intelli-shell command list
+intelli-shell bookmark list
+intelli-shell search list
+intelli-shell import commands.txt
+intelli-shell search list
+intelli-search
+intelli-shell search
+exit
+iic
+cheat -l -p personal
+cheat list
+cheat -l
+cheat -l -p personal | ov
+atuin
+atuin history list
+atuin history list | ov -n
+atuin history list | less
+atuin history list --format "{time} {command}" | ov -n -l
+ov --help
+atuin history list --format "{time} {command}" | ov -n -l --column-rainbow
+atuin history list --format "{time} {command}" | ov -n -l --column-rainbow -C
+atuin history list --format "{time} {command}" | ov -n -l --column-rainbow -c
+atuin history list --format "{time} {command}" | ov -n -l
+exit
+atuin history list --format "{time} {command}" | ov -n -l
+cursor-agent
+exit
+iic
+exit
+iic
+cursor-agent
+exit
+iic
+nv
+iic
+cheat -l -p personal --tag lazy
+cheat -l -p personal
+cheat -l -p personal | ov
+cld
+cld | ov -n
+cld | ov -n -l
+ov --help
+clp
+cl
+exit
+iic
+cheat -l -p personal --tag dev | ov -n -l
+cheat -l -p personal --tag dev | ov -n
+cheat -l -p personal --tag dev | ov -n -l
+clp
+which clp
+cheat -l -p personal | ov -n -l
+clp
+cl
+ahl
+cl
+exit
+ahl
+cl
+exit
+ahl
+clp
+ca
+exit
+exit
+cheat -p personal -e gh-dash
+iic
+clp
+exit
+iic
+clp
+iic
+dysk
+btm
+gg
+devbox global add serie@latest
+serie
+z groc
+serie
+pwd
+..
+ls
+cd devbox-env/
+ls
+bat devbox.json
+..
+git clone git@github.com:lusingander/serie.git
+serie/
+serie
+glog
+git log --graph
+..
+rm -rf serie/
+git clone git@github.com:redlib-org/redlib.git
+redlib
+z redlib
+serie
+git log --graph
+serie
+serie -p iterm
+serie -p kitty
+serie -g single
+zsh
+exit
+z redlib
+serie
+exit
+serie --preload
+z redlib
+devbox global add git-graph@latest
+devbox global add git-graph@0.7.0
+devbox global add git-graph@0.6.0
+brew install git-graph
+git-graph
+lazygit
+brew rm git-graph
+devbox global rm git-graph
+exit
+task
+iic
+devbox global add timewarrior@1.9.1
+timew
+cep lazygit
+exit
+iic
+which pi
+exit
+iic
+py
+python
+which g
+iic
+cheat -l -p personal | ov -n -l
+iic
+exit
+fd akali
+find akali
+find | akali
+fd akali
+exit
+rg
+rg akali
+z
+rg akali
+fzf
+rg Sergi
+macchina
+btm
+bottom
+broot
+groc
+z groc
+touch asdf.txt
+gst
+difftastic
+dust
+du
+ca
+exit
+zsh
+la
+zsh
+clear
+zsh
+clear
+iic
+ls -lAh
+iic
+lsd -lAh
+la
+ls -lAh
+ls -la
+la
+ls
+exit
+procs
+tldr procs
+procs --tree
+procs
+which tldr
+tealdeer
+onefetch
+which zj
+which zoxide
+zoxide
+gh
+gh --version
+iic
+gh-markdown-preview
+clp
+which gh-poi
+iic
+gh-poi --dry-run
+devbox global rm gcalcli
+which ds
+exit
+iic
+ds gcalcli
+starship
+zsh
+tldr yt-dlp
+btm
+z bachata
+yt-dlp -x --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=9jDjwLmASVo"
+iic
+exit
+tg
+exit
+ca
+clear
+asdf
+exit
+dgr cursor-cli
+exit
+dgr cursor-cli
+brew install cursor-cli
+ca
+brew rm cursor-cli
+ca
+exit
+dga cursor-cli
+cursor-cli
+ov
+dgr serie
+tg
+exit
+zsh
+nu config
+btm
+gh extensions list
+exit
+btm
+a
+exit
+exit
+exit
+gh config
+gh config path
+gh config list
+git config --global
+git config
+nvim
+difftastic
+difft
+gh-dash
+gh
+gh-dash
+gh extensions
+gh extension install dlvhdr/gh-enhance
+gh-enhance
+gh gh-enhance
+gh enhance
+gh enhance --help
+groc
+z groc
+gh enhance 1
+gh enhance 200
+gh enhance Sergih28/groc
+gh enhance -R Sergih28/groc
+gh enhance
+gh enhance -R "Sergih28/groc"
+gh enhance -R groc
+gh enhance -R Sergih28 groc
+gst
+git -c diff.external=difft show --ext-diff
+nv CHANGELOG.md
+git -c diff.external=difft show --ext-diff
+g diff
+glog
+g log
+git -c diff.external=difft show --ext-diff
+git show
+git -c diff.external=difft show --ext-diff
+git -c diff.external=difft log --ext-diff
+git -c diff.external=difft log --ext-diff -p src
+git -c diff.external=difft log -p --ext-diff
+git diff
+lazygit
+exit
+exit
+g diff
+gh-dash
+exit
+gh-dash
+exit
+git diff
+exit
+which gd
+which ghd
+ghd
+z
+delta
+which delta
+which difft
+ghd
+exit
+git -c diff.external=difft log -p --ext-diff
+z groc
+git -c diff.external=difft log -p --ext-diff
+exit
+nv
+z
+lazygit
+nv .config/lazygit/config.yml
+nv .config
+exit
+lazygit
+nv .config
+exit
+exit
+nv .config
+lazygit
+dga diffnav@latest
+diffnav
+exit
+lazygit
+lg
+lazygit
+exit
+ghd
+lg
+config nu
+exit
+which cx
+ghd
+ghd --version
+exit
+ghd
+z groc
+ghd
+..
+z simracing-planner/
+ghd
+..
+z groc
+ghd
+z groc
+ghd
+exit
+exit
+exit
+nv .config/lazygit/
+ghd
+exit
+ghd
+zellij new groc
+zellij --help
+zellij -c ~/Documents/projects
+zellij -s ~/Documents/projects
+zellij -s "~/Documents/projects"
+zellij --cwd ~/Documents/projects
+zellij -- --cwd ~/Documents/projects
+zellij options --default-cwd ~/Documents/projects
+exit
+nvim ~/.config
+exit
+nv
+exit
+z projects
+ls
+mkdir sergi
+mkdir other
+mv Sergih28 other
+ls
+cd other/
+ls
+mv Sergih28 ../sergi/
+ls
+..
+z sergi/
+lsd
+ls
+..
+ls
+cd devbox-env/
+ls
+cat devbox.json
+lsa
+lsd -lAh
+gst
+glog
+g log
+..
+rm devbox-env/
+rm -rf devbox-env/
+ls
+mv dotfiles/ sergi/
+ls
+mv groc sergi/
+ls
+mv groc_old/ sergi/
+mv simracing-planner/ sergi/
+ls
+mv testing-debugging/ sergi/
+ls
+z qwik-city-test/
+ls
+gst
+g log
+..
+ls
+rm -rf qwik-city-test/
+rm -rf redlib/
+mv `simracing-planner copy/` sergi/
+ls
+cd other/
+ls
+..
+cd sergi/
+ls
+..
+z
+nvim .config/gh-dash/
+broot
+z proj
+z projects
+z pro
+config nu
+z projects
+z
+nvim .config/gh-dash/
+config nu
+nvim .config/zellij
+gh extension list
+gh dash
+exit
+gh dahs
+gh dash
+nv .config/zellij/
+z projects
+z other/
+gh repo clone Sergih28/zjstatus
+gh repo set-default --help
+ls
+z zjstatus
+z projects
+z zjstatus
+z other/
+z zjstatus/
+nvim .config/gh-
+nvim .config/gh-dash
+z
+nvim .config/gh-dash
+nvim .config/intelli-shell/commands.txt
+iic
+which dgu
+exit
+dgu
+which ghi
+exit
+ghel
+exit
+ghel
+exit
+ghel
+ghei
+dgl
+dglo
+config nu
+iic
+gh extension list
+exit
+devbox global add superfile
+superfile
+spf
+cursor-agent
+nv .config/intelli-shell/commands.txt
+cheat bat
+which cheat
+cheat gh
+cheat devbox
+pwd
+mkdir ai-ask
+ls
+exit
+nv .config/zellij/config.kdl
+nv .config/zellij/layouts/layout_main.kdl
+z proj
+ls
+cd sergi/
+ls
+cd dotfiles/
+ls
+lsa
+la
+gst
+z proj
+z dotfiles
+pwd
+cp -r .config/nvim .config/nvim
+cp -r ~/.config/nvim .config/nvim
+cp -r ~/.config/nvim .config
+rm -rf ~/.config/nvim
+cp .config/nvim ~/.config/nvim
+cp -r .config/nvim ~/.config/nvim
+exit
+git tag
+git tag -a v0.0.2 32ea31d4
+git tag --help
+git tag -a v0.0.2 32ea31d4 --cleanup=whitespace
+git tag -a v0.0.1 a3b698a --cleanup=whitespace
+git tag -a v0.0.2 32ea31d4 --cleanup=whitespace
+config nu
+z
+exit
+devbox path
+devbox
+dgu
+brew update
+nvim .config/nushell/
+zellij -V
+devbox search mise
+dga github:anomalyco/opencode
+brew upgrade
+which mole
+exit
+mole
+brew bundle dump
+brew bundle --help
+ls
+bat Brewfile
+devbox global list
+macchina
+brew install mise
+mise -v
+mise use --help
+exit
+brew bundle dump --describe
+bat Brewfile
+macchina
+dgr macchina
+brew list
+z
+bat Brewfile
+rm -rf Brewfile
+exit
+bat Brewfile
+brew bundle dump --describe
+brew bundle dump --describe --force
+macchina
+exit
+brew remove isync
+mise use -g macchina
+mise use -g aqua:Macchina-CLI/macchina
+z .config/mise/
+bat config.toml
+ls
+lsd -la
+macchina
+which macchina
+ls -la
+nv config.toml
+mise self-update
+mise -g update
+lsa
+ls
+ls -la
+mise install -g
+mise install
+mise use -g aqua:Macchina-CLI/macchina
+ls -la
+nv config.toml
+macchina
+mise use -g aqua:Macchina-CLI/macchina
+ls -la
+lsd -lAh
+mise lock -g
+mise lock
+ls -la
+nv mise.lock
+which macchina
+macchina
+config nu
+dbl
+dgl
+dgr bat
+bat config.toml
+mise use -g bat
+nv mise.lock
+bat config.toml
+dgr superfile
+superfile
+exit
+exit
+exit
+exit
+mise use -g superfile
+superfile
+z .config/mise/
+superfile
+which superfile
+which macchina
+macchina
+superfile
+which superfile
+sfile
+mise use -g superfile@latest
+superfile
+exit
+zsh
+spf
+nv .config/zellij/layouts/layout_main.kdl
+nv ~/.config/zellij/layouts/layout_main.kdl
+exit
+which spf
+spf
+exit
+mise ls -g
+echo $PATH
+echo $env.PATH
+macchina
+mise activate nushell
+exit
+confign u
+config nu
+macchina
+spf
+exit
+config nu
+dgl
+brew list
+mise ls -g
+which dust
+dust
+dust --help
+z groc
+which zoxide
+zoxide
+config nu
+z groc
+exit
+z groc
+z Documents/projects/sergi/groc/
+z
+z groc
+du
+dust
+exit
+dgr dust
+dust
+exit
+mise use -g dust
+z groc
+dust
+which dust
+mise ls -g
+tg
+dgr tg
+which ca
+dgr cursor-cli
+ca
+mise use -g cursor-cli
+mise search cursor
+z
+z mise
+nv config.toml
+mise run cursor-install
+which ca
+ca
+which agent
+agent
+cursor-agent
+cursor-cli
+exit
+z
+z mise
+zsh
+nv config.toml
+exit
+macchina
+opencode
+mise use -g opencode
+exit
+exit
+exit
+exit
+nu --version
+mise use -g nushell
+mise use --help
+mise use -g --help
+mise use -g github:nushell/nushell
+which nu
+nu --version
+exit
+nu
+nu --version
+exit
+dgl
+dgr nushell
+which nu
+dgl
+nv ../ghostty/config
+dgr lazygit
+mise use -g lazygit
+dgr lazydocker
+mise use -g lazydocker
+dgl
+mise use -g ripgrep
+dgr ripgrep
+mise use -g bottom
+dgr bottom
+mise ls -g
+mise use -g lazysql
+dgr lazysql
+mise use -g aqua:nushell/nushell
+mise ls -g
+mise uninstall --help
+mise uninstall -g github:nushell/nushell
+mise uninstall github:nushell/nushell
+which nu
+nv ../ghostty/config
+which nu
+nv ../ghostty/config
+mise ls -g
+nv config.toml
+mise ls -g
+mise use -g lazysql
+mise use -g aqua:jorgerojas26/lazysql
+lazysql
+dgl
+mise use -g lsd
+mise use -g diffnav
+dgr lsd
+mise use -g aqua:dlvhdr/diffnav
+dgr diffnav
+dgl
+mise use -g nodejs
+mise use -g node
+mise use -g node --verbose
+mise use -g gh
+dgr gh
+mise use -g starship
+dgr starship
+mise use -g yt-dlp
+mise ls -g
+dgl
+mise use -g atuin
+mise use -g github:atuinsh/atuin
+which atuin
+exit
+dgr atuin
+z .local/share/mise
+exit
+cd .local
+mise uninstall github:atuinsh/atuin
+which atuin
+dgi atuin
+dga atuin
+which atuin
+exit
+exit
+exit
+which atuin
+exit
+dgl
+mise use -g timewarrior
+mise use -g timew
+mise use -g github:GothenburgBitFactory/timewarrior
+which timew
+dgr timewarrior
+which timew
+timewarrior
+which timewarrior
+mise uninstall github:GothenburgBitFactory/timewarrior
+nv .config/mise/config.toml
+mise ls -g
+dgi timewarrior
+dga timewarrior
+dgl
+mise use -g ov
+mise use -g aqua:noborus/ov
+dgr ov
+cheat -l -p personal --tag lazy | ov -n -l
+exit
+mise use -g cheat
+dgr cheat
+which cheat
+dgl
+which yt-dlp
+mise use -g zellij
+dgr yt-dlp
+dgr zellij
+dgl
+exit
+exit
+zsh
+exit
+dgr neovim
+mise use -g neovim@0.11.0
+dgl
+mise use -g taskwarrior
+mise use -g fzf
+mise use -g pnpm
+which pnpm
+pnpm --version
+dgr fzf
+mise use -g git
+dgr pnpm
+mise use -g jq
+dgr jq
+dgr neomutt@20260105
+mise ls -g
+dgl
+mise use -g bun
+mise use -g python
+dgr bun
+mise use -g yarn
+yarn --version
+mise uninstall yarn
+nv .config/mise/config.toml
+dgr python
+cd ai-ask/
+mise use -g fd
+brew list
+mise ls -g
+which cursor
+which cursor-cli
+cursor-agent
+agent
+brew install --cask cursor-cli
+agent
+cursor-agent
+dgr fd
+dgr nodejs
+ca
+sudo ca
+sudo cursor-agent
+brew install node
+ca
+dgl
+brew list
+z mise
+bat config.toml
+mise ls --installed -g
+mise uninstall -g --all
+mise uninstall --all
+nvim Brewfile
+brew bundle install
+bat config.toml
+cat config.toml
+vi config.toml
+mise use -g neovim@0.11.0
+nvim
+nvim Brewfile
+vi Brewfile
+mise -g list
+mise ls -g
+brew bundle install
+git --version
+which git
+git --version
+z ai
+bat /Users/sergi/Library/Application\ Support/atuin/history.db
+z
+cd `Library/Application Support/`
+z ai
+brew bundle install
+sqlite3 ~/Library/Application\ Support/atuin/history.db
+codex
+exit
+z  ~/.local/share/atuin
+ls
+cp history.db history.db.bak
+sqlite3 history.db
+rm -rf history.db
+exit
+opencode
+ca
+cursor-agent
+z ai
+nv Brewfile
+brew bundle install
+which cursor-agent
+brew rm cursor-cli
+dga cursor-cli
+dgl
+z ai
+brew bundle install
+z ai
+gemini-cli
+gemini
+claude
+opencode -V
+opencode -v
+mise ls -g
+mise use -g opencode
+opencode -v
+ca -v
+dgr cursor-cli
+z ai
+brew bundle install
+agent -v
+cursor-agent -v
+ca -v
+codex -v
+codex -V
+gemini -V
+gemini -v
+claude -v
+opencode web
+man zellij
+zellij --help
+zellij la
+zellij ls
+exit
+atuin
+autin doctor
+atuin doctor
+atuin list
+atuin history
+atuin history list --format "{time} {command}" | ov -n -l
+atuin history list --format "{time} {command}"
+z
+z sergi
+g clone git@github.com:Sergih28/foodies-organizer.git
+opencode --prompt --help
+npx skills add https://github.com/github/awesome-copilot --skill conventional-commit
+npx skills add https://github.com/remix-run/agent-skills --skill react-router-framework-mode
+npx skills add https://github.com/thebushidocollective/han --skill playwright-bdd-step-definitions
+npx skills add https://github.com/thebushidocollective/han --skill playwright-bdd-gherkin-syntax
+npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
+npx skills add https://github.com/anthropics/skills --skill skill-creator
+z
+z .agents
+ls
+z skills
+ls
+npx skills add https://github.com/anthropics/skills --skill frontend-design
+npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
+npx skills add https://github.com/squirrelscan/skills --skill audit-website
+npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill radix-ui-design-system
+iic
+mise ls -g
+z ai
+ls
+brew bundle dump
+iic
+brew list
+brew list --help
+brew list --installed-as-dependency
+brew list --installed-on-request
+brew list --formula
+brew list --cask
+iic
+brew list --casks
+iic
+brew list --installed-on-request
+dgl
+mlg
+mug
+which mug
+iic
+mise ls -g
+mise use -g
+opencode -v
+brew upgrade
+brew update
+opencode
+opencode pr --help
+opencode --prompt "Who am I?"
+opencode --prompt --help
+opencode --prompt who-am-i
+opencode --prompt review-pr-for-this-branch
+opencode --prompt "i am a message"
+opencode --command review-pr-for-this-branch
+opencode run "hello"
+opencode --prompt "hi there"

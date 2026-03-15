@@ -1,3 +1,30 @@
+# [alias:bli] List manually installed packages #brew
+brew list --installed-on-request
+
+# [alias:blic] List installed casks #brew
+brew list --casks
+
+# [alias:bl] List all installed packages #brew
+brew list
+
+# [alias:bbdf] Generate and replace Brewfile #brew
+brew bundle dump --force
+
+# [alias:bbd] Generate Brewfile #brew
+brew bundle dump
+
+# [alias:bbi] Install Brewfile packages #brew
+brew bundle install
+
+# [alias:mlg] List global packages #mise
+mise ls -g
+
+# [alias:mug] Install global package (shows fzf list) #mise
+mise use -g
+
+# [alias:mug] Install global package #mise
+mise use -g {{package}}
+
 # [alias:ghel] List gh extensions #github
 gh extension list
 
