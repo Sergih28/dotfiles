@@ -3,12 +3,3 @@ lockfile = true
 
 [tools]
 neovim = "0.11.0"
-opencode = "latest"
-
-[tasks.cursor-install]
-description = "Install Cursor CLI"
-run = "curl https://cursor.com/install -fsS | bash"
-
-[tasks.cursor-update]
-description = "Update Cursor CLI"
-run = "~/.local/bin/cursor-agent update || true"

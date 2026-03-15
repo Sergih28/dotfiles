@@ -479,6 +479,55 @@ url = "https://github.com/atuinsh/atuin/releases/download/v18.13.0/atuin-server-
 url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/373696970"
 provenance = "github-attestations"
 
+[[tools."github:christo-auer/eilmeldung"]]
+version = "1.1.0"
+backend = "github:christo-auer/eilmeldung"
+
+[tools."github:christo-auer/eilmeldung"."platforms.linux-arm64"]
+checksum = "sha256:2f0d52870cadfec5d5a4404d760feca174d741a8b7b8845e317b40f12d85d1bd"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-aarch64-unknown-linux-musl-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431528"
+
+[tools."github:christo-auer/eilmeldung"."platforms.linux-arm64-musl"]
+checksum = "sha256:2f0d52870cadfec5d5a4404d760feca174d741a8b7b8845e317b40f12d85d1bd"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-aarch64-unknown-linux-musl-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431528"
+
+[tools."github:christo-auer/eilmeldung"."platforms.linux-x64"]
+checksum = "sha256:d31d974bf70fac2b59635f7fa489a3f51bfddfea5411b089d581a0f13824d195"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-x86_64-unknown-linux-musl-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431532"
+
+[tools."github:christo-auer/eilmeldung"."platforms.linux-x64-baseline"]
+checksum = "sha256:d31d974bf70fac2b59635f7fa489a3f51bfddfea5411b089d581a0f13824d195"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-x86_64-unknown-linux-musl-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431532"
+
+[tools."github:christo-auer/eilmeldung"."platforms.linux-x64-musl"]
+checksum = "sha256:d31d974bf70fac2b59635f7fa489a3f51bfddfea5411b089d581a0f13824d195"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-x86_64-unknown-linux-musl-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431532"
+
+[tools."github:christo-auer/eilmeldung"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:d31d974bf70fac2b59635f7fa489a3f51bfddfea5411b089d581a0f13824d195"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-x86_64-unknown-linux-musl-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431532"
+
+[tools."github:christo-auer/eilmeldung"."platforms.macos-arm64"]
+checksum = "sha256:ca0f5e68647ae4d0cf6104bfd783d5cd9a63dfb2fab42cfe0345dc0015372c9e"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-aarch64-apple-darwin-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431529"
+
+[tools."github:christo-auer/eilmeldung"."platforms.macos-x64"]
+checksum = "sha256:a33767c745ae3bc551a1a691344ef696eac14cc9d6f466bfc221700b4eb87a29"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-x86_64-apple-darwin-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431531"
+
+[tools."github:christo-auer/eilmeldung"."platforms.macos-x64-baseline"]
+checksum = "sha256:a33767c745ae3bc551a1a691344ef696eac14cc9d6f466bfc221700b4eb87a29"
+url = "https://github.com/christo-auer/eilmeldung/releases/download/1.1.0/eilmeldung-x86_64-apple-darwin-1.1.0.tar.gz"
+url_api = "https://api.github.com/repos/christo-auer/eilmeldung/releases/assets/371431531"
+
 [[tools."github:nushell/nushell"]]
 version = "0.111.0"
 backend = "github:nushell/nushell"
