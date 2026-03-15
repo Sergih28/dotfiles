@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "plan",
+  "autoupdate": true,
+  "command": {
+    "review-pr-for-this-branch": {
+      "template": "@code-reviewer Review PR for this branch",
+      "description": "Review PR with code-reviewer custom agent",
+      "agent": "plan"
+    }
+  },
+  "agent": {
+    "code-reviewer": {
+      "description": "Reviews code for best practices and potential issues",
+      "mode": "subagent",
+      "prompt": "You are a code reviewer. Focus on security, performance and mantainability. Keep in mind best practices. Check that commit messages comply with conventional commits. If you find a security issue, delegate to @security-engineer",
+      "tools": {
+        "write": false,
+        "edit": false
+      }
+    },
+    "security-engineer": {
+      "description": "Reviews code security",
+      "mode": "subagent",
+      "prompt": "You are a security engineer. Focus on security, you'll be given tasks to figure out whether there's a risky code snippet, or a CVE we need to address with versions",
+      "tools": {
+        "write": false,
+        "edit": false
+      }
+    }
+  }
+}
