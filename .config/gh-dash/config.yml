@@ -87,10 +87,14 @@ keybindings:
       command: >
         cd {{.RepoPath}}; lazygit
   prs:
-    - key: C
-      name: code review
+    - key: K
+      name: code review with octo
       command: >
         zellij action new-pane -n "{{.RepoName}} ({{.RepoPath}}) - PR #{{.PrNumber}} Code Review" --stacked -- nu -c "cd {{.RepoPath}};nvim -c \":silent Octo pr {{.PrNumber}}\""
+    - key: C
+      name: code review with AI
+      command: >
+        zellij action new-pane -n "{{.RepoName}} ({{.RepoPath}}) - PR #{{.PrNumber}}  Code Review" --stacked -- nu -c "cd {{.RepoPath}};opencode pr {{.PrNumber}}"
     - key: T
       name: view actions
       command: gh enhance -R {{.RepoName}} {{.PrNumber}}
