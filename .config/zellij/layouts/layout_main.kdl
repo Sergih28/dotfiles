@@ -26,11 +26,15 @@ layout {
     }
 
     new_tab_template {
-        default-with-time
+        top-bar-with-time
     }
 
     tab name="" {
-        default-with-time
+        top-bar-with-time
+        pane name=""
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
     tab name="" {
         top-bar-with-time
