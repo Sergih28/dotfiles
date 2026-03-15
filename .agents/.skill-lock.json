@@ -102,6 +102,15 @@
       "skillFolderHash": "46d356b631ccbfa6d71b1d30c8d7d06df2042200",
       "installedAt": "2026-03-15T01:27:42.196Z",
       "updatedAt": "2026-03-15T01:27:42.196Z"
+    },
+    "code-review-excellence": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+      "skillFolderHash": "01df909b77da6e637490582b2899447eed1786bd",
+      "installedAt": "2026-03-15T13:35:16.605Z",
+      "updatedAt": "2026-03-15T13:35:16.605Z"
     }
   },
   "dismissed": {
