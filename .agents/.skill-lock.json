@@ -1,0 +1,121 @@
+{
+  "version": 3,
+  "skills": {
+    "conventional-commit": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/github/awesome-copilot.git",
+      "skillPath": "skills/conventional-commit/SKILL.md",
+      "skillFolderHash": "2dd6528ab4c12198e4805ea62739f7c51d0dd51d",
+      "installedAt": "2026-03-15T01:06:20.656Z",
+      "updatedAt": "2026-03-15T01:06:20.656Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-03-15T01:06:27.566Z",
+      "updatedAt": "2026-03-15T01:06:27.566Z"
+    },
+    "react-router-framework-mode": {
+      "source": "remix-run/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/remix-run/agent-skills.git",
+      "skillPath": "skills/react-router-framework-mode/SKILL.md",
+      "skillFolderHash": "08ac3f4e80ca73ecd37b86fcdb83124a7bec5000",
+      "installedAt": "2026-03-15T01:10:41.250Z",
+      "updatedAt": "2026-03-15T01:10:41.250Z"
+    },
+    "playwright-bdd-step-definitions": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/thebushidocollective/han.git",
+      "skillPath": "plugins/tools/playwright-bdd/skills/playwright-bdd-step-definitions/SKILL.md",
+      "skillFolderHash": "b58a123c9720ebed1bfb6064d748a71066d180ac",
+      "installedAt": "2026-03-15T01:18:44.232Z",
+      "updatedAt": "2026-03-15T01:18:44.232Z"
+    },
+    "playwright-bdd-gherkin-syntax": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/thebushidocollective/han.git",
+      "skillPath": "plugins/tools/playwright-bdd/skills/playwright-bdd-gherkin-syntax/SKILL.md",
+      "skillFolderHash": "bf8748fae0f4c121a2849fad23fd822b5950bbb7",
+      "installedAt": "2026-03-15T01:21:17.169Z",
+      "updatedAt": "2026-03-15T01:21:17.169Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-03-15T01:21:32.996Z",
+      "updatedAt": "2026-03-15T01:21:32.996Z"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "98a510d1cfef9f82c3b1eec200229ca68725e613",
+      "pluginName": "example-skills",
+      "installedAt": "2026-03-15T01:23:59.127Z",
+      "updatedAt": "2026-03-15T01:23:59.127Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "pluginName": "example-skills",
+      "installedAt": "2026-03-15T01:24:32.427Z",
+      "updatedAt": "2026-03-15T01:24:32.427Z"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+      "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "skillFolderHash": "75e1acaafe8b08e59d4b86fc253ac7873aff6bba",
+      "pluginName": "ui-ux-pro-max",
+      "installedAt": "2026-03-15T01:25:24.827Z",
+      "updatedAt": "2026-03-15T01:25:24.827Z"
+    },
+    "audit-website": {
+      "source": "squirrelscan/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/squirrelscan/skills.git",
+      "skillPath": "audit-website/SKILL.md",
+      "skillFolderHash": "ec491d7739b80f4c64126ae674384cbbcac953ae",
+      "installedAt": "2026-03-15T01:27:29.153Z",
+      "updatedAt": "2026-03-15T01:27:29.153Z"
+    },
+    "radix-ui-design-system": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "skillPath": "skills/radix-ui-design-system/SKILL.md",
+      "skillFolderHash": "46d356b631ccbfa6d71b1d30c8d7d06df2042200",
+      "installedAt": "2026-03-15T01:27:42.196Z",
+      "updatedAt": "2026-03-15T01:27:42.196Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp"
+  ]
+}
