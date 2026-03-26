@@ -76,6 +76,8 @@ alias blic = brew list --casks
 alias bbi = brew bundle install
 alias bbd = brew bundle dump
 alias bbdf = brew bundle dump --force
+alias bu = brew update
+alias bU = brew upgrade
 
 def ahl [] {
   atuin history list --format "{time} {command}" | ov -n -l
