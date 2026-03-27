@@ -5,36 +5,43 @@
 ### Homebrew
 
 Install Homebrew:
-```nushell
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Install packages from Brewfile:
-```nushell
+```bash
 brew bundle install
+```
+
+### Oh My Zsh
+
+Install Oh My Zsh:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### Mise
 
 Install mise:
-```nushell
+```bash
 curl https://mise.run | sh
 ```
 
 Install global tools from config:
-```nushell
+```bash
 mise install
 ```
 
 ### Devbox
 
 Install devbox:
-```nushell
+```bash
 curl -fsSL https://get.jetify.com/devbox | bash
 ```
 
 Install global packages from devbox.json:
-```nushell
+```bash
 devbox global update  # alias: dgu
 ```
 
@@ -45,19 +52,19 @@ Install DAP related things (more info in the dap plugin file).
 ## Updating Dependencies
 
 ### Homebrew
-```nushell
+```bash
 brew update
 brew upgrade
 brew bundle dump  # alias: bbd
 ```
 
 ### Mise
-```nushell
+```bash
 mise up
 ```
 
 ### Devbox
-```nushell
+```bash
 devbox global update  # alias: dgu
 ```
 
