@@ -1,6 +1,8 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.config"
+
 eval "$(devbox global shellenv)"
 eval "$(intelli-shell init zsh)"
-# eval "$(zellij setup --generate-auto-start zsh)"
 eval "$(zoxide init zsh)"
 
 INTELLI_SEARCH_HOTKEY=ctrl+i
@@ -12,13 +14,7 @@ alias zld="zellij --layout layout_dev"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export EDITOR="$HOME/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/nvim"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time Oh My Zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+export EDITOR="/usr/bin/vi"
 ZSH_THEME="apple"
 
 # Set list of themes to pick from when loading at random

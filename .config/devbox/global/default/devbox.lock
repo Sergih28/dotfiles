@@ -1,0 +1,153 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "atuin@latest": {
+      "last_modified": "2026-03-21T07:29:51Z",
+      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#atuin",
+      "source": "devbox-search",
+      "version": "18.13.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lmxiwij6zi09a7qi64rm7zlb3nybx92x-atuin-18.13.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lmxiwij6zi09a7qi64rm7zlb3nybx92x-atuin-18.13.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bz392xlzbzhfxpkmgwjgw6jrkhh9ap2k-atuin-18.13.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bz392xlzbzhfxpkmgwjgw6jrkhh9ap2k-atuin-18.13.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wpg3vs01pqqp2djlaj2jrx0whbqhfdsr-atuin-18.13.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wpg3vs01pqqp2djlaj2jrx0whbqhfdsr-atuin-18.13.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ys220g0fywwzbjwyw97crawpninkmg9c-atuin-18.13.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ys220g0fywwzbjwyw97crawpninkmg9c-atuin-18.13.3"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-03-23T13:48:00Z",
+      "resolved": "github:NixOS/nixpkgs/fdc7b8f7b30fdbedec91b71ed82f36e1637483ed?lastModified=1774273680&narHash=sha256-a%2B%2BtZ1RQsDb1I0NHrFwdGuRlR5TORvCEUksM459wKUA%3D"
+    },
+    "taskwarrior3@3.4.2": {
+      "last_modified": "2026-03-21T07:29:51Z",
+      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#taskwarrior3",
+      "source": "devbox-search",
+      "version": "3.4.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ph5w1jbafjqqpvy1gnncc8jhh345ss1x-taskwarrior-3.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ph5w1jbafjqqpvy1gnncc8jhh345ss1x-taskwarrior-3.4.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gpzj8kd8h04x92f2kcm5lbgncnz2w33v-taskwarrior-3.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gpzj8kd8h04x92f2kcm5lbgncnz2w33v-taskwarrior-3.4.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/95v1csx9fjy37ncvd81mg60qvgjk9lkq-taskwarrior-3.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/95v1csx9fjy37ncvd81mg60qvgjk9lkq-taskwarrior-3.4.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b1xq56s66aj7myrlfg8y3ckwgr3874a9-taskwarrior-3.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/b1xq56s66aj7myrlfg8y3ckwgr3874a9-taskwarrior-3.4.2"
+        }
+      }
+    },
+    "timewarrior@latest": {
+      "last_modified": "2026-03-21T07:29:51Z",
+      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#timewarrior",
+      "source": "devbox-search",
+      "version": "1.9.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y9drk9kw1vks1lzskhwv8ff2spr2iyj8-timewarrior-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/y9drk9kw1vks1lzskhwv8ff2spr2iyj8-timewarrior-1.9.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/76rvzq9jgnzvi65p185adrr2wzf8n5jy-timewarrior-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/76rvzq9jgnzvi65p185adrr2wzf8n5jy-timewarrior-1.9.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n6qjqibx29x7gy0wnch5gmzcxv5fdnfn-timewarrior-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n6qjqibx29x7gy0wnch5gmzcxv5fdnfn-timewarrior-1.9.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c0v8xvnbzb5fqaz6c0x3lcfqvq6vzjd0-timewarrior-1.9.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c0v8xvnbzb5fqaz6c0x3lcfqvq6vzjd0-timewarrior-1.9.1"
+        }
+      }
+    }
+  }
+}
