@@ -1,3 +1,4 @@
+$env.XDG_CONFIG_HOME = ($env.HOME | path join ".config")
 
 # Mise
 let line = 'use ($nu.data-dir | path join mise.nu)'
