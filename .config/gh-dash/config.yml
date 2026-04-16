@@ -108,9 +108,7 @@ keybindings:
       command: >
         gh issue unpin {{ .IssueNumber }} --repo {{ .RepoName }}
 repoPaths:
-  Sergih28/*: ~/Documents/projects/sergi/*
-  Sergih28/zjstatus: ~/Documents/projects/other/*
-  Sergih28/zellij-datetime: ~/Documents/projects/other/*
+  Sergih28/*: ~/Documents/projects/Sergih28/*
 theme:
     ui:
         sectionsShowCount: true
