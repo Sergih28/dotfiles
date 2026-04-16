@@ -119,6 +119,13 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "normal"
         }
+        bind "l" {
+            LaunchOrFocusPlugin "zellij:layout-manager" {
+                floating true
+                move_to_focused_tab true
+            }
+            SwitchToMode "normal"
+        }
         bind "Ctrl o" { SwitchToMode "normal"; }
         bind "p" {
             LaunchOrFocusPlugin "plugin-manager" {
@@ -270,20 +277,13 @@ plugins {
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
     }
-    with-clock location="file:~/.config/zellij/plugins/zellij-datetime.wasm" {
-        background_color "#89dceb"
-        foreground_color "#313244"
-        pane_color "#1E2030"
-        time_format "%I:%M %p"
-        timezone1 "WEST"
-    }
 }
 
 // Plugins to load in the background when a new session starts
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
-  "file:~/.config/zellij/plugins/zellij-datetime.wasm"
+    zellij:link
 }
 web_client {
     font "monospace"
@@ -295,6 +295,13 @@ web_client {
 //   - false (Default)
 // 
 // simplified_ui true
+ 
+// Enable OSC8 hyperlink output
+// Options:
+//   - true (Default)
+//   - false
+// 
+// osc8_hyperlinks true
  
 // Choose the theme that is specified in the themes section.
 // Default: default
@@ -309,7 +316,7 @@ theme "catppuccin-macchiato"
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
-default_shell "nu"
+default_shell "zsh"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
@@ -531,6 +538,22 @@ show_startup_tips false
 // default is true
 // advanced_mouse_actions false
  
+// Whether to enable mouse hover visual effects (frame highlight and help text)
+// default is true
+// mouse_hover_effects false
+ 
+// Whether to show visual bell indicators (pane/tab frame flash and [!] suffix)
+// default is true
+// visual_bell true
+ 
+// Whether to focus panes on mouse hover
+// default is false
+// focus_follows_mouse false
+ 
+// Whether clicking a pane to focus it also sends the click into the pane
+// default is false
+// mouse_click_through false
+ 
 // The ip address the web server should listen on when it starts
 // Default: "127.0.0.1"
 // (Requires restart)
@@ -547,3 +570,10 @@ show_startup_tips false
 // can be useful for removing wrappers around commands
 // Note: be sure to escape backslashes and similar characters properly
 // post_command_discovery_hook "echo $RESURRECT_COMMAND | sed <your_regex_here>"
+
+// Number of async worker tasks to spawn per active client.
+//
+// Allocating few tasks may result in resource contention and lags. Small values (around 4) should
+// typically work best. Set to 0 to use the number of (physical) CPU cores.
+// Note: This only applies to web clients at the moment.
+// client_async_worker_tasks 4

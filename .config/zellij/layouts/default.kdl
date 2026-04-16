@@ -1,14 +1,11 @@
 layout {
     pane_template name="default-with-time"{
         pane size=1 split_direction="vertical" {
-            pane size="75%" borderless=true {
+            pane borderless=true {
                 plugin location="zellij:tab-bar"
             }
-            pane size="35" borderless=true {
-                plugin location="with-clock"
-            }
         }
-        pane name=""
+        pane size="100%" name=""
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }

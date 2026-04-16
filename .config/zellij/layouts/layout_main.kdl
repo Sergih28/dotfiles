@@ -1,44 +1,40 @@
 layout {
     pane_template name="default-with-time" {
         pane size=1 split_direction="vertical" {
-            pane size="75%" borderless=true {
+            pane borderless=true {
                 plugin location="zellij:tab-bar"
             }
-            pane size="35" borderless=true {
-                plugin location="with-clock"
-            }
         }
-        pane name=""
+        pane size="100%" name=""
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
     }
 
     pane_template name="top-bar-with-time" {
-        pane size=1 split_direction="vertical" {
-            pane size="75%" borderless=true {
-                plugin location="zellij:compact-bar"
-            }
-            pane size="35" borderless=true {
-                plugin location="with-clock"
-            }
+        pane size=1 split_direction="vertical" borderless=true {
+            plugin location="zellij:compact-bar"
         }
     }
 
     new_tab_template {
         top-bar-with-time
+        pane size="100%" name=""
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
 
     tab name="" {
         top-bar-with-time
-        pane name=""
+        pane size="100%" name=""
         pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
     }
     tab name="" {
         top-bar-with-time
-        pane command="spf" borderless=true
+        pane size="100%" command="spf" borderless=true
     }
     tab name="" {
         top-bar-with-time
@@ -55,7 +51,7 @@ layout {
     }
     tab name="" {
         top-bar-with-time
-        pane command="nvim" borderless=true start_suspended=true
+        pane size="100%" command="nvim" borderless=true start_suspended=true
     }
     tab name="󱜿" {
         top-bar-with-time
@@ -86,15 +82,5 @@ layout {
             }
         }
     }
-
-    // tab name="󰃭" {
-    //     pane size=1 borderless=true {
-    //         plugin location="zellij:compact-bar"
-    //     }
-    //     pane borderless=true {
-    //         command "gcalcli"
-    //         args "agenda"
-    //     }
-    // }
 }
 
