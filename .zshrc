@@ -20,6 +20,7 @@ zstyle ':omz:update' frequency 1
 
 plugins=(git)
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 source $ZSH/oh-my-zsh.sh
 
