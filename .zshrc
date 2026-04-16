@@ -9,7 +9,8 @@ eval "$(mise activate zsh)"
 INTELLI_SEARCH_HOTKEY=ctrl+i
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="apple"
+# Empty theme so that starship is not overwritten by this
+ZSH_THEME=""
 
 export EDITOR="nvim"
 
