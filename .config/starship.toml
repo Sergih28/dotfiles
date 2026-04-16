@@ -62,7 +62,7 @@ truncation_symbol       = "*/"
 [git_branch]
 format                  = "[$symbol$branch ]($style)"
 style                   = "bold purple"
-symbol                  = " "
+symbol                  = " "
 
 [git_commit]
 format                  = " [\\($hash\\)]($style)"
@@ -107,7 +107,7 @@ style                   = "bold dimmed green"
 
 [nodejs]
 format                  = "[$symbol($version )]($style)"
-symbol                  = " "
+symbol                  = " "
 
 # ----- END OF NODEJS ----------------------------------------------------------
 
