@@ -21,7 +21,7 @@ style                   = "bold red"
 # Display discharing_symbol when capacity is between 10% and 30%
 [[battery.display]]
 threshold               = 30
-style                   = "bold yellow"
+style                   = "bold #F9E2AF"
 discharging_symbol      = "💦 "
 
 # Do not display any symbol when battery is over 30%
@@ -34,9 +34,9 @@ discharging_symbol      = "💦 "
 
 # Replace the "❯" symbol in the prompt with
 [character]
-vicmd_symbol            = "[](bold cyan) "
-success_symbol          = "[➜](bold green) "
-error_symbol            = "[✗](bold red) "
+vicmd_symbol            = "[](bold #74C7EC) "
+success_symbol          = "[➜](bold #A6E3A1) "
+error_symbol            = "[✗](bold #F38BA8) "
 
 # ----- END OF CHARACTER -------------------------------------------------------
 
@@ -51,7 +51,7 @@ disabled                = true
 # ----- DIRECTORY --------------------------------------------------------------
 
 [directory]
-style                   = "yellow"
+style                   = "#F9E2AF"
 truncation_length       = 8
 truncation_symbol       = "*/"
 
@@ -61,17 +61,17 @@ truncation_symbol       = "*/"
 
 [git_branch]
 format                  = "[$symbol$branch ]($style)"
-style                   = "bold purple"
+style                   = "bold #CBA6F7"
 symbol                  = " "
 
 [git_commit]
 format                  = " [\\($hash\\)]($style)"
-style                   = "green"
+style                   = "#A6E3A1"
 only_detached           = true
 
 [git_status]
 format                  = '([$all_status$ahead_behind]($style) )'
-style                   = "bold red"
+style                   = "bold #F38BA8"
 conflicted              = "  ${count}"
 ahead                   = " ⇡${count}"
 behind                  = " ⇣${count}"
@@ -79,7 +79,7 @@ diverged                = " ⇕${count}"
 untracked               = " ?${count}"
 stashed                 = " $${count}"
 modified                = " !${count}"
-staged                  = '[ ++\($count\)](green)'
+staged                  = '[ ++\($count\)](#A6E3A1)'
 renamed                 = " »${count}"
 deleted                 = " ✘${count}"
 
@@ -88,7 +88,7 @@ deleted                 = " ✘${count}"
 # ----- LUA --------------------------------------------------------------------
 
 [lua]
-format                  = "[🌕 $version](bold blue) "
+format                  = "[🌕 $version](bold #89B4FA) "
 
 # ----- END OF LUA -------------------------------------------------------------
 
@@ -99,7 +99,7 @@ format                  = "[🌕 $version](bold blue) "
 disabled                = false
 format                  = "[${ram}( ${swap})]($style) "
 threshold               = 70
-style                   = "bold dimmed green"
+style                   = "dimmed #A6E3A1"
 
 # ----- END OF MEMORY ----------------------------------------------------------
 
@@ -125,14 +125,14 @@ symbol                  = " "
 [time]
 disabled                = false
 format                  = "[$time]($style) "
-style                   = "dimmed yellow"
+style                   = "dimmed #F9E2AF"
 use_12hr                = true
 
 # ----- END OF TIME ------------------------------------------------------------
 
 [username]
-style_user              = "white bold"
-style_root              = "black bold"
+style_user              = "bold #CDD6F4"
+style_root              = "bold #313244"
 format                  = "[$user]($style) "
 disabled                = false
 show_always             = true
