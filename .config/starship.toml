@@ -1,140 +1,333 @@
-# ----- LINE BREAK -------------------------------------------------------------
+"$schema" = 'https://starship.rs/config-schema.json'
 
-# Inserts a blank line between shell prompts
-add_newline             = false
+add_newline = false
 
-# ----- END OF LINE BREAK ------------------------------------------------------
+format = """
+[](red)\
+$os\
+$username\
+[](bg:green fg:red)\
+$directory\
+[](fg:green bg:sapphire)\
+$time\
+[ ](fg:lavender)\
+$git_branch\
+${custom.git_tag}\
+$git_commit\
+$git_status\
+$git_metrics\
+$git_state\
+$c\
+$conda\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+$mise\
+$battery\
+$memory_usage\
+$cmd_duration\
+$line_break\
+$character"""
 
-# ----- BATTERY ----------------------------------------------------------------
+palette = 'catppuccin_mocha'
 
-# Symbols
 [battery]
-full_symbol             = "🔋 "
-charging_symbol         = "⚡️ "
-discharging_symbol      = "💀 "
+format = "[[](fg:red) $symbol$percentage [ ](fg:red)]($style)"
 
-# Display discharing_symbol when capacity is between 0% and 10%
 [[battery.display]]
-threshold               = 10
-style                   = "bold red"
+threshold = 30
+style = "bg:red fg:crust"
 
-# Display discharing_symbol when capacity is between 10% and 30%
-[[battery.display]]
-threshold               = 30
-style                   = "bold #F9E2AF"
-discharging_symbol      = "💦 "
-
-# Do not display any symbol when battery is over 30%
-# Display charging_symbol when battery is charging
-# Display full_symbol when battery is full
-
-# ----- END OF BATTERY ---------------------------------------------------------
-
-# ----- CHARACTER --------------------------------------------------------------
-
-# Replace the "❯" symbol in the prompt with
-[character]
-vicmd_symbol            = "[](bold #74C7EC) "
-success_symbol          = "[➜](bold #A6E3A1) "
-error_symbol            = "[✗](bold #F38BA8) "
-
-# ----- END OF CHARACTER -------------------------------------------------------
-
-# ----- COMMAND DURATION -------------------------------------------------------
-
-# Not showing how much time it took to complete the last command
-[cmd_duration]
-disabled                = true
-
-# ----- END OF COMMAND DURATION ------------------------------------------------
-
-# ----- DIRECTORY --------------------------------------------------------------
-
-[directory]
-style                   = "#F9E2AF"
-truncation_length       = 8
-truncation_symbol       = "*/"
-
-# ----- END OF DIRECTORY -------------------------------------------------------
-
-# ----- GIT --------------------------------------------------------------------
-
-[git_branch]
-format                  = "[$symbol$branch ]($style)"
-style                   = "bold #CBA6F7"
-symbol                  = " "
-
-[git_commit]
-format                  = " [\\($hash\\)]($style)"
-style                   = "#A6E3A1"
-only_detached           = true
-
-[git_status]
-format                  = '([$all_status$ahead_behind]($style) )'
-style                   = "bold #F38BA8"
-conflicted              = "  ${count}"
-ahead                   = " ⇡${count}"
-behind                  = " ⇣${count}"
-diverged                = " ⇕${count}"
-untracked               = " ?${count}"
-stashed                 = " $${count}"
-modified                = " !${count}"
-staged                  = '[ ++\($count\)](#A6E3A1)'
-renamed                 = " »${count}"
-deleted                 = " ✘${count}"
-
-# ----- END OF GIT -------------------------------------------------------------
-
-# ----- LUA --------------------------------------------------------------------
-
-[lua]
-format                  = "[🌕 $version](bold #89B4FA) "
-
-# ----- END OF LUA -------------------------------------------------------------
-
-# ----- MEMORY -----------------------------------------------------------------
-
-# Show memory usage (ram + swap) if more than 70% is being used
 [memory_usage]
-disabled                = false
-format                  = "[${ram}( ${swap})]($style) "
-threshold               = 70
-style                   = "dimmed #A6E3A1"
+disabled = false
+format = "[[](fg:peach)  ${ram}(  ${swap} )[ ](fg:peach)]($style)"
+threshold = 75
+style = "bg:peach fg:crust"
 
-# ----- END OF MEMORY ----------------------------------------------------------
+[os]
+disabled = false
+style = "bg:red fg:crust"
 
-# ----- NODEJS -----------------------------------------------------------------
-
-[nodejs]
-format                  = "[$symbol($version )]($style)"
-symbol                  = " "
-
-# ----- END OF NODEJS ----------------------------------------------------------
-
-# ----- PYTHON -----------------------------------------------------------------
-
-[python]
-disabled                = false
-format                  = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-symbol                  = " "
-
-# ----- END OF PYTHON ----------------------------------------------------------
-
-# ----- TIME -------------------------------------------------------------------
-
-[time]
-disabled                = false
-format                  = "[$time]($style) "
-style                   = "dimmed #F9E2AF"
-use_12hr                = true
-
-# ----- END OF TIME ------------------------------------------------------------
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
 
 [username]
-style_user              = "bold #CDD6F4"
-style_root              = "bold #313244"
-format                  = "[$user]($style) "
-disabled                = false
-show_always             = true
+show_always = true
+style_user = "bg:red fg:crust"
+style_root = "bg:red fg:crust"
+format = '[ $user]($style)'
 
-# ----- END OF TIME ------------------------------------------------------------
+[directory]
+style = "bg:green fg:crust"
+format = "[ $path ]($style)"
+truncation_length = 8
+truncation_symbol = "*/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"projects" = "󰲋 "
+"work" = "󰲋 "
+
+[custom.git_tag]
+command = "git describe --tags --exact-match"
+when = "git describe --tags --exact-match 2>/dev/null"
+style = "bg:pink"
+format = '[[](fg:pink)[  $output ](fg:crust bg:pink)[ ](fg:pink)]($style)'
+
+[git_commit]
+style = 'crust bg:lavender'
+format = '[[](fg:lavender)[  $hash$tag ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+# tag_symbol = '  '
+tag_disabled = true
+
+[git_branch]
+symbol = ""
+style = "bg:yellow"
+format = '[[](fg:yellow)[ $symbol $branch ](fg:crust bg:yellow)[ ](fg:yellow)]($style)'
+
+[git_status]
+style = "bg:peach"
+format = '[[](fg:peach)[($ahead_behind$all_status)](fg:crust bg:peach) [ ](fg:peach)]($style)'
+up_to_date = ""
+conflicted = "  ${count}"
+ahead = " ⇡${count}"
+behind = " ⇣${count}"
+diverged = " ⇕${count}"
+untracked = " ?${count}"
+stashed = " $${count}"
+modified = " !${count}"
+staged = ' ++${count}'
+renamed = " »${count}"
+deleted = " ✘${count}"
+
+[git_metrics]
+disabled = false
+added_style = 'bold crust bg:peach'
+deleted_style = 'bold crust bg:peach'
+format = '[[](fg:peach) [+$added]($added_style)/[-$deleted](fg:crust bg:peach) [ ](fg:peach)]($deleted_style)'
+
+[git_state]
+style = "bg:mauve"
+format = '[[](fg:mauve) [$state( $progress_current/$progress_total)](fg:crust bg:mauve) [](fg:mauve)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[c]
+symbol = " "
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[php]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[java]
+symbol = " "
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[python]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:lavender"
+format = '[[](fg:lavender)[ $symbol( $version) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+
+[conda]
+symbol = "  "
+style = "fg:crust bg:lavender"
+format = '[[](fg:lavender)[ $symbol$environment) ](fg:crust bg:lavender)[ ](fg:lavender)]($style)'
+ignore_base = false
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+style = "bg:lavender"
+format = '[[  $time](fg:crust bg:lavender)]($style)'
+use_12hr = true
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[✗](bold fg:red)'
+vimcmd_symbol = '[](bold fg:green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
+vimcmd_replace_symbol = '[❮](bold fg:lavender)'
+vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[cmd_duration]
+show_milliseconds = true
+format = " in $duration "
+style = "bg:lavender"
+disabled = false
+show_notifications = true
+min_time_to_notify = 45000
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+[palettes.catppuccin_frappe]
+rosewater = "#f2d5cf"
+flamingo = "#eebebe"
+pink = "#f4b8e4"
+mauve = "#ca9ee6"
+red = "#e78284"
+maroon = "#ea999c"
+peach = "#ef9f76"
+yellow = "#e5c890"
+green = "#a6d189"
+teal = "#81c8be"
+sky = "#99d1db"
+sapphire = "#85c1dc"
+blue = "#8caaee"
+lavender = "#babbf1"
+text = "#c6d0f5"
+subtext1 = "#b5bfe2"
+subtext0 = "#a5adce"
+overlay2 = "#949cbb"
+overlay1 = "#838ba7"
+overlay0 = "#737994"
+surface2 = "#626880"
+surface1 = "#51576d"
+surface0 = "#414559"
+base = "#303446"
+mantle = "#292c3c"
+crust = "#232634"
+
+[palettes.catppuccin_latte]
+rosewater = "#dc8a78"
+flamingo = "#dd7878"
+pink = "#ea76cb"
+mauve = "#8839ef"
+red = "#d20f39"
+maroon = "#e64553"
+peach = "#fe640b"
+yellow = "#df8e1d"
+green = "#40a02b"
+teal = "#179299"
+sky = "#04a5e5"
+sapphire = "#209fb5"
+blue = "#1e66f5"
+lavender = "#7287fd"
+text = "#4c4f69"
+subtext1 = "#5c5f77"
+subtext0 = "#6c6f85"
+overlay2 = "#7c7f93"
+overlay1 = "#8c8fa1"
+overlay0 = "#9ca0b0"
+surface2 = "#acb0be"
+surface1 = "#bcc0cc"
+surface0 = "#ccd0da"
+base = "#eff1f5"
+mantle = "#e6e9ef"
+crust = "#dce0e8"
+
+[palettes.catppuccin_macchiato]
+rosewater = "#f4dbd6"
+flamingo = "#f0c6c6"
+pink = "#f5bde6"
+mauve = "#c6a0f6"
+red = "#ed8796"
+maroon = "#ee99a0"
+peach = "#f5a97f"
+yellow = "#eed49f"
+green = "#a6da95"
+teal = "#8bd5ca"
+sky = "#91d7e3"
+sapphire = "#7dc4e4"
+blue = "#8aadf4"
+lavender = "#b7bdf8"
+text = "#cad3f5"
+subtext1 = "#b8c0e0"
+subtext0 = "#a5adcb"
+overlay2 = "#939ab7"
+overlay1 = "#8087a2"
+overlay0 = "#6e738d"
+surface2 = "#5b6078"
+surface1 = "#494d64"
+surface0 = "#363a4f"
+base = "#24273a"
+mantle = "#1e2030"
+crust = "#181926"
