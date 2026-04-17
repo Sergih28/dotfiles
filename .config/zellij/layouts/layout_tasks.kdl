@@ -19,7 +19,7 @@ layout {
     tab name="" {
         top-bar-without-time
         pane stacked=true {
-            pane name=" tasks" command="nu" {
+            pane name=" tasks" command="zsh" {
               args "-c" "clear; task"
             }
             pane name=" playground"

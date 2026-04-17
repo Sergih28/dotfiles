@@ -77,7 +77,7 @@ layout {
         top-bar-with-time
         pane stacked=true {
             pane name=" btm" command="btm" start_suspended=true
-            pane name=" dysk" command="nu"  start_suspended=true {
+            pane name=" dysk" command="zsh"  start_suspended=true {
               args "-c" "clear; dysk"
             }
         }
