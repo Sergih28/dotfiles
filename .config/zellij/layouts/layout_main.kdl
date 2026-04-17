@@ -67,6 +67,9 @@ layout {
             pane name="󰕮 dashboard" command="gh" start_suspended=true {
               args "dash"
             }
+            pane name="󱜿 lazy" command="gh" start_suspended=true {
+              args "lazy"
+            }
             pane name=" notifications" command="gh" start_suspended=true {
               args "notify"
             }
