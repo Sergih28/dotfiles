@@ -7,8 +7,6 @@ eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 
-INTELLI_SEARCH_HOTKEY=ctrl+i
-
 export ZSH="$HOME/.oh-my-zsh"
 # Empty theme so that starship is not overwritten by this
 ZSH_THEME=""
