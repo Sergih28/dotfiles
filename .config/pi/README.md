@@ -29,11 +29,13 @@
 | Interface | [pi-powerline-footer](https://pi.dev/packages/pi-powerline-footer) | [![v0.17.1](https://img.shields.io/badge/v0.17.1-blue?style=for-the-badge&logo=pi)](https://github.com/nicobailon/pi-powerline-footer/releases/tag/v0.17.1) | `2026-09-19` | Powerline-style status bar | None |
 | Search & Web | [@ff-labs/pi-fff](https://pi.dev/packages/@ff-labs/pi-fff) | [![v0.10.6](https://img.shields.io/badge/v0.10.6-blue?style=for-the-badge&logo=pi)](https://github.com/dmtrKovalenko/fff/releases/tag/v0.10.6) | `2026-09-19` | Fuzzy file and content search (fff-powered) | None |
 | Search & Web | [pi-web-access](https://pi.dev/packages/pi-web-access) | [![v0.30.0](https://img.shields.io/badge/v0.30.0-blue?style=for-the-badge&logo=pi)](https://github.com/nicobailon/pi-web-access/releases/tag/v0.30.0) | `2026-09-20` | Web search, URL/PDF/YouTube fetch, repo cloning across ~25 providers | Free tier (search provider) |
+| Search & Web | [pi-agent-browser-native](https://pi.dev/packages/pi-agent-browser-native) | [![v0.6.15](https://img.shields.io/badge/v0.6.15-blue?style=for-the-badge&logo=pi)](https://github.com/fitchmultz/pi-agent-browser-native/releases/tag/v0.6.15) | `2026-09-21` | Native `agent_browser` tool — drive real browser sessions, snapshots, screenshots, profiles | None |
+| Coordination | [pi-intercom](https://pi.dev/packages/pi-intercom) | [![v0.13.0](https://img.shields.io/badge/v0.13.0-blue?style=for-the-badge&logo=pi)](https://www.npmjs.com/package/pi-intercom/v/0.13.0) | `2026-09-21` | Direct 1:1 messaging between local pi sessions (send/ask/reply) | None |
 | Model & Infra | [pi-free](https://pi.dev/packages/pi-free) | [![v2.8.1](https://img.shields.io/badge/v2.8.1-blue?style=for-the-badge&logo=pi)](https://github.com/apmantza/pi-free/releases/tag/v2.8.1) | `2026-09-19` | Free-model provider filtering and dynamic model fetching | None |
 | Core | [pi-lens](https://pi.dev/packages/pi-lens) | [![v4.2.1](https://img.shields.io/badge/v4.2.1-blue?style=for-the-badge&logo=pi)](https://github.com/apmantza/pi-lens/releases/tag/v4.2.1) | `2026-09-19` | Real-time code feedback: LSP, linters, formatters, type-checking, structural analysis | None |
 | Core | [remote-pi](https://pi.dev/packages/remote-pi) | [![v0.7.0](https://img.shields.io/badge/v0.7.0-blue?style=for-the-badge&logo=pi)](https://github.com/jacobaraujo7/remote_pi/releases/tag/v0.7.0) | `2026-09-19` | Phone remote control + local agent mesh over a socket broker | None |
 
-**Total: 21 declared, 21 installed.**
+**Total: 23 declared, 23 installed.**
 
 Not listed: `@earendil-works/pi-coding-agent` and `@earendil-works/pi-tui` (the pi harness itself,
 present in `node_modules` but not user-installed extensions), and `@juicesharp/rpiv-config`
