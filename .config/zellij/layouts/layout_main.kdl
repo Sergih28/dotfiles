@@ -25,56 +25,38 @@ layout {
         }
     }
 
-    tab name="" {
-        top-bar-with-time
-        pane size="100%" name=""
-        pane size=1 borderless=true {
-            plugin location="zellij:status-bar"
-        }
-    }
-    tab name="" {
-        top-bar-with-time
-        pane size="100%" command="spf" borderless=true
-    }
-    tab name="" {
+    tab name="" {
         top-bar-with-time
         pane stacked=true {
-            pane name="󱞟 opencode" command="opencode" start_suspended=true cwd="~/ai-ask/"
-            pane name="󱞟 opencode web" command="opencode" start_suspended=true cwd="~/ai-ask/" {
-              args "web"
+            pane name="󰕮 dashboard" command="gh" {
+              args "dash"
             }
-            pane name="󰆿 cursor" command="cursor-agent" start_suspended=true cwd="~/ai-ask/"
-            pane name=" codex" command="codex" start_suspended=true cwd="~/ai-ask/"
-            pane name="󰓎 gemini" command="gemini" start_suspended=true cwd="~/ai-ask/"
-            pane name=" claude" command="claude" start_suspended=true cwd="~/ai-ask/"
+            // pane name="󱜿 lazy" command="gh" {
+            //   args "lazy"
+            // }
+            pane name=" notifications" command="gh" {
+              args "notify"
+            }
+        }
+    }
+    tab name="󰇈" {
+        top-bar-with-time
+        pane size="100%" name="󰇈 Obsidian" {
+            command "nvim"
+            args "--cmd" "cd ~/Documents/Obsidian_Sergi"
+        }
+    }
+    tab name="󱜿" {
+        top-bar-with-time
+        pane stacked=true {
+            pane name=" lazygit" command="lazygit"
+            pane name=" lazydocker" command="lazydocker" start_suspended=true
+            pane name=" lazysql" command="lazysql" start_suspended=true
         }
     }
     tab name="" {
         top-bar-with-time
         pane size="100%" command="nvim" borderless=true start_suspended=true
-    }
-    tab name="󱜿" {
-        top-bar-with-time
-        pane stacked=true {
-            pane name=" lazygit" command="lazygit" start_suspended=true
-            pane name=" lazydocker" command="lazydocker" start_suspended=true
-            pane name=" lazysql" command="lazysql" start_suspended=true
-        }
-    }
-    tab name="" {
-        top-bar-with-time
-        pane stacked=true {
-            pane name="󰕮 dashboard" command="gh" start_suspended=true {
-              args "dash"
-            }
-            pane name="󱜿 lazy" command="gh" start_suspended=true {
-              args "lazy"
-            }
-            pane name=" notifications" command="gh" start_suspended=true {
-              args "notify"
-            }
-            pane name=" playground"
-        }
     }
     tab name="󰌢" {
         top-bar-with-time
@@ -83,6 +65,17 @@ layout {
             pane name=" dysk" command="zsh"  start_suspended=true {
               args "-c" "clear; dysk"
             }
+        }
+    }
+    tab name="" {
+        top-bar-with-time
+        pane size="100%" command="spf" borderless=true
+    }
+    tab name="" {
+        top-bar-with-time
+        pane size="100%" name=""
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
         }
     }
 }
