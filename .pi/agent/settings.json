@@ -1,0 +1,84 @@
+{
+  "defaultModel": "deepseek-flash",
+  "defaultProvider": "deepseek",
+  "enabledModels": [
+    "openrouter/deepseek/deepseek-v4-flash",
+    "openrouter/deepseek/deepseek-v4-flash-vision-exp",
+    "deepseek/deepseek-v4-pro",
+    "deepseek/deepseek-flash",
+    "openai-codex/gpt-6-astra",
+    "openai-codex/gpt-6-luna",
+    "openai-codex/gpt-6-sol"
+  ],
+  "lastChangelogVersion": "0.87.1",
+  "packages": [
+    "npm:remote-pi",
+    "npm:@pi-unipi/notify",
+    "npm:@mohndoe/pi-atlas",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:pi-lens",
+    "npm:pi-free",
+    "npm:pi-web-access",
+    "npm:pi-powerline-footer",
+    "npm:@ff-labs/pi-fff",
+    "npm:pi-context-view",
+    "npm:@dietrichgebert/ponytail",
+    "npm:@narumitw/pi-btw",
+    "npm:@plannotator/pi-extension",
+    "npm:@narumitw/pi-goal",
+    "npm:pi-simplify",
+    "npm:@narumitw/pi-usage",
+    "npm:pi-web-ui",
+    "npm:@juicesharp/rpiv-advisor",
+    "npm:pi-open-tui",
+    {
+      "source": "git:github.com/otahontas/pi-coding-agent-catppuccin",
+      "themes": [
+        "-catppuccin-frappe.json",
+        "-catppuccin-latte.json",
+        "-catppuccin-macchiato.json"
+      ]
+    },
+    "npm:pi-intercom",
+    {
+      "source": "npm:pi-agent-browser-native",
+      "extensions": [
+        "-dist/extensions/agent-browser/index.js"
+      ]
+    },
+    "npm:@maplezzk/pi-interactive-subagents",
+    "npm:@codexstar/pi-listen"
+  ],
+  "theme": "catppuccin-mocha",
+  "modelThinkingLevels": {
+    "deepseek/deepseek-v4-flash": "off"
+  },
+  "defaultThinkingLevel": "low",
+  "voice": {
+    "version": 2,
+    "enabled": true,
+    "language": "en",
+    "scope": "global",
+    "backend": "local",
+    "localModel": "parakeet-v2",
+    "toggleShortcut": "ctrl+shift+v",
+    "ttsEnabled": false,
+    "ttsBackend": "local",
+    "ttsLocalModel": "kokoro-int8-en-v0_19",
+    "ttsLocalVoiceId": 0,
+    "ttsDeepgramVoiceId": "aura-asteria-en",
+    "ttsSpeed": 1.5,
+    "ttsAutoSpeak": true,
+    "autoSubmitOnSpeak": false,
+    "holdThresholdMs": 700,
+    "ttsDeepgramStreaming": false,
+    "ttsOnboardingShown": false,
+    "onboarding": {
+      "completed": true,
+      "schemaVersion": 2,
+      "completedAt": "2026-09-25T19:39:51.499Z",
+      "source": "migration"
+    }
+  }
+}

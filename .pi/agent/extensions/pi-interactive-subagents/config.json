@@ -1,0 +1,7 @@
+{
+  "mux": "herdr",
+  "herdrMode": "split",
+  "subagentExtensions": [
+    "/Users/sergi/.pi/agent/npm/node_modules/pi-intercom/index.ts"
+  ]
+}

@@ -1,0 +1,8 @@
+variant = "none"
+split_corner = false
+show_tab = false
+trim_group_prefix = true
+reorder_workspaces = true
+group_indent = 2
+group_gap = true
+follow_appearance = true
