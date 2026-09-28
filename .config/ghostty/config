@@ -13,6 +13,8 @@ window-decoration = server
 mouse-scroll-multiplier = 0.5
 keybind = ctrl+,=unbind
 macos-option-as-alt = true
+copy-on-select = clipboard
+selection-clear-on-copy = false
 
 # >>> herdr-radar font block
 font-codepoint-map = U+E1A0-U+E1B7=Herdr Agent Icons Max

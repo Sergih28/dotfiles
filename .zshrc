@@ -23,3 +23,10 @@ source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_aliases
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+export PATH="/opt/local/bin:/opt/local/sbin:$HOME/.cargo/bin:/Users/sergi/.pi/agent/bin:$HOME/.local/bin:$PATH"
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi

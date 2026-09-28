@@ -10,6 +10,7 @@ directory = "~/.herdr/worktrees"
 mouse_capture = true
 status_indicators = "symbols"
 prompt_new_tab_name = false
+copy_on_select = false
 
 show_agent_labels_on_pane_borders = false
 agent_panel_sort = "spaces"
